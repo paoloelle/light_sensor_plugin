@@ -26,8 +26,9 @@
         </inertial>
         </link>
         <frame name="mount_point"/>
+         <!--FIXME don't pass absoulte path-->
         <plugin
-            filename="libLightSensor"
+            filename="/home/paolo/light_sensor_plugin/install/lib/libLightSensor.so"
             name="custom_light_sensor::LightSensor">
         <update_rate>1</update_rate>
         <scan>

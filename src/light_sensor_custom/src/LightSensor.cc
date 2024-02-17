@@ -119,7 +119,7 @@ void LightSensor::Configure(const ignition::gazebo::Entity &_entity,
   		// populate and publish the message
 
   		// time stamp the message with sim time
-  		ignition::msgs::Float_V msg;
+  		ignition::msgs::Float msg;
   		*msg.mutable_header()->mutable_stamp() = ignition::msgs::Convert(_info.simTime);
   		auto frame = msg.mutable_header()->add_data();
 
@@ -131,7 +131,7 @@ void LightSensor::Configure(const ignition::gazebo::Entity &_entity,
   		frame->add_value(scopedName);
 
   		// populate sensor data
-  		msg.add_data(light_value);
+  		msg.set_data(light_value);
   		this->publisher.Publish(msg);
 
         }
