@@ -1,0 +1,284 @@
+[0.000000] (-) TimerEvent: {}
+[0.000097] (mbzirc_naive_radar) JobQueued: {'identifier': 'mbzirc_naive_radar', 'dependencies': OrderedDict()}
+[0.000165] (mbzirc_naive_radar) JobStarted: {'identifier': 'mbzirc_naive_radar'}
+[0.099492] (-) TimerEvent: {}
+[0.101303] (mbzirc_naive_radar) JobProgress: {'identifier': 'mbzirc_naive_radar', 'progress': 'cmake'}
+[0.101357] (mbzirc_naive_radar) Command: {'cmd': ['/usr/bin/cmake', '/home/paolo/light_sensor_plugin', '-DCMAKE_INSTALL_PREFIX=/home/paolo/light_sensor_plugin/install'], 'cwd': '/home/paolo/light_sensor_plugin/build/mbzirc_naive_radar', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'paolo'), ('LC_TIME', 'it_IT.UTF-8'), ('IGNITION_VERSION', 'fortress'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/paolo/turtlebot4_ws/install/turtlebot4_msgs/lib:/home/paolo/create3_ws/install/irobot_create_nodes/lib:/home/paolo/create3_ws/install/irobot_create_ignition_toolbox/lib:/home/paolo/create3_ws/install/irobot_create_toolbox/lib:/home/paolo/create3_ws/install/irobot_create_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/paolo'), ('OLDPWD', '/home/paolo'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'it_IT.UTF-8'), ('MANAGERPID', '1040'), ('SYSTEMD_EXEC_PID', '1209'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '25857'), ('_colcon_cd_root', '/opt/ros/humble/'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/paolo/turtlebot4_controller_ws/install:/home/paolo/turtlebot4_ws/install:/home/paolo/create3_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'paolo'), ('JOURNAL_STREAM', '8:28665'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'paolo'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/paolo-VivoBook-S15-X510UF:@/tmp/.ICE-unix/1184,unix/paolo-VivoBook-S15-X510UF:/tmp/.ICE-unix/1184'), ('INVOCATION_ID', '9d5c699e36244dd5bf0051726d94449b'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'it_IT.UTF-8'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('LC_TELEPHONE', 'it_IT.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.MF0AJ2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/paolo/turtlebot4_controller_ws/install/turtlebot4_controller:/home/paolo/turtlebot4_ws/install/turtlebot4_simulator:/home/paolo/turtlebot4_ws/install/turtlebot4_ignition_bringup:/home/paolo/turtlebot4_ws/install/turtlebot4_desktop:/home/paolo/turtlebot4_ws/install/turtlebot4_viz:/home/paolo/turtlebot4_ws/install/turtlebot4_setup:/home/paolo/turtlebot4_ws/install/turtlebot4_node:/home/paolo/turtlebot4_ws/install/turtlebot4_navigation:/home/paolo/turtlebot4_ws/install/turtlebot4_ignition_toolbox:/home/paolo/turtlebot4_ws/install/turtlebot4_msgs:/home/paolo/turtlebot4_ws/install/turtlebot4_ignition_gui_plugins:/home/paolo/turtlebot4_ws/install/turtlebot4_description:/home/paolo/create3_ws/install/irobot_create_ignition_sim:/home/paolo/create3_ws/install/irobot_create_ignition_bringup:/home/paolo/create3_ws/install/irobot_create_common_bringup:/home/paolo/create3_ws/install/irobot_create_nodes:/home/paolo/create3_ws/install/irobot_create_ignition_toolbox:/home/paolo/create3_ws/install/irobot_create_toolbox:/home/paolo/create3_ws/install/irobot_create_msgs:/home/paolo/create3_ws/install/irobot_create_ignition_plugins:/home/paolo/create3_ws/install/irobot_create_description:/home/paolo/create3_ws/install/irobot_create_control:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'it_IT.UTF-8'), ('TERMINATOR_UUID', 'urn:uuid:4ae9b752-0241-4088-b2cf-550b6ab80d86'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'it_IT.UTF-8'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'it_IT.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/paolo/light_sensor_plugin/build/mbzirc_naive_radar'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/paolo/turtlebot4_controller_ws/build/turtlebot4_controller:/home/paolo/turtlebot4_controller_ws/install/turtlebot4_controller/lib/python3.10/site-packages:/home/paolo/turtlebot4_ws/install/turtlebot4_setup/local/lib/python3.10/dist-packages:/home/paolo/turtlebot4_ws/install/turtlebot4_navigation/local/lib/python3.10/dist-packages:/home/paolo/turtlebot4_ws/install/turtlebot4_msgs/local/lib/python3.10/dist-packages:/home/paolo/create3_ws/install/irobot_create_common_bringup/local/lib/python3.10/dist-packages:/home/paolo/create3_ws/install/irobot_create_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'it_IT.UTF-8'), ('LC_PAPER', 'it_IT.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/paolo/turtlebot4_ws/install/turtlebot4_simulator:/home/paolo/turtlebot4_ws/install/turtlebot4_ignition_bringup:/home/paolo/turtlebot4_ws/install/turtlebot4_desktop:/home/paolo/turtlebot4_ws/install/turtlebot4_viz:/home/paolo/turtlebot4_ws/install/turtlebot4_setup:/home/paolo/turtlebot4_ws/install/turtlebot4_node:/home/paolo/turtlebot4_ws/install/turtlebot4_navigation:/home/paolo/turtlebot4_ws/install/turtlebot4_ignition_toolbox:/home/paolo/turtlebot4_ws/install/turtlebot4_msgs:/home/paolo/turtlebot4_ws/install/turtlebot4_ignition_gui_plugins:/home/paolo/turtlebot4_ws/install/turtlebot4_description:/home/paolo/create3_ws/install/irobot_create_ignition_sim:/home/paolo/create3_ws/install/irobot_create_ignition_bringup:/home/paolo/create3_ws/install/irobot_create_common_bringup:/home/paolo/create3_ws/install/irobot_create_nodes:/home/paolo/create3_ws/install/irobot_create_ignition_toolbox:/home/paolo/create3_ws/install/irobot_create_toolbox:/home/paolo/create3_ws/install/irobot_create_msgs:/home/paolo/create3_ws/install/irobot_create_ignition_plugins:/home/paolo/create3_ws/install/irobot_create_description:/home/paolo/create3_ws/install/irobot_create_control')]), 'shell': False}
+[0.199625] (-) TimerEvent: {}
+[0.232418] (mbzirc_naive_radar) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.299915] (-) TimerEvent: {}
+[0.335102] (mbzirc_naive_radar) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.346891] (mbzirc_naive_radar) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.399986] (-) TimerEvent: {}
+[0.424172] (mbzirc_naive_radar) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.431705] (mbzirc_naive_radar) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.432174] (mbzirc_naive_radar) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.432909] (mbzirc_naive_radar) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.436310] (mbzirc_naive_radar) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.500114] (-) TimerEvent: {}
+[0.515241] (mbzirc_naive_radar) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.522739] (mbzirc_naive_radar) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.523019] (mbzirc_naive_radar) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.523458] (mbzirc_naive_radar) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.532516] (mbzirc_naive_radar) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.7 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.600224] (-) TimerEvent: {}
+[0.700474] (-) TimerEvent: {}
+[0.726559] (mbzirc_naive_radar) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3.10 (found version "3.10.12") found components: Interpreter \n'}
+[0.800581] (-) TimerEvent: {}
+[0.858904] (mbzirc_naive_radar) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.15.1\n'}
+[0.870685] (mbzirc_naive_radar) StdoutLine: {'line': b'-- Searching for dependencies of ignition-math6\n'}
+[0.875876] (mbzirc_naive_radar) StdoutLine: {'line': b'-- Looking for ignition-msgs8 -- found version 8.7.0\n'}
+[0.876282] (mbzirc_naive_radar) StdoutLine: {'line': b'-- Searching for dependencies of ignition-msgs8\n'}
+[0.900698] (-) TimerEvent: {}
+[1.000984] (-) TimerEvent: {}
+[1.072173] (mbzirc_naive_radar) StdoutLine: {'line': b'-- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found suitable version "3.12.4", minimum required is "3") \n'}
+[1.073023] (mbzirc_naive_radar) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.15.1\n'}
+[1.080058] (mbzirc_naive_radar) StdoutLine: {'line': b"-- Checking for module 'tinyxml2'\n"}
+[1.093406] (mbzirc_naive_radar) StdoutLine: {'line': b'--   Found tinyxml2, version 9.0.0\n'}
+[1.101095] (-) TimerEvent: {}
+[1.127223] (mbzirc_naive_radar) StdoutLine: {'line': b'-- Looking for ignition-transport11 -- found version 11.4.1\n'}
+[1.127802] (mbzirc_naive_radar) StdoutLine: {'line': b'-- Searching for dependencies of ignition-transport11\n'}
+[1.147010] (mbzirc_naive_radar) StdoutLine: {'line': b'-- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found version "3.12.4") \n'}
+[1.160726] (mbzirc_naive_radar) StdoutLine: {'line': b'-- Config-file not installed for ZeroMQ -- checking for pkg-config\n'}
+[1.164982] (mbzirc_naive_radar) StdoutLine: {'line': b"-- Checking for module 'libzmq >= 4'\n"}
+[1.184111] (mbzirc_naive_radar) StdoutLine: {'line': b'--   Found libzmq , version 4.3.4\n'}
+[1.201242] (-) TimerEvent: {}
+[1.216663] (mbzirc_naive_radar) StdoutLine: {'line': b'-- Found ZeroMQ: TRUE (Required is at least version "4") \n'}
+[1.222764] (mbzirc_naive_radar) StdoutLine: {'line': b"-- Checking for module 'uuid'\n"}
+[1.236586] (mbzirc_naive_radar) StdoutLine: {'line': b'--   Found uuid, version 2.37.2\n'}
+[1.266926] (mbzirc_naive_radar) StdoutLine: {'line': b'-- Found UUID: TRUE  \n'}
+[1.271623] (mbzirc_naive_radar) StdoutLine: {'line': b'-- Looking for ignition-utils1 -- found version 1.5.1\n'}
+[1.272160] (mbzirc_naive_radar) StdoutLine: {'line': b'-- Searching for dependencies of ignition-utils1\n'}
+[1.272841] (mbzirc_naive_radar) StdoutLine: {'line': b'-- Searching for <ignition-utils1> component [cli]\n'}
+[1.277243] (mbzirc_naive_radar) StdoutLine: {'line': b'-- Looking for ignition-utils1-cli -- found version 1.5.1\n'}
+[1.277725] (mbzirc_naive_radar) StdoutLine: {'line': b'-- Searching for dependencies of ignition-utils1-cli\n'}
+[1.278501] (mbzirc_naive_radar) StdoutLine: {'line': b'-- Looking for ignition-msgs8 -- found version 8.7.0\n'}
+[1.284033] (mbzirc_naive_radar) StdoutLine: {'line': b'-- Looking for ignition-plugin1 -- found version 1.4.0\n'}
+[1.284551] (mbzirc_naive_radar) StdoutLine: {'line': b'-- Searching for dependencies of ignition-plugin1\n'}
+[1.285198] (mbzirc_naive_radar) StdoutLine: {'line': b'-- Searching for <ignition-plugin1> component [loader]\n'}
+[1.289274] (mbzirc_naive_radar) StdoutLine: {'line': b'-- Looking for ignition-plugin1-loader -- found version 1.4.0\n'}
+[1.289743] (mbzirc_naive_radar) StdoutLine: {'line': b'-- Searching for dependencies of ignition-plugin1-loader\n'}
+[1.290339] (mbzirc_naive_radar) StdoutLine: {'line': b'-- Searching for <ignition-plugin1> component [register]\n'}
+[1.294418] (mbzirc_naive_radar) StdoutLine: {'line': b'-- Looking for ignition-plugin1-register -- found version 1.4.0\n'}
+[1.294880] (mbzirc_naive_radar) StdoutLine: {'line': b'-- Searching for dependencies of ignition-plugin1-register\n'}
+[1.301343] (-) TimerEvent: {}
+[1.301925] (mbzirc_naive_radar) StdoutLine: {'line': b'-- Looking for ignition-sensors6 -- found version 6.8.0\n'}
+[1.302395] (mbzirc_naive_radar) StdoutLine: {'line': b'-- Searching for dependencies of ignition-sensors6\n'}
+[1.322848] (mbzirc_naive_radar) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.15.1\n'}
+[1.328525] (mbzirc_naive_radar) StdoutLine: {'line': b'-- Looking for ignition-common4 -- found version 4.7.0\n'}
+[1.328982] (mbzirc_naive_radar) StdoutLine: {'line': b'-- Searching for dependencies of ignition-common4\n'}
+[1.329611] (mbzirc_naive_radar) StdoutLine: {'line': b'-- Looking for dlfcn.h - found\n'}
+[1.330548] (mbzirc_naive_radar) StdoutLine: {'line': b'-- Looking for libdl - found\n'}
+[1.331744] (mbzirc_naive_radar) StdoutLine: {'line': b'-- Found DL: TRUE  \n'}
+[1.343602] (mbzirc_naive_radar) StdoutLine: {'line': b'-- Searching for <ignition-common4> component [profiler]\n'}
+[1.347974] (mbzirc_naive_radar) StdoutLine: {'line': b'-- Looking for ignition-common4-profiler -- found version 4.7.0\n'}
+[1.348459] (mbzirc_naive_radar) StdoutLine: {'line': b'-- Searching for dependencies of ignition-common4-profiler\n'}
+[1.349573] (mbzirc_naive_radar) StdoutLine: {'line': b'-- Looking for ignition-transport11 -- found version 11.4.1\n'}
+[1.354123] (mbzirc_naive_radar) StdoutLine: {'line': b'-- Looking for ignition-rendering6 -- found version 6.6.3\n'}
+[1.354550] (mbzirc_naive_radar) StdoutLine: {'line': b'-- Searching for dependencies of ignition-rendering6\n'}
+[1.354922] (mbzirc_naive_radar) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.15.1\n'}
+[1.355350] (mbzirc_naive_radar) StdoutLine: {'line': b'-- Searching for dependencies of ignition-math6\n'}
+[1.355536] (mbzirc_naive_radar) StdoutLine: {'line': b'-- Searching for <ignition-math6> component [eigen3]\n'}
+[1.360060] (mbzirc_naive_radar) StdoutLine: {'line': b'-- Looking for ignition-math6-eigen3 -- found version 6.15.1\n'}
+[1.360665] (mbzirc_naive_radar) StdoutLine: {'line': b'-- Searching for dependencies of ignition-math6-eigen3\n'}
+[1.371225] (mbzirc_naive_radar) StdoutLine: {'line': b'-- Looking for ignition-common4 -- found version 4.7.0\n'}
+[1.371643] (mbzirc_naive_radar) StdoutLine: {'line': b'-- Searching for dependencies of ignition-common4\n'}
+[1.371855] (mbzirc_naive_radar) StdoutLine: {'line': b'-- Looking for dlfcn.h - found\n'}
+[1.371945] (mbzirc_naive_radar) StdoutLine: {'line': b'-- Looking for libdl - found\n'}
+[1.380245] (mbzirc_naive_radar) StdoutLine: {'line': b'-- Searching for <ignition-common4> component [graphics]\n'}
+[1.384932] (mbzirc_naive_radar) StdoutLine: {'line': b'-- Looking for ignition-common4-graphics -- found version 4.7.0\n'}
+[1.385413] (mbzirc_naive_radar) StdoutLine: {'line': b'-- Searching for dependencies of ignition-common4-graphics\n'}
+[1.385792] (mbzirc_naive_radar) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.15.1\n'}
+[1.386193] (mbzirc_naive_radar) StdoutLine: {'line': b'-- Looking for ignition-utils1 -- found version 1.5.1\n'}
+[1.386880] (mbzirc_naive_radar) StdoutLine: {'line': b'-- Searching for <ignition-common4> component [events]\n'}
+[1.391244] (mbzirc_naive_radar) StdoutLine: {'line': b'-- Looking for ignition-common4-events -- found version 4.7.0\n'}
+[1.391715] (mbzirc_naive_radar) StdoutLine: {'line': b'-- Searching for dependencies of ignition-common4-events\n'}
+[1.392075] (mbzirc_naive_radar) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.15.1\n'}
+[1.393214] (mbzirc_naive_radar) StdoutLine: {'line': b'-- Looking for ignition-plugin1 -- found version 1.4.0\n'}
+[1.393649] (mbzirc_naive_radar) StdoutLine: {'line': b'-- Searching for dependencies of ignition-plugin1\n'}
+[1.393839] (mbzirc_naive_radar) StdoutLine: {'line': b'-- Searching for <ignition-plugin1> component [all]\n'}
+[1.398076] (mbzirc_naive_radar) StdoutLine: {'line': b'-- Looking for all libraries of ignition-plugin1 -- found version 1.4.0\n'}
+[1.398580] (mbzirc_naive_radar) StdoutLine: {'line': b'-- Looking for ignition-plugin1 -- found version 1.4.0\n'}
+[1.400994] (mbzirc_naive_radar) StdoutLine: {'line': b'-- Looking for ignition-msgs8 -- found version 8.7.0\n'}
+[1.401438] (-) TimerEvent: {}
+[1.405634] (mbzirc_naive_radar) StdoutLine: {'line': b'-- Looking for sdformat12 -- found version 12.7.2\n'}
+[1.406077] (mbzirc_naive_radar) StdoutLine: {'line': b'-- Searching for dependencies of sdformat12\n'}
+[1.413256] (mbzirc_naive_radar) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.15.1\n'}
+[1.413636] (mbzirc_naive_radar) StdoutLine: {'line': b'-- Looking for ignition-utils1 -- found version 1.5.1\n'}
+[1.422529] (mbzirc_naive_radar) StdoutLine: {'line': b'-- Looking for ignition-gazebo6 -- found version 6.16.0\n'}
+[1.422978] (mbzirc_naive_radar) StdoutLine: {'line': b'-- Searching for dependencies of ignition-gazebo6\n'}
+[1.423343] (mbzirc_naive_radar) StdoutLine: {'line': b'-- Looking for sdformat12 -- found version 12.7.2\n'}
+[1.423832] (mbzirc_naive_radar) StdoutLine: {'line': b'-- Looking for ignition-plugin1 -- found version 1.4.0\n'}
+[1.424249] (mbzirc_naive_radar) StdoutLine: {'line': b'-- Looking for ignition-transport11 -- found version 11.4.1\n'}
+[1.424768] (mbzirc_naive_radar) StdoutLine: {'line': b'-- Searching for dependencies of ignition-transport11\n'}
+[1.460877] (mbzirc_naive_radar) StdoutLine: {'line': b'-- Config-file not installed for ZeroMQ -- checking for pkg-config\n'}
+[1.465568] (mbzirc_naive_radar) StdoutLine: {'line': b"-- Checking for module 'libzmq >= 4'\n"}
+[1.478614] (mbzirc_naive_radar) StdoutLine: {'line': b'--   Found libzmq , version 4.3.4\n'}
+[1.501537] (-) TimerEvent: {}
+[1.521022] (mbzirc_naive_radar) StdoutLine: {'line': b'-- Looking for ignition-utils1 -- found version 1.5.1\n'}
+[1.521371] (mbzirc_naive_radar) StdoutLine: {'line': b'-- Looking for ignition-msgs8 -- found version 8.7.0\n'}
+[1.521580] (mbzirc_naive_radar) StdoutLine: {'line': b'-- Searching for <ignition-transport11> component [log]\n'}
+[1.526523] (mbzirc_naive_radar) StdoutLine: {'line': b'-- Looking for ignition-transport11-log -- found version 11.4.1\n'}
+[1.527113] (mbzirc_naive_radar) StdoutLine: {'line': b'-- Searching for dependencies of ignition-transport11-log\n'}
+[1.527839] (mbzirc_naive_radar) StdoutLine: {'line': b'-- Searching for <ignition-transport11> component [parameters]\n'}
+[1.532316] (mbzirc_naive_radar) StdoutLine: {'line': b'-- Looking for ignition-transport11-parameters -- found version 11.4.1\n'}
+[1.532840] (mbzirc_naive_radar) StdoutLine: {'line': b'-- Searching for dependencies of ignition-transport11-parameters\n'}
+[1.533930] (mbzirc_naive_radar) StdoutLine: {'line': b'-- Looking for ignition-msgs8 -- found version 8.7.0\n'}
+[1.534334] (mbzirc_naive_radar) StdoutLine: {'line': b'-- Looking for ignition-common4 -- found version 4.7.0\n'}
+[1.534765] (mbzirc_naive_radar) StdoutLine: {'line': b'-- Searching for dependencies of ignition-common4\n'}
+[1.535005] (mbzirc_naive_radar) StdoutLine: {'line': b'-- Looking for dlfcn.h - found\n'}
+[1.535102] (mbzirc_naive_radar) StdoutLine: {'line': b'-- Looking for libdl - found\n'}
+[1.543994] (mbzirc_naive_radar) StdoutLine: {'line': b'-- Searching for <ignition-common4> component [profiler]\n'}
+[1.544415] (mbzirc_naive_radar) StdoutLine: {'line': b'-- Searching for <ignition-common4> component [events]\n'}
+[1.544872] (mbzirc_naive_radar) StdoutLine: {'line': b'-- Searching for <ignition-common4> component [av]\n'}
+[1.549263] (mbzirc_naive_radar) StdoutLine: {'line': b'-- Looking for ignition-common4-av -- found version 4.7.0\n'}
+[1.549783] (mbzirc_naive_radar) StdoutLine: {'line': b'-- Searching for dependencies of ignition-common4-av\n'}
+[1.555032] (mbzirc_naive_radar) StdoutLine: {'line': b"-- Checking for module 'libswscale'\n"}
+[1.568843] (mbzirc_naive_radar) StdoutLine: {'line': b'--   Found libswscale, version 5.9.100\n'}
+[1.601637] (-) TimerEvent: {}
+[1.602533] (mbzirc_naive_radar) StdoutLine: {'line': b'-- Found SWSCALE: TRUE  \n'}
+[1.608035] (mbzirc_naive_radar) StdoutLine: {'line': b"-- Checking for module 'libavdevice >= 56.4.100'\n"}
+[1.623324] (mbzirc_naive_radar) StdoutLine: {'line': b'--   Found libavdevice , version 58.13.100\n'}
+[1.667073] (mbzirc_naive_radar) StdoutLine: {'line': b'-- Found AVDEVICE: TRUE (Required is at least version "56.4.100") \n'}
+[1.673137] (mbzirc_naive_radar) StdoutLine: {'line': b"-- Checking for module 'libavformat'\n"}
+[1.689314] (mbzirc_naive_radar) StdoutLine: {'line': b'--   Found libavformat, version 58.76.100\n'}
+[1.701759] (-) TimerEvent: {}
+[1.731270] (mbzirc_naive_radar) StdoutLine: {'line': b'-- Found AVFORMAT: TRUE  \n'}
+[1.739073] (mbzirc_naive_radar) StdoutLine: {'line': b"-- Checking for module 'libavcodec'\n"}
+[1.756075] (mbzirc_naive_radar) StdoutLine: {'line': b'--   Found libavcodec, version 58.134.100\n'}
+[1.797050] (mbzirc_naive_radar) StdoutLine: {'line': b'-- Found AVCODEC: TRUE  \n'}
+[1.801865] (-) TimerEvent: {}
+[1.803393] (mbzirc_naive_radar) StdoutLine: {'line': b"-- Checking for module 'libavutil'\n"}
+[1.819310] (mbzirc_naive_radar) StdoutLine: {'line': b'--   Found libavutil, version 56.70.100\n'}
+[1.860803] (mbzirc_naive_radar) StdoutLine: {'line': b'-- Found AVUTIL: TRUE  \n'}
+[1.866873] (mbzirc_naive_radar) StdoutLine: {'line': b'-- Looking for ignition-fuel_tools7 -- found version 7.3.0\n'}
+[1.867604] (mbzirc_naive_radar) StdoutLine: {'line': b'-- Searching for dependencies of ignition-fuel_tools7\n'}
+[1.902019] (-) TimerEvent: {}
+[1.962199] (mbzirc_naive_radar) StdoutLine: {'line': b'-- Found CURL: /usr/lib/x86_64-linux-gnu/libcurl.so (found version "7.81.0")  \n'}
+[1.974798] (mbzirc_naive_radar) StdoutLine: {'line': b"-- Checking for module 'jsoncpp'\n"}
+[1.990089] (mbzirc_naive_radar) StdoutLine: {'line': b'--   Found jsoncpp, version 1.9.5\n'}
+[2.002160] (-) TimerEvent: {}
+[2.026347] (mbzirc_naive_radar) StdoutLine: {'line': b'-- Found JSONCPP: TRUE  \n'}
+[2.035910] (mbzirc_naive_radar) StdoutLine: {'line': b"-- Checking for module 'libzip'\n"}
+[2.052610] (mbzirc_naive_radar) StdoutLine: {'line': b'--   Found libzip, version 1.7.3\n'}
+[2.090321] (mbzirc_naive_radar) StdoutLine: {'line': b'-- Found ZIP: TRUE  \n'}
+[2.090838] (mbzirc_naive_radar) StdoutLine: {'line': b'-- Looking for ignition-common4 -- found version 4.7.0\n'}
+[2.091391] (mbzirc_naive_radar) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.15.1\n'}
+[2.092018] (mbzirc_naive_radar) StdoutLine: {'line': b'-- Looking for ignition-msgs8 -- found version 8.7.0\n'}
+[2.098266] (mbzirc_naive_radar) StdoutLine: {'line': b'-- Looking for ignition-gui6 -- found version 6.8.0\n'}
+[2.098736] (mbzirc_naive_radar) StdoutLine: {'line': b'-- Searching for dependencies of ignition-gui6\n'}
+[2.102264] (-) TimerEvent: {}
+[2.120800] (mbzirc_naive_radar) StdoutLine: {'line': b'-- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found suitable version "3.12.4", minimum required is "3") \n'}
+[2.130498] (mbzirc_naive_radar) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.15.1\n'}
+[2.130893] (mbzirc_naive_radar) StdoutLine: {'line': b'-- Looking for ignition-common4 -- found version 4.7.0\n'}
+[2.131326] (mbzirc_naive_radar) StdoutLine: {'line': b'-- Looking for ignition-plugin1 -- found version 1.4.0\n'}
+[2.131769] (mbzirc_naive_radar) StdoutLine: {'line': b'-- Looking for ignition-transport11 -- found version 11.4.1\n'}
+[2.132200] (mbzirc_naive_radar) StdoutLine: {'line': b'-- Looking for ignition-rendering6 -- found version 6.6.3\n'}
+[2.132688] (mbzirc_naive_radar) StdoutLine: {'line': b'-- Looking for ignition-msgs8 -- found version 8.7.0\n'}
+[2.179711] (mbzirc_naive_radar) StdoutLine: {'line': b'-- Looking for ignition-physics5 -- found version 5.3.2\n'}
+[2.180134] (mbzirc_naive_radar) StdoutLine: {'line': b'-- Searching for dependencies of ignition-physics5\n'}
+[2.180576] (mbzirc_naive_radar) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.15.1\n'}
+[2.180959] (mbzirc_naive_radar) StdoutLine: {'line': b'-- Looking for ignition-plugin1 -- found version 1.4.0\n'}
+[2.181324] (mbzirc_naive_radar) StdoutLine: {'line': b'-- Looking for ignition-utils1 -- found version 1.5.1\n'}
+[2.182551] (mbzirc_naive_radar) StdoutLine: {'line': b'-- Searching for <ignition-physics5> component [heightmap]\n'}
+[2.187078] (mbzirc_naive_radar) StdoutLine: {'line': b'-- Looking for ignition-physics5-heightmap -- found version 5.3.2\n'}
+[2.187706] (mbzirc_naive_radar) StdoutLine: {'line': b'-- Searching for dependencies of ignition-physics5-heightmap\n'}
+[2.188289] (mbzirc_naive_radar) StdoutLine: {'line': b'-- Looking for ignition-common4 -- found version 4.7.0\n'}
+[2.189098] (mbzirc_naive_radar) StdoutLine: {'line': b'-- Searching for <ignition-physics5> component [mesh]\n'}
+[2.194770] (mbzirc_naive_radar) StdoutLine: {'line': b'-- Looking for ignition-physics5-mesh -- found version 5.3.2\n'}
+[2.195249] (mbzirc_naive_radar) StdoutLine: {'line': b'-- Searching for dependencies of ignition-physics5-mesh\n'}
+[2.195649] (mbzirc_naive_radar) StdoutLine: {'line': b'-- Looking for ignition-common4 -- found version 4.7.0\n'}
+[2.196196] (mbzirc_naive_radar) StdoutLine: {'line': b'-- Searching for <ignition-physics5> component [sdf]\n'}
+[2.200758] (mbzirc_naive_radar) StdoutLine: {'line': b'-- Looking for ignition-physics5-sdf -- found version 5.3.2\n'}
+[2.201240] (mbzirc_naive_radar) StdoutLine: {'line': b'-- Searching for dependencies of ignition-physics5-sdf\n'}
+[2.201615] (mbzirc_naive_radar) StdoutLine: {'line': b'-- Looking for sdformat12 -- found version 12.7.2\n'}
+[2.202371] (-) TimerEvent: {}
+[2.202609] (mbzirc_naive_radar) StdoutLine: {'line': b'-- Looking for ignition-sensors6 -- found version 6.8.0\n'}
+[2.203053] (mbzirc_naive_radar) StdoutLine: {'line': b'-- Searching for dependencies of ignition-sensors6\n'}
+[2.225754] (mbzirc_naive_radar) StdoutLine: {'line': b'-- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found version "3.12.4") \n'}
+[2.226849] (mbzirc_naive_radar) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.15.1\n'}
+[2.227303] (mbzirc_naive_radar) StdoutLine: {'line': b'-- Looking for ignition-common4 -- found version 4.7.0\n'}
+[2.227801] (mbzirc_naive_radar) StdoutLine: {'line': b'-- Looking for ignition-transport11 -- found version 11.4.1\n'}
+[2.228268] (mbzirc_naive_radar) StdoutLine: {'line': b'-- Looking for ignition-rendering6 -- found version 6.6.3\n'}
+[2.228822] (mbzirc_naive_radar) StdoutLine: {'line': b'-- Looking for ignition-msgs8 -- found version 8.7.0\n'}
+[2.229475] (mbzirc_naive_radar) StdoutLine: {'line': b'-- Looking for sdformat12 -- found version 12.7.2\n'}
+[2.229798] (mbzirc_naive_radar) StdoutLine: {'line': b'-- Searching for <ignition-sensors6> component [air_pressure]\n'}
+[2.234557] (mbzirc_naive_radar) StdoutLine: {'line': b'-- Looking for ignition-sensors6-air_pressure -- found version 6.8.0\n'}
+[2.235110] (mbzirc_naive_radar) StdoutLine: {'line': b'-- Searching for dependencies of ignition-sensors6-air_pressure\n'}
+[2.235760] (mbzirc_naive_radar) StdoutLine: {'line': b'-- Searching for <ignition-sensors6> component [altimeter]\n'}
+[2.240919] (mbzirc_naive_radar) StdoutLine: {'line': b'-- Looking for ignition-sensors6-altimeter -- found version 6.8.0\n'}
+[2.241514] (mbzirc_naive_radar) StdoutLine: {'line': b'-- Searching for dependencies of ignition-sensors6-altimeter\n'}
+[2.242343] (mbzirc_naive_radar) StdoutLine: {'line': b'-- Searching for <ignition-sensors6> component [imu]\n'}
+[2.247277] (mbzirc_naive_radar) StdoutLine: {'line': b'-- Looking for ignition-sensors6-imu -- found version 6.8.0\n'}
+[2.247766] (mbzirc_naive_radar) StdoutLine: {'line': b'-- Searching for dependencies of ignition-sensors6-imu\n'}
+[2.248438] (mbzirc_naive_radar) StdoutLine: {'line': b'-- Searching for <ignition-sensors6> component [force_torque]\n'}
+[2.252806] (mbzirc_naive_radar) StdoutLine: {'line': b'-- Looking for ignition-sensors6-force_torque -- found version 6.8.0\n'}
+[2.253415] (mbzirc_naive_radar) StdoutLine: {'line': b'-- Searching for dependencies of ignition-sensors6-force_torque\n'}
+[2.254083] (mbzirc_naive_radar) StdoutLine: {'line': b'-- Searching for <ignition-sensors6> component [logical_camera]\n'}
+[2.259537] (mbzirc_naive_radar) StdoutLine: {'line': b'-- Looking for ignition-sensors6-logical_camera -- found version 6.8.0\n'}
+[2.260145] (mbzirc_naive_radar) StdoutLine: {'line': b'-- Searching for dependencies of ignition-sensors6-logical_camera\n'}
+[2.261017] (mbzirc_naive_radar) StdoutLine: {'line': b'-- Searching for <ignition-sensors6> component [magnetometer]\n'}
+[2.265810] (mbzirc_naive_radar) StdoutLine: {'line': b'-- Looking for ignition-sensors6-magnetometer -- found version 6.8.0\n'}
+[2.266323] (mbzirc_naive_radar) StdoutLine: {'line': b'-- Searching for dependencies of ignition-sensors6-magnetometer\n'}
+[2.267000] (mbzirc_naive_radar) StdoutLine: {'line': b'-- Searching for <ignition-sensors6> component [navsat]\n'}
+[2.271528] (mbzirc_naive_radar) StdoutLine: {'line': b'-- Looking for ignition-sensors6-navsat -- found version 6.8.0\n'}
+[2.272052] (mbzirc_naive_radar) StdoutLine: {'line': b'-- Searching for dependencies of ignition-sensors6-navsat\n'}
+[2.273081] (mbzirc_naive_radar) StdoutLine: {'line': b'-- Searching for <ignition-sensors6> component [rendering]\n'}
+[2.278362] (mbzirc_naive_radar) StdoutLine: {'line': b'-- Looking for ignition-sensors6-rendering -- found version 6.8.0\n'}
+[2.278926] (mbzirc_naive_radar) StdoutLine: {'line': b'-- Searching for dependencies of ignition-sensors6-rendering\n'}
+[2.279735] (mbzirc_naive_radar) StdoutLine: {'line': b'-- Searching for <ignition-sensors6> component [lidar]\n'}
+[2.284142] (mbzirc_naive_radar) StdoutLine: {'line': b'-- Looking for ignition-sensors6-lidar -- found version 6.8.0\n'}
+[2.284631] (mbzirc_naive_radar) StdoutLine: {'line': b'-- Searching for dependencies of ignition-sensors6-lidar\n'}
+[2.285047] (mbzirc_naive_radar) StdoutLine: {'line': b'-- Looking for ignition-sensors6 -- found version 6.8.0\n'}
+[2.285849] (mbzirc_naive_radar) StdoutLine: {'line': b'-- Searching for <ignition-sensors6> component [gpu_lidar]\n'}
+[2.290638] (mbzirc_naive_radar) StdoutLine: {'line': b'-- Looking for ignition-sensors6-gpu_lidar -- found version 6.8.0\n'}
+[2.291289] (mbzirc_naive_radar) StdoutLine: {'line': b'-- Searching for dependencies of ignition-sensors6-gpu_lidar\n'}
+[2.291761] (mbzirc_naive_radar) StdoutLine: {'line': b'-- Looking for ignition-sensors6 -- found version 6.8.0\n'}
+[2.292747] (mbzirc_naive_radar) StdoutLine: {'line': b'-- Searching for <ignition-sensors6> component [camera]\n'}
+[2.297411] (mbzirc_naive_radar) StdoutLine: {'line': b'-- Looking for ignition-sensors6-camera -- found version 6.8.0\n'}
+[2.297933] (mbzirc_naive_radar) StdoutLine: {'line': b'-- Searching for dependencies of ignition-sensors6-camera\n'}
+[2.298423] (mbzirc_naive_radar) StdoutLine: {'line': b'-- Looking for ignition-sensors6 -- found version 6.8.0\n'}
+[2.299529] (mbzirc_naive_radar) StdoutLine: {'line': b'-- Searching for <ignition-sensors6> component [boundingbox_camera]\n'}
+[2.302446] (-) TimerEvent: {}
+[2.304142] (mbzirc_naive_radar) StdoutLine: {'line': b'-- Looking for ignition-sensors6-boundingbox_camera -- found version 6.8.0\n'}
+[2.304723] (mbzirc_naive_radar) StdoutLine: {'line': b'-- Searching for dependencies of ignition-sensors6-boundingbox_camera\n'}
+[2.305538] (mbzirc_naive_radar) StdoutLine: {'line': b'-- Searching for <ignition-sensors6> component [segmentation_camera]\n'}
+[2.311107] (mbzirc_naive_radar) StdoutLine: {'line': b'-- Looking for ignition-sensors6-segmentation_camera -- found version 6.8.0\n'}
+[2.311655] (mbzirc_naive_radar) StdoutLine: {'line': b'-- Searching for dependencies of ignition-sensors6-segmentation_camera\n'}
+[2.312439] (mbzirc_naive_radar) StdoutLine: {'line': b'-- Searching for <ignition-sensors6> component [depth_camera]\n'}
+[2.316994] (mbzirc_naive_radar) StdoutLine: {'line': b'-- Looking for ignition-sensors6-depth_camera -- found version 6.8.0\n'}
+[2.317522] (mbzirc_naive_radar) StdoutLine: {'line': b'-- Searching for dependencies of ignition-sensors6-depth_camera\n'}
+[2.317944] (mbzirc_naive_radar) StdoutLine: {'line': b'-- Looking for ignition-sensors6 -- found version 6.8.0\n'}
+[2.318772] (mbzirc_naive_radar) StdoutLine: {'line': b'-- Searching for <ignition-sensors6> component [rgbd_camera]\n'}
+[2.323439] (mbzirc_naive_radar) StdoutLine: {'line': b'-- Looking for ignition-sensors6-rgbd_camera -- found version 6.8.0\n'}
+[2.324239] (mbzirc_naive_radar) StdoutLine: {'line': b'-- Searching for dependencies of ignition-sensors6-rgbd_camera\n'}
+[2.324672] (mbzirc_naive_radar) StdoutLine: {'line': b'-- Looking for ignition-sensors6 -- found version 6.8.0\n'}
+[2.325685] (mbzirc_naive_radar) StdoutLine: {'line': b'-- Searching for <ignition-sensors6> component [thermal_camera]\n'}
+[2.331072] (mbzirc_naive_radar) StdoutLine: {'line': b'-- Looking for ignition-sensors6-thermal_camera -- found version 6.8.0\n'}
+[2.331721] (mbzirc_naive_radar) StdoutLine: {'line': b'-- Searching for dependencies of ignition-sensors6-thermal_camera\n'}
+[2.332144] (mbzirc_naive_radar) StdoutLine: {'line': b'-- Looking for ignition-sensors6 -- found version 6.8.0\n'}
+[2.333601] (mbzirc_naive_radar) StdoutLine: {'line': b'-- Looking for ignition-rendering6 -- found version 6.6.3\n'}
+[2.334056] (mbzirc_naive_radar) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.15.1\n'}
+[2.338661] (mbzirc_naive_radar) StdoutLine: {'line': b'-- Looking for ignition-utils1 -- found version 1.5.1\n'}
+[2.376663] (mbzirc_naive_radar) StderrLine: {'line': b'\x1b[31mCMake Error at CMakeLists.txt:18 (find_package):\n'}
+[2.377021] (mbzirc_naive_radar) StderrLine: {'line': b'  By not providing "Findradar_msgs.cmake" in CMAKE_MODULE_PATH this project\n'}
+[2.377149] (mbzirc_naive_radar) StderrLine: {'line': b'  has asked CMake to find a package configuration file provided by\n'}
+[2.377211] (mbzirc_naive_radar) StderrLine: {'line': b'  "radar_msgs", but CMake did not find one.\n'}
+[2.377268] (mbzirc_naive_radar) StderrLine: {'line': b'\n'}
+[2.377324] (mbzirc_naive_radar) StderrLine: {'line': b'  Could not find a package configuration file provided by "radar_msgs" with\n'}
+[2.377440] (mbzirc_naive_radar) StderrLine: {'line': b'  any of the following names:\n'}
+[2.377512] (mbzirc_naive_radar) StderrLine: {'line': b'\n'}
+[2.377642] (mbzirc_naive_radar) StderrLine: {'line': b'    radar_msgsConfig.cmake\n'}
+[2.377696] (mbzirc_naive_radar) StderrLine: {'line': b'    radar_msgs-config.cmake\n'}
+[2.377751] (mbzirc_naive_radar) StderrLine: {'line': b'\n'}
+[2.377813] (mbzirc_naive_radar) StderrLine: {'line': b'  Add the installation prefix of "radar_msgs" to CMAKE_PREFIX_PATH or set\n'}
+[2.377867] (mbzirc_naive_radar) StderrLine: {'line': b'  "radar_msgs_DIR" to a directory containing one of the above files.  If\n'}
+[2.377922] (mbzirc_naive_radar) StderrLine: {'line': b'  "radar_msgs" provides a separate development package or SDK, be sure it has\n'}
+[2.377976] (mbzirc_naive_radar) StderrLine: {'line': b'  been installed.\n'}
+[2.378069] (mbzirc_naive_radar) StderrLine: {'line': b'\n'}
+[2.378136] (mbzirc_naive_radar) StderrLine: {'line': b'\x1b[0m\n'}
+[2.378186] (mbzirc_naive_radar) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[2.378243] (mbzirc_naive_radar) StdoutLine: {'line': b'See also "/home/paolo/light_sensor_plugin/build/mbzirc_naive_radar/CMakeFiles/CMakeOutput.log".\n'}
+[2.387344] (mbzirc_naive_radar) CommandEnded: {'returncode': 1}
+[2.388049] (mbzirc_naive_radar) JobEnded: {'identifier': 'mbzirc_naive_radar', 'rc': 1}
+[2.398874] (-) EventReactorShutdown: {}

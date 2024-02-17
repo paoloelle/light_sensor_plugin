@@ -1,0 +1,252 @@
+[0.000000] (-) TimerEvent: {}
+[0.000554] (light_sensor_plugin) JobQueued: {'identifier': 'light_sensor_plugin', 'dependencies': OrderedDict()}
+[0.000723] (light_sensor_plugin) JobStarted: {'identifier': 'light_sensor_plugin'}
+[0.099355] (light_sensor_plugin) JobProgress: {'identifier': 'light_sensor_plugin', 'progress': 'cmake'}
+[0.099736] (-) TimerEvent: {}
+[0.100326] (light_sensor_plugin) Command: {'cmd': ['/usr/bin/cmake', '/home/paolo/light_sensor_plugin', '-DCMAKE_INSTALL_PREFIX=/home/paolo/light_sensor_plugin/install'], 'cwd': '/home/paolo/light_sensor_plugin/build/light_sensor_plugin', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'paolo'), ('LC_TIME', 'it_IT.UTF-8'), ('IGNITION_VERSION', 'fortress'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/paolo/turtlebot4_ws/install/turtlebot4_msgs/lib:/home/paolo/create3_ws/install/irobot_create_nodes/lib:/home/paolo/create3_ws/install/irobot_create_ignition_toolbox/lib:/home/paolo/create3_ws/install/irobot_create_toolbox/lib:/home/paolo/create3_ws/install/irobot_create_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/paolo'), ('OLDPWD', '/home/paolo'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'it_IT.UTF-8'), ('MANAGERPID', '1040'), ('SYSTEMD_EXEC_PID', '1209'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '25857'), ('_colcon_cd_root', '/opt/ros/humble/'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/paolo/turtlebot4_controller_ws/install:/home/paolo/turtlebot4_ws/install:/home/paolo/create3_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'paolo'), ('JOURNAL_STREAM', '8:28665'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'paolo'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/paolo-VivoBook-S15-X510UF:@/tmp/.ICE-unix/1184,unix/paolo-VivoBook-S15-X510UF:/tmp/.ICE-unix/1184'), ('INVOCATION_ID', '9d5c699e36244dd5bf0051726d94449b'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'it_IT.UTF-8'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('LC_TELEPHONE', 'it_IT.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.MF0AJ2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/paolo/turtlebot4_controller_ws/install/turtlebot4_controller:/home/paolo/turtlebot4_ws/install/turtlebot4_simulator:/home/paolo/turtlebot4_ws/install/turtlebot4_ignition_bringup:/home/paolo/turtlebot4_ws/install/turtlebot4_desktop:/home/paolo/turtlebot4_ws/install/turtlebot4_viz:/home/paolo/turtlebot4_ws/install/turtlebot4_setup:/home/paolo/turtlebot4_ws/install/turtlebot4_node:/home/paolo/turtlebot4_ws/install/turtlebot4_navigation:/home/paolo/turtlebot4_ws/install/turtlebot4_ignition_toolbox:/home/paolo/turtlebot4_ws/install/turtlebot4_msgs:/home/paolo/turtlebot4_ws/install/turtlebot4_ignition_gui_plugins:/home/paolo/turtlebot4_ws/install/turtlebot4_description:/home/paolo/create3_ws/install/irobot_create_ignition_sim:/home/paolo/create3_ws/install/irobot_create_ignition_bringup:/home/paolo/create3_ws/install/irobot_create_common_bringup:/home/paolo/create3_ws/install/irobot_create_nodes:/home/paolo/create3_ws/install/irobot_create_ignition_toolbox:/home/paolo/create3_ws/install/irobot_create_toolbox:/home/paolo/create3_ws/install/irobot_create_msgs:/home/paolo/create3_ws/install/irobot_create_ignition_plugins:/home/paolo/create3_ws/install/irobot_create_description:/home/paolo/create3_ws/install/irobot_create_control:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'it_IT.UTF-8'), ('TERMINATOR_UUID', 'urn:uuid:4ae9b752-0241-4088-b2cf-550b6ab80d86'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'it_IT.UTF-8'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'it_IT.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/paolo/light_sensor_plugin/build/light_sensor_plugin'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/paolo/turtlebot4_controller_ws/build/turtlebot4_controller:/home/paolo/turtlebot4_controller_ws/install/turtlebot4_controller/lib/python3.10/site-packages:/home/paolo/turtlebot4_ws/install/turtlebot4_setup/local/lib/python3.10/dist-packages:/home/paolo/turtlebot4_ws/install/turtlebot4_navigation/local/lib/python3.10/dist-packages:/home/paolo/turtlebot4_ws/install/turtlebot4_msgs/local/lib/python3.10/dist-packages:/home/paolo/create3_ws/install/irobot_create_common_bringup/local/lib/python3.10/dist-packages:/home/paolo/create3_ws/install/irobot_create_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'it_IT.UTF-8'), ('LC_PAPER', 'it_IT.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/paolo/turtlebot4_ws/install/turtlebot4_simulator:/home/paolo/turtlebot4_ws/install/turtlebot4_ignition_bringup:/home/paolo/turtlebot4_ws/install/turtlebot4_desktop:/home/paolo/turtlebot4_ws/install/turtlebot4_viz:/home/paolo/turtlebot4_ws/install/turtlebot4_setup:/home/paolo/turtlebot4_ws/install/turtlebot4_node:/home/paolo/turtlebot4_ws/install/turtlebot4_navigation:/home/paolo/turtlebot4_ws/install/turtlebot4_ignition_toolbox:/home/paolo/turtlebot4_ws/install/turtlebot4_msgs:/home/paolo/turtlebot4_ws/install/turtlebot4_ignition_gui_plugins:/home/paolo/turtlebot4_ws/install/turtlebot4_description:/home/paolo/create3_ws/install/irobot_create_ignition_sim:/home/paolo/create3_ws/install/irobot_create_ignition_bringup:/home/paolo/create3_ws/install/irobot_create_common_bringup:/home/paolo/create3_ws/install/irobot_create_nodes:/home/paolo/create3_ws/install/irobot_create_ignition_toolbox:/home/paolo/create3_ws/install/irobot_create_toolbox:/home/paolo/create3_ws/install/irobot_create_msgs:/home/paolo/create3_ws/install/irobot_create_ignition_plugins:/home/paolo/create3_ws/install/irobot_create_description:/home/paolo/create3_ws/install/irobot_create_control')]), 'shell': False}
+[0.115283] (light_sensor_plugin) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.7 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.199856] (-) TimerEvent: {}
+[0.261755] (light_sensor_plugin) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.15.1\n'}
+[0.265539] (light_sensor_plugin) StdoutLine: {'line': b'-- Searching for dependencies of ignition-math6\n'}
+[0.266399] (light_sensor_plugin) StdoutLine: {'line': b'-- Looking for ignition-msgs8 -- found version 8.7.0\n'}
+[0.267166] (light_sensor_plugin) StdoutLine: {'line': b'-- Searching for dependencies of ignition-msgs8\n'}
+[0.290011] (light_sensor_plugin) StdoutLine: {'line': b'-- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found suitable version "3.12.4", minimum required is "3") \n'}
+[0.290897] (light_sensor_plugin) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.15.1\n'}
+[0.295297] (light_sensor_plugin) StdoutLine: {'line': b"-- Checking for module 'tinyxml2'\n"}
+[0.299975] (-) TimerEvent: {}
+[0.309755] (light_sensor_plugin) StdoutLine: {'line': b'--   Found tinyxml2, version 9.0.0\n'}
+[0.342443] (light_sensor_plugin) StdoutLine: {'line': b'-- Looking for ignition-transport11 -- found version 11.4.1\n'}
+[0.342929] (light_sensor_plugin) StdoutLine: {'line': b'-- Searching for dependencies of ignition-transport11\n'}
+[0.363003] (light_sensor_plugin) StdoutLine: {'line': b'-- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found version "3.12.4") \n'}
+[0.377054] (light_sensor_plugin) StdoutLine: {'line': b'-- Config-file not installed for ZeroMQ -- checking for pkg-config\n'}
+[0.381454] (light_sensor_plugin) StdoutLine: {'line': b"-- Checking for module 'libzmq >= 4'\n"}
+[0.393933] (light_sensor_plugin) StdoutLine: {'line': b'--   Found libzmq , version 4.3.4\n'}
+[0.400086] (-) TimerEvent: {}
+[0.432037] (light_sensor_plugin) StdoutLine: {'line': b"-- Checking for module 'uuid'\n"}
+[0.445636] (light_sensor_plugin) StdoutLine: {'line': b'--   Found uuid, version 2.37.2\n'}
+[0.478886] (light_sensor_plugin) StdoutLine: {'line': b'-- Looking for ignition-utils1 -- found version 1.5.1\n'}
+[0.479400] (light_sensor_plugin) StdoutLine: {'line': b'-- Searching for dependencies of ignition-utils1\n'}
+[0.479921] (light_sensor_plugin) StdoutLine: {'line': b'-- Searching for <ignition-utils1> component [cli]\n'}
+[0.480244] (light_sensor_plugin) StdoutLine: {'line': b'-- Looking for ignition-utils1-cli -- found version 1.5.1\n'}
+[0.480781] (light_sensor_plugin) StdoutLine: {'line': b'-- Searching for dependencies of ignition-utils1-cli\n'}
+[0.481565] (light_sensor_plugin) StdoutLine: {'line': b'-- Looking for ignition-msgs8 -- found version 8.7.0\n'}
+[0.482434] (light_sensor_plugin) StdoutLine: {'line': b'-- Looking for ignition-plugin1 -- found version 1.4.0\n'}
+[0.482879] (light_sensor_plugin) StdoutLine: {'line': b'-- Searching for dependencies of ignition-plugin1\n'}
+[0.483375] (light_sensor_plugin) StdoutLine: {'line': b'-- Searching for <ignition-plugin1> component [loader]\n'}
+[0.483637] (light_sensor_plugin) StdoutLine: {'line': b'-- Looking for ignition-plugin1-loader -- found version 1.4.0\n'}
+[0.484077] (light_sensor_plugin) StdoutLine: {'line': b'-- Searching for dependencies of ignition-plugin1-loader\n'}
+[0.484565] (light_sensor_plugin) StdoutLine: {'line': b'-- Searching for <ignition-plugin1> component [register]\n'}
+[0.484889] (light_sensor_plugin) StdoutLine: {'line': b'-- Looking for ignition-plugin1-register -- found version 1.4.0\n'}
+[0.485392] (light_sensor_plugin) StdoutLine: {'line': b'-- Searching for dependencies of ignition-plugin1-register\n'}
+[0.486120] (light_sensor_plugin) StdoutLine: {'line': b'-- Looking for ignition-sensors6 -- found version 6.8.0\n'}
+[0.486566] (light_sensor_plugin) StdoutLine: {'line': b'-- Searching for dependencies of ignition-sensors6\n'}
+[0.500199] (-) TimerEvent: {}
+[0.506685] (light_sensor_plugin) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.15.1\n'}
+[0.507016] (light_sensor_plugin) StdoutLine: {'line': b'-- Looking for ignition-common4 -- found version 4.7.0\n'}
+[0.507528] (light_sensor_plugin) StdoutLine: {'line': b'-- Searching for dependencies of ignition-common4\n'}
+[0.507696] (light_sensor_plugin) StdoutLine: {'line': b'-- Looking for dlfcn.h - found\n'}
+[0.507818] (light_sensor_plugin) StdoutLine: {'line': b'-- Looking for libdl - found\n'}
+[0.525373] (light_sensor_plugin) StdoutLine: {'line': b'-- Searching for <ignition-common4> component [profiler]\n'}
+[0.525693] (light_sensor_plugin) StdoutLine: {'line': b'-- Looking for ignition-common4-profiler -- found version 4.7.0\n'}
+[0.526211] (light_sensor_plugin) StdoutLine: {'line': b'-- Searching for dependencies of ignition-common4-profiler\n'}
+[0.527542] (light_sensor_plugin) StdoutLine: {'line': b'-- Looking for ignition-transport11 -- found version 11.4.1\n'}
+[0.528096] (light_sensor_plugin) StdoutLine: {'line': b'-- Looking for ignition-rendering6 -- found version 6.6.3\n'}
+[0.528522] (light_sensor_plugin) StdoutLine: {'line': b'-- Searching for dependencies of ignition-rendering6\n'}
+[0.528864] (light_sensor_plugin) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.15.1\n'}
+[0.529373] (light_sensor_plugin) StdoutLine: {'line': b'-- Searching for dependencies of ignition-math6\n'}
+[0.529532] (light_sensor_plugin) StdoutLine: {'line': b'-- Searching for <ignition-math6> component [eigen3]\n'}
+[0.529868] (light_sensor_plugin) StdoutLine: {'line': b'-- Looking for ignition-math6-eigen3 -- found version 6.15.1\n'}
+[0.530414] (light_sensor_plugin) StdoutLine: {'line': b'-- Searching for dependencies of ignition-math6-eigen3\n'}
+[0.531900] (light_sensor_plugin) StdoutLine: {'line': b'-- Looking for ignition-common4 -- found version 4.7.0\n'}
+[0.532397] (light_sensor_plugin) StdoutLine: {'line': b'-- Searching for dependencies of ignition-common4\n'}
+[0.532566] (light_sensor_plugin) StdoutLine: {'line': b'-- Looking for dlfcn.h - found\n'}
+[0.532635] (light_sensor_plugin) StdoutLine: {'line': b'-- Looking for libdl - found\n'}
+[0.540739] (light_sensor_plugin) StdoutLine: {'line': b'-- Searching for <ignition-common4> component [graphics]\n'}
+[0.541069] (light_sensor_plugin) StdoutLine: {'line': b'-- Looking for ignition-common4-graphics -- found version 4.7.0\n'}
+[0.541581] (light_sensor_plugin) StdoutLine: {'line': b'-- Searching for dependencies of ignition-common4-graphics\n'}
+[0.541922] (light_sensor_plugin) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.15.1\n'}
+[0.542395] (light_sensor_plugin) StdoutLine: {'line': b'-- Looking for ignition-utils1 -- found version 1.5.1\n'}
+[0.542921] (light_sensor_plugin) StdoutLine: {'line': b'-- Searching for <ignition-common4> component [events]\n'}
+[0.543248] (light_sensor_plugin) StdoutLine: {'line': b'-- Looking for ignition-common4-events -- found version 4.7.0\n'}
+[0.543798] (light_sensor_plugin) StdoutLine: {'line': b'-- Searching for dependencies of ignition-common4-events\n'}
+[0.544249] (light_sensor_plugin) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.15.1\n'}
+[0.545163] (light_sensor_plugin) StdoutLine: {'line': b'-- Looking for ignition-plugin1 -- found version 1.4.0\n'}
+[0.545813] (light_sensor_plugin) StdoutLine: {'line': b'-- Searching for dependencies of ignition-plugin1\n'}
+[0.546069] (light_sensor_plugin) StdoutLine: {'line': b'-- Searching for <ignition-plugin1> component [all]\n'}
+[0.546305] (light_sensor_plugin) StdoutLine: {'line': b'-- Looking for all libraries of ignition-plugin1 -- found version 1.4.0\n'}
+[0.546808] (light_sensor_plugin) StdoutLine: {'line': b'-- Looking for ignition-plugin1 -- found version 1.4.0\n'}
+[0.548777] (light_sensor_plugin) StdoutLine: {'line': b'-- Looking for ignition-msgs8 -- found version 8.7.0\n'}
+[0.549230] (light_sensor_plugin) StdoutLine: {'line': b'-- Looking for sdformat12 -- found version 12.7.2\n'}
+[0.549707] (light_sensor_plugin) StdoutLine: {'line': b'-- Searching for dependencies of sdformat12\n'}
+[0.556422] (light_sensor_plugin) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.15.1\n'}
+[0.556969] (light_sensor_plugin) StdoutLine: {'line': b'-- Looking for ignition-utils1 -- found version 1.5.1\n'}
+[0.558395] (light_sensor_plugin) StdoutLine: {'line': b'-- Looking for ignition-gazebo6 -- found version 6.16.0\n'}
+[0.558880] (light_sensor_plugin) StdoutLine: {'line': b'-- Searching for dependencies of ignition-gazebo6\n'}
+[0.559271] (light_sensor_plugin) StdoutLine: {'line': b'-- Looking for sdformat12 -- found version 12.7.2\n'}
+[0.559716] (light_sensor_plugin) StdoutLine: {'line': b'-- Looking for ignition-plugin1 -- found version 1.4.0\n'}
+[0.560193] (light_sensor_plugin) StdoutLine: {'line': b'-- Looking for ignition-transport11 -- found version 11.4.1\n'}
+[0.560687] (light_sensor_plugin) StdoutLine: {'line': b'-- Searching for dependencies of ignition-transport11\n'}
+[0.594177] (light_sensor_plugin) StdoutLine: {'line': b'-- Config-file not installed for ZeroMQ -- checking for pkg-config\n'}
+[0.598623] (light_sensor_plugin) StdoutLine: {'line': b"-- Checking for module 'libzmq >= 4'\n"}
+[0.600308] (-) TimerEvent: {}
+[0.611621] (light_sensor_plugin) StdoutLine: {'line': b'--   Found libzmq , version 4.3.4\n'}
+[0.653732] (light_sensor_plugin) StdoutLine: {'line': b'-- Looking for ignition-utils1 -- found version 1.5.1\n'}
+[0.654254] (light_sensor_plugin) StdoutLine: {'line': b'-- Looking for ignition-msgs8 -- found version 8.7.0\n'}
+[0.654511] (light_sensor_plugin) StdoutLine: {'line': b'-- Searching for <ignition-transport11> component [log]\n'}
+[0.654903] (light_sensor_plugin) StdoutLine: {'line': b'-- Looking for ignition-transport11-log -- found version 11.4.1\n'}
+[0.655508] (light_sensor_plugin) StdoutLine: {'line': b'-- Searching for dependencies of ignition-transport11-log\n'}
+[0.656011] (light_sensor_plugin) StdoutLine: {'line': b'-- Searching for <ignition-transport11> component [parameters]\n'}
+[0.656389] (light_sensor_plugin) StdoutLine: {'line': b'-- Looking for ignition-transport11-parameters -- found version 11.4.1\n'}
+[0.656954] (light_sensor_plugin) StdoutLine: {'line': b'-- Searching for dependencies of ignition-transport11-parameters\n'}
+[0.657804] (light_sensor_plugin) StdoutLine: {'line': b'-- Looking for ignition-msgs8 -- found version 8.7.0\n'}
+[0.658237] (light_sensor_plugin) StdoutLine: {'line': b'-- Looking for ignition-common4 -- found version 4.7.0\n'}
+[0.658714] (light_sensor_plugin) StdoutLine: {'line': b'-- Searching for dependencies of ignition-common4\n'}
+[0.658925] (light_sensor_plugin) StdoutLine: {'line': b'-- Looking for dlfcn.h - found\n'}
+[0.658999] (light_sensor_plugin) StdoutLine: {'line': b'-- Looking for libdl - found\n'}
+[0.667250] (light_sensor_plugin) StdoutLine: {'line': b'-- Searching for <ignition-common4> component [profiler]\n'}
+[0.667640] (light_sensor_plugin) StdoutLine: {'line': b'-- Searching for <ignition-common4> component [events]\n'}
+[0.668101] (light_sensor_plugin) StdoutLine: {'line': b'-- Searching for <ignition-common4> component [av]\n'}
+[0.668530] (light_sensor_plugin) StdoutLine: {'line': b'-- Looking for ignition-common4-av -- found version 4.7.0\n'}
+[0.669060] (light_sensor_plugin) StdoutLine: {'line': b'-- Searching for dependencies of ignition-common4-av\n'}
+[0.673876] (light_sensor_plugin) StdoutLine: {'line': b"-- Checking for module 'libswscale'\n"}
+[0.686437] (light_sensor_plugin) StdoutLine: {'line': b'--   Found libswscale, version 5.9.100\n'}
+[0.700402] (-) TimerEvent: {}
+[0.721286] (light_sensor_plugin) StdoutLine: {'line': b"-- Checking for module 'libavdevice >= 56.4.100'\n"}
+[0.735234] (light_sensor_plugin) StdoutLine: {'line': b'--   Found libavdevice , version 58.13.100\n'}
+[0.776906] (light_sensor_plugin) StdoutLine: {'line': b"-- Checking for module 'libavformat'\n"}
+[0.790459] (light_sensor_plugin) StdoutLine: {'line': b'--   Found libavformat, version 58.76.100\n'}
+[0.800533] (-) TimerEvent: {}
+[0.828124] (light_sensor_plugin) StdoutLine: {'line': b"-- Checking for module 'libavcodec'\n"}
+[0.841658] (light_sensor_plugin) StdoutLine: {'line': b'--   Found libavcodec, version 58.134.100\n'}
+[0.877058] (light_sensor_plugin) StdoutLine: {'line': b"-- Checking for module 'libavutil'\n"}
+[0.889695] (light_sensor_plugin) StdoutLine: {'line': b'--   Found libavutil, version 56.70.100\n'}
+[0.900668] (-) TimerEvent: {}
+[0.923829] (light_sensor_plugin) StdoutLine: {'line': b'-- Looking for ignition-fuel_tools7 -- found version 7.3.0\n'}
+[0.924324] (light_sensor_plugin) StdoutLine: {'line': b'-- Searching for dependencies of ignition-fuel_tools7\n'}
+[0.964962] (light_sensor_plugin) StdoutLine: {'line': b"-- Checking for module 'jsoncpp'\n"}
+[0.978105] (light_sensor_plugin) StdoutLine: {'line': b'--   Found jsoncpp, version 1.9.5\n'}
+[1.000772] (-) TimerEvent: {}
+[1.012763] (light_sensor_plugin) StdoutLine: {'line': b"-- Checking for module 'libzip'\n"}
+[1.025291] (light_sensor_plugin) StdoutLine: {'line': b'--   Found libzip, version 1.7.3\n'}
+[1.056510] (light_sensor_plugin) StdoutLine: {'line': b'-- Looking for ignition-common4 -- found version 4.7.0\n'}
+[1.056914] (light_sensor_plugin) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.15.1\n'}
+[1.057386] (light_sensor_plugin) StdoutLine: {'line': b'-- Looking for ignition-msgs8 -- found version 8.7.0\n'}
+[1.058346] (light_sensor_plugin) StdoutLine: {'line': b'-- Looking for ignition-gui6 -- found version 6.8.0\n'}
+[1.058832] (light_sensor_plugin) StdoutLine: {'line': b'-- Searching for dependencies of ignition-gui6\n'}
+[1.078521] (light_sensor_plugin) StdoutLine: {'line': b'-- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found suitable version "3.12.4", minimum required is "3") \n'}
+[1.085821] (light_sensor_plugin) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.15.1\n'}
+[1.086259] (light_sensor_plugin) StdoutLine: {'line': b'-- Looking for ignition-common4 -- found version 4.7.0\n'}
+[1.086734] (light_sensor_plugin) StdoutLine: {'line': b'-- Looking for ignition-plugin1 -- found version 1.4.0\n'}
+[1.087269] (light_sensor_plugin) StdoutLine: {'line': b'-- Looking for ignition-transport11 -- found version 11.4.1\n'}
+[1.087789] (light_sensor_plugin) StdoutLine: {'line': b'-- Looking for ignition-rendering6 -- found version 6.6.3\n'}
+[1.088244] (light_sensor_plugin) StdoutLine: {'line': b'-- Looking for ignition-msgs8 -- found version 8.7.0\n'}
+[1.100846] (-) TimerEvent: {}
+[1.101875] (light_sensor_plugin) StdoutLine: {'line': b'-- Looking for ignition-physics5 -- found version 5.3.2\n'}
+[1.102344] (light_sensor_plugin) StdoutLine: {'line': b'-- Searching for dependencies of ignition-physics5\n'}
+[1.102743] (light_sensor_plugin) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.15.1\n'}
+[1.103181] (light_sensor_plugin) StdoutLine: {'line': b'-- Looking for ignition-plugin1 -- found version 1.4.0\n'}
+[1.103687] (light_sensor_plugin) StdoutLine: {'line': b'-- Looking for ignition-utils1 -- found version 1.5.1\n'}
+[1.104760] (light_sensor_plugin) StdoutLine: {'line': b'-- Searching for <ignition-physics5> component [heightmap]\n'}
+[1.105120] (light_sensor_plugin) StdoutLine: {'line': b'-- Looking for ignition-physics5-heightmap -- found version 5.3.2\n'}
+[1.105681] (light_sensor_plugin) StdoutLine: {'line': b'-- Searching for dependencies of ignition-physics5-heightmap\n'}
+[1.106152] (light_sensor_plugin) StdoutLine: {'line': b'-- Looking for ignition-common4 -- found version 4.7.0\n'}
+[1.106700] (light_sensor_plugin) StdoutLine: {'line': b'-- Searching for <ignition-physics5> component [mesh]\n'}
+[1.107065] (light_sensor_plugin) StdoutLine: {'line': b'-- Looking for ignition-physics5-mesh -- found version 5.3.2\n'}
+[1.107623] (light_sensor_plugin) StdoutLine: {'line': b'-- Searching for dependencies of ignition-physics5-mesh\n'}
+[1.108026] (light_sensor_plugin) StdoutLine: {'line': b'-- Looking for ignition-common4 -- found version 4.7.0\n'}
+[1.108478] (light_sensor_plugin) StdoutLine: {'line': b'-- Searching for <ignition-physics5> component [sdf]\n'}
+[1.108939] (light_sensor_plugin) StdoutLine: {'line': b'-- Looking for ignition-physics5-sdf -- found version 5.3.2\n'}
+[1.109482] (light_sensor_plugin) StdoutLine: {'line': b'-- Searching for dependencies of ignition-physics5-sdf\n'}
+[1.110026] (light_sensor_plugin) StdoutLine: {'line': b'-- Looking for sdformat12 -- found version 12.7.2\n'}
+[1.110980] (light_sensor_plugin) StdoutLine: {'line': b'-- Looking for ignition-sensors6 -- found version 6.8.0\n'}
+[1.111498] (light_sensor_plugin) StdoutLine: {'line': b'-- Searching for dependencies of ignition-sensors6\n'}
+[1.131750] (light_sensor_plugin) StdoutLine: {'line': b'-- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found version "3.12.4") \n'}
+[1.132898] (light_sensor_plugin) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.15.1\n'}
+[1.133377] (light_sensor_plugin) StdoutLine: {'line': b'-- Looking for ignition-common4 -- found version 4.7.0\n'}
+[1.134022] (light_sensor_plugin) StdoutLine: {'line': b'-- Looking for ignition-transport11 -- found version 11.4.1\n'}
+[1.134466] (light_sensor_plugin) StdoutLine: {'line': b'-- Looking for ignition-rendering6 -- found version 6.6.3\n'}
+[1.134889] (light_sensor_plugin) StdoutLine: {'line': b'-- Looking for ignition-msgs8 -- found version 8.7.0\n'}
+[1.135364] (light_sensor_plugin) StdoutLine: {'line': b'-- Looking for sdformat12 -- found version 12.7.2\n'}
+[1.135605] (light_sensor_plugin) StdoutLine: {'line': b'-- Searching for <ignition-sensors6> component [air_pressure]\n'}
+[1.136005] (light_sensor_plugin) StdoutLine: {'line': b'-- Looking for ignition-sensors6-air_pressure -- found version 6.8.0\n'}
+[1.136500] (light_sensor_plugin) StdoutLine: {'line': b'-- Searching for dependencies of ignition-sensors6-air_pressure\n'}
+[1.136983] (light_sensor_plugin) StdoutLine: {'line': b'-- Searching for <ignition-sensors6> component [altimeter]\n'}
+[1.137325] (light_sensor_plugin) StdoutLine: {'line': b'-- Looking for ignition-sensors6-altimeter -- found version 6.8.0\n'}
+[1.137861] (light_sensor_plugin) StdoutLine: {'line': b'-- Searching for dependencies of ignition-sensors6-altimeter\n'}
+[1.138305] (light_sensor_plugin) StdoutLine: {'line': b'-- Searching for <ignition-sensors6> component [imu]\n'}
+[1.138689] (light_sensor_plugin) StdoutLine: {'line': b'-- Looking for ignition-sensors6-imu -- found version 6.8.0\n'}
+[1.139303] (light_sensor_plugin) StdoutLine: {'line': b'-- Searching for dependencies of ignition-sensors6-imu\n'}
+[1.139761] (light_sensor_plugin) StdoutLine: {'line': b'-- Searching for <ignition-sensors6> component [force_torque]\n'}
+[1.140149] (light_sensor_plugin) StdoutLine: {'line': b'-- Looking for ignition-sensors6-force_torque -- found version 6.8.0\n'}
+[1.140651] (light_sensor_plugin) StdoutLine: {'line': b'-- Searching for dependencies of ignition-sensors6-force_torque\n'}
+[1.141117] (light_sensor_plugin) StdoutLine: {'line': b'-- Searching for <ignition-sensors6> component [logical_camera]\n'}
+[1.141506] (light_sensor_plugin) StdoutLine: {'line': b'-- Looking for ignition-sensors6-logical_camera -- found version 6.8.0\n'}
+[1.141992] (light_sensor_plugin) StdoutLine: {'line': b'-- Searching for dependencies of ignition-sensors6-logical_camera\n'}
+[1.142453] (light_sensor_plugin) StdoutLine: {'line': b'-- Searching for <ignition-sensors6> component [magnetometer]\n'}
+[1.142860] (light_sensor_plugin) StdoutLine: {'line': b'-- Looking for ignition-sensors6-magnetometer -- found version 6.8.0\n'}
+[1.143390] (light_sensor_plugin) StdoutLine: {'line': b'-- Searching for dependencies of ignition-sensors6-magnetometer\n'}
+[1.143886] (light_sensor_plugin) StdoutLine: {'line': b'-- Searching for <ignition-sensors6> component [navsat]\n'}
+[1.144401] (light_sensor_plugin) StdoutLine: {'line': b'-- Looking for ignition-sensors6-navsat -- found version 6.8.0\n'}
+[1.145066] (light_sensor_plugin) StdoutLine: {'line': b'-- Searching for dependencies of ignition-sensors6-navsat\n'}
+[1.145541] (light_sensor_plugin) StdoutLine: {'line': b'-- Searching for <ignition-sensors6> component [rendering]\n'}
+[1.145984] (light_sensor_plugin) StdoutLine: {'line': b'-- Looking for ignition-sensors6-rendering -- found version 6.8.0\n'}
+[1.146478] (light_sensor_plugin) StdoutLine: {'line': b'-- Searching for dependencies of ignition-sensors6-rendering\n'}
+[1.146944] (light_sensor_plugin) StdoutLine: {'line': b'-- Searching for <ignition-sensors6> component [lidar]\n'}
+[1.147369] (light_sensor_plugin) StdoutLine: {'line': b'-- Looking for ignition-sensors6-lidar -- found version 6.8.0\n'}
+[1.147858] (light_sensor_plugin) StdoutLine: {'line': b'-- Searching for dependencies of ignition-sensors6-lidar\n'}
+[1.148283] (light_sensor_plugin) StdoutLine: {'line': b'-- Looking for ignition-sensors6 -- found version 6.8.0\n'}
+[1.148810] (light_sensor_plugin) StdoutLine: {'line': b'-- Searching for <ignition-sensors6> component [gpu_lidar]\n'}
+[1.149227] (light_sensor_plugin) StdoutLine: {'line': b'-- Looking for ignition-sensors6-gpu_lidar -- found version 6.8.0\n'}
+[1.149720] (light_sensor_plugin) StdoutLine: {'line': b'-- Searching for dependencies of ignition-sensors6-gpu_lidar\n'}
+[1.150115] (light_sensor_plugin) StdoutLine: {'line': b'-- Looking for ignition-sensors6 -- found version 6.8.0\n'}
+[1.150634] (light_sensor_plugin) StdoutLine: {'line': b'-- Searching for <ignition-sensors6> component [camera]\n'}
+[1.151041] (light_sensor_plugin) StdoutLine: {'line': b'-- Looking for ignition-sensors6-camera -- found version 6.8.0\n'}
+[1.151558] (light_sensor_plugin) StdoutLine: {'line': b'-- Searching for dependencies of ignition-sensors6-camera\n'}
+[1.151967] (light_sensor_plugin) StdoutLine: {'line': b'-- Looking for ignition-sensors6 -- found version 6.8.0\n'}
+[1.152472] (light_sensor_plugin) StdoutLine: {'line': b'-- Searching for <ignition-sensors6> component [boundingbox_camera]\n'}
+[1.152884] (light_sensor_plugin) StdoutLine: {'line': b'-- Looking for ignition-sensors6-boundingbox_camera -- found version 6.8.0\n'}
+[1.153356] (light_sensor_plugin) StdoutLine: {'line': b'-- Searching for dependencies of ignition-sensors6-boundingbox_camera\n'}
+[1.153842] (light_sensor_plugin) StdoutLine: {'line': b'-- Searching for <ignition-sensors6> component [segmentation_camera]\n'}
+[1.154247] (light_sensor_plugin) StdoutLine: {'line': b'-- Looking for ignition-sensors6-segmentation_camera -- found version 6.8.0\n'}
+[1.154725] (light_sensor_plugin) StdoutLine: {'line': b'-- Searching for dependencies of ignition-sensors6-segmentation_camera\n'}
+[1.155188] (light_sensor_plugin) StdoutLine: {'line': b'-- Searching for <ignition-sensors6> component [depth_camera]\n'}
+[1.155620] (light_sensor_plugin) StdoutLine: {'line': b'-- Looking for ignition-sensors6-depth_camera -- found version 6.8.0\n'}
+[1.156121] (light_sensor_plugin) StdoutLine: {'line': b'-- Searching for dependencies of ignition-sensors6-depth_camera\n'}
+[1.156499] (light_sensor_plugin) StdoutLine: {'line': b'-- Looking for ignition-sensors6 -- found version 6.8.0\n'}
+[1.157030] (light_sensor_plugin) StdoutLine: {'line': b'-- Searching for <ignition-sensors6> component [rgbd_camera]\n'}
+[1.157422] (light_sensor_plugin) StdoutLine: {'line': b'-- Looking for ignition-sensors6-rgbd_camera -- found version 6.8.0\n'}
+[1.157931] (light_sensor_plugin) StdoutLine: {'line': b'-- Searching for dependencies of ignition-sensors6-rgbd_camera\n'}
+[1.158312] (light_sensor_plugin) StdoutLine: {'line': b'-- Looking for ignition-sensors6 -- found version 6.8.0\n'}
+[1.158838] (light_sensor_plugin) StdoutLine: {'line': b'-- Searching for <ignition-sensors6> component [thermal_camera]\n'}
+[1.159216] (light_sensor_plugin) StdoutLine: {'line': b'-- Looking for ignition-sensors6-thermal_camera -- found version 6.8.0\n'}
+[1.159742] (light_sensor_plugin) StdoutLine: {'line': b'-- Searching for dependencies of ignition-sensors6-thermal_camera\n'}
+[1.160159] (light_sensor_plugin) StdoutLine: {'line': b'-- Looking for ignition-sensors6 -- found version 6.8.0\n'}
+[1.161101] (light_sensor_plugin) StdoutLine: {'line': b'-- Looking for ignition-rendering6 -- found version 6.6.3\n'}
+[1.161524] (light_sensor_plugin) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.15.1\n'}
+[1.162124] (light_sensor_plugin) StdoutLine: {'line': b'-- Looking for ignition-utils1 -- found version 1.5.1\n'}
+[1.183179] (light_sensor_plugin) StdoutLine: {'line': b'-- Found rclcpp: 16.0.8 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[1.200939] (-) TimerEvent: {}
+[1.205755] (light_sensor_plugin) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[1.208220] (light_sensor_plugin) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[1.213920] (light_sensor_plugin) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[1.225105] (light_sensor_plugin) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.241649] (light_sensor_plugin) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.299428] (light_sensor_plugin) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[1.301043] (-) TimerEvent: {}
+[1.301378] (light_sensor_plugin) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.6 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[1.401188] (-) TimerEvent: {}
+[1.428158] (light_sensor_plugin) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[1.501316] (-) TimerEvent: {}
+[1.591011] (light_sensor_plugin) StderrLine: {'line': b'\x1b[31mCMake Error at /opt/ros/humble/share/ament_cmake_target_dependencies/cmake/ament_target_dependencies.cmake:77 (message):\n'}
+[1.591201] (light_sensor_plugin) StderrLine: {'line': b"  ament_target_dependencies() the passed package name 'radar_msgs' was not\n"}
+[1.591276] (light_sensor_plugin) StderrLine: {'line': b'  found before\n'}
+[1.591339] (light_sensor_plugin) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[1.591398] (light_sensor_plugin) StderrLine: {'line': b'  CMakeLists.txt:40 (ament_target_dependencies)\n'}
+[1.591456] (light_sensor_plugin) StderrLine: {'line': b'\n'}
+[1.591514] (light_sensor_plugin) StderrLine: {'line': b'\x1b[0m\n'}
+[1.591571] (light_sensor_plugin) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[1.591634] (light_sensor_plugin) StdoutLine: {'line': b'See also "/home/paolo/light_sensor_plugin/build/light_sensor_plugin/CMakeFiles/CMakeOutput.log".\n'}
+[1.600317] (light_sensor_plugin) CommandEnded: {'returncode': 1}
+[1.601202] (light_sensor_plugin) JobEnded: {'identifier': 'light_sensor_plugin', 'rc': 1}
+[1.602021] (-) TimerEvent: {}
+[1.602090] (-) EventReactorShutdown: {}

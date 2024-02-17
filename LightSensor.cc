@@ -37,7 +37,7 @@ void LightSensor::Configure(const ignition::gazebo::Entity &_entity,
             parent->Data()))
             {
                 this->modelEntity = parent->Data();
-                parent = _ecm.Component<igntion::gazebo::components::ParentEntity>(
+                parent = _ecm.Component<ignition::gazebo::components::ParentEntity>(
                     parent->Data());
             }
 
