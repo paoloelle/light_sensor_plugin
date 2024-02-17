@@ -1,0 +1,4 @@
+source;share/light_sensor/environment/ament_prefix_path.sh
+source;share/light_sensor/environment/path.sh
+source;share/light_sensor/environment/resource_paths.sh
+source;share/light_sensor/environment/resource_paths.dsv

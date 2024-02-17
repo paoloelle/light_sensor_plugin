@@ -1,0 +1,4 @@
+source;share/light_sensor/local_setup.bash
+source;share/light_sensor/local_setup.dsv
+source;share/light_sensor/local_setup.sh
+source;share/light_sensor/local_setup.zsh

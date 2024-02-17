@@ -1,2 +1,0 @@
-Invoking command in '/home/paolo/light_sensor_plugin/build/mbzirc_naive_radar': /usr/bin/cmake /home/paolo/light_sensor_plugin -DCMAKE_INSTALL_PREFIX=/home/paolo/light_sensor_plugin/install
-Invoked command in '/home/paolo/light_sensor_plugin/build/mbzirc_naive_radar' returned '1': /usr/bin/cmake /home/paolo/light_sensor_plugin -DCMAKE_INSTALL_PREFIX=/home/paolo/light_sensor_plugin/install
