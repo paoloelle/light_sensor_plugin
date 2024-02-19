@@ -1,0 +1,36 @@
+[01m[K/home/paolo/light_sensor_plugin/src/light_sensor_custom/src/LightSensor.cc:[m[K In member function ‘[01m[Kvirtual void custom_light_sensor::LightSensor::Configure(const Entity&, const std::shared_ptr<const sdf::v12::Element>&, ignition::gazebo::v6::EntityComponentManager&, ignition::gazebo::v6::EventManager&)[m[K’:
+[01m[K/home/paolo/light_sensor_plugin/src/light_sensor_custom/src/LightSensor.cc:39:76:[m[K [01;31m[Kerror: [m[Kcannot bind non-const lvalue reference of type ‘[01m[Kstd::__cxx11::basic_string<char>&[m[K’ to an rvalue of type ‘[01m[Kstd::__cxx11::basic_string<char>[m[K’
+   39 |                         std::string lightName = lightSdf->Get<std::string>([01;31m[K"name"[m[K);
+      |                                                                            [01;31m[K^~~~~~[m[K
+In file included from [01m[K/usr/include/c++/11/string:55[m[K,
+                 from [01m[K/usr/include/ignition/msgs8/ignition/msgs/pointcloud_packed.pb.h:8[m[K,
+                 from [01m[K/usr/include/ignition/msgs8/ignition/msgs/detail/PointCloudPackedUtils.hh:24[m[K,
+                 from [01m[K/usr/include/ignition/msgs8/ignition/msgs.hh:23[m[K,
+                 from [01m[K/home/paolo/light_sensor_plugin/src/light_sensor_custom/src/LightSensor.cc:1[m[K:
+[01m[K/usr/include/c++/11/bits/basic_string.h:533:7:[m[K [01;36m[Knote: [m[K  after user-defined conversion: ‘[01m[Kstd::__cxx11::basic_string<_CharT, _Traits, _Alloc>::basic_string(const _CharT*, const _Alloc&) [with <template-parameter-2-1> = std::allocator<char>; _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>][m[K’
+  533 |       [01;36m[Kbasic_string[m[K(const _CharT* __s, const _Alloc& __a = _Alloc())
+      |       [01;36m[K^~~~~~~~~~~~[m[K
+In file included from [01m[K/usr/include/ignition/sdformat12/sdf/Element.hh:28[m[K,
+                 from [01m[K/usr/include/ignition/sdformat12/sdf/Model.hh:26[m[K,
+                 from [01m[K/usr/include/ignition/gazebo6/gz/sim/components/Model.hh:22[m[K,
+                 from [01m[K/usr/include/ignition/gazebo6/ignition/gazebo/components/Model.hh:18[m[K,
+                 from [01m[K/home/paolo/light_sensor_plugin/src/light_sensor_custom/src/LightSensor.cc:4[m[K:
+[01m[K/usr/include/ignition/sdformat12/sdf/Param.hh:509:22:[m[K [01;36m[Knote: [m[K  initializing argument 1 of ‘[01m[Kbool sdf::v12::Param::Get(T&) const [with T = std::__cxx11::basic_string<char>][m[K’
+  509 |   bool Param::Get([01;36m[KT &_value[m[K) const
+      |                   [01;36m[K~~~^~~~~~[m[K
+[01m[K/home/paolo/light_sensor_plugin/src/light_sensor_custom/src/LightSensor.cc:40:98:[m[K [01;31m[Kerror: [m[Kcannot convert ‘[01m[Kconst char [5][m[K’ to ‘[01m[Kignition::math::v6::Pose3<double>&[m[K’
+   40 |                         ignition::math::Pose3d lightPose = lightSdf->Get<ignition::math::Pose3d>([01;31m[K"pose"[m[K);
+      |                                                                                                  [01;31m[K^~~~~~[m[K
+      |                                                                                                  [01;31m[K|[m[K
+      |                                                                                                  [01;31m[Kconst char [5][m[K
+In file included from [01m[K/usr/include/ignition/sdformat12/sdf/Element.hh:28[m[K,
+                 from [01m[K/usr/include/ignition/sdformat12/sdf/Model.hh:26[m[K,
+                 from [01m[K/usr/include/ignition/gazebo6/gz/sim/components/Model.hh:22[m[K,
+                 from [01m[K/usr/include/ignition/gazebo6/ignition/gazebo/components/Model.hh:18[m[K,
+                 from [01m[K/home/paolo/light_sensor_plugin/src/light_sensor_custom/src/LightSensor.cc:4[m[K:
+[01m[K/usr/include/ignition/sdformat12/sdf/Param.hh:509:22:[m[K [01;36m[Knote: [m[K  initializing argument 1 of ‘[01m[Kbool sdf::v12::Param::Get(T&) const [with T = ignition::math::v6::Pose3<double>][m[K’
+  509 |   bool Param::Get([01;36m[KT &_value[m[K) const
+      |                   [01;36m[K~~~^~~~~~[m[K
+gmake[2]: *** [CMakeFiles/LightSensor.dir/build.make:76: CMakeFiles/LightSensor.dir/src/LightSensor.cc.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/LightSensor.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

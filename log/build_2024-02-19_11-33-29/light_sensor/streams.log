@@ -1,0 +1,223 @@
+[0.114s] Invoking command in '/home/paolo/light_sensor_plugin/build/light_sensor': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/paolo/turtlebot4_controller_ws/install/turtlebot4_controller:/opt/ros/humble /usr/bin/cmake --build /home/paolo/light_sensor_plugin/build/light_sensor -- -j8 -l8
+[0.170s] [35m[1mConsolidate compiler generated dependencies of target LightSensor[0m
+[0.205s] [ 50%] [32mBuilding CXX object CMakeFiles/LightSensor.dir/src/LightSensor.cc.o[0m
+[7.410s] [01m[K/home/paolo/light_sensor_plugin/src/light_sensor_custom/src/LightSensor.cc:[m[K In member function ‘[01m[Kvirtual void custom_light_sensor::LightSensor::Configure(const Entity&, const std::shared_ptr<const sdf::v12::Element>&, ignition::gazebo::v6::EntityComponentManager&, ignition::gazebo::v6::EventManager&)[m[K’:
+[7.410s] [01m[K/home/paolo/light_sensor_plugin/src/light_sensor_custom/src/LightSensor.cc:22:52:[m[K [01;31m[Kerror: [m[Kinvalid use of non-static member function ‘[01m[Kstd::optional<double> ignition::gazebo::v6::Light::Intensity(const ignition::gazebo::v6::EntityComponentManager&) const[m[K’
+[7.410s]    22 |                 _ecm.Each<ignition::gazebo::Light::[01;31m[KIntensity[m[K>(
+[7.410s]       |                                                    [01;31m[K^~~~~~~~~[m[K
+[7.411s] [01m[K/home/paolo/light_sensor_plugin/src/light_sensor_custom/src/LightSensor.cc:[m[K In lambda function:
+[7.411s] [01m[K/home/paolo/light_sensor_plugin/src/light_sensor_custom/src/LightSensor.cc:28:17:[m[K [01;35m[Kwarning: [m[Kno return statement in function returning non-void [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreturn-type-Wreturn-type]8;;[m[K]
+[7.411s]    28 |                 [01;35m[K}[m[K);
+[7.411s]       |                 [01;35m[K^[m[K
+[7.411s] [01m[K/home/paolo/light_sensor_plugin/src/light_sensor_custom/src/LightSensor.cc:[m[K In member function ‘[01m[Kvirtual void custom_light_sensor::LightSensor::Configure(const Entity&, const std::shared_ptr<const sdf::v12::Element>&, ignition::gazebo::v6::EntityComponentManager&, ignition::gazebo::v6::EventManager&)[m[K’:
+[7.411s] [01m[K/home/paolo/light_sensor_plugin/src/light_sensor_custom/src/LightSensor.cc:22:62:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kignition::gazebo::v6::EntityComponentManager::Each<<expression error> >(custom_light_sensor::LightSensor::Configure(const Entity&, const std::shared_ptr<const sdf::v12::Element>&, ignition::gazebo::v6::EntityComponentManager&, ignition::gazebo::v6::EventManager&)::<lambda(const Pose*)>)[m[K’
+[7.411s]    22 |                 [01;31m[K_ecm.Each<ignition::gazebo::Light::Intensity>([m[K
+[7.411s]       |                 [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^[m[K
+[7.411s]    23 | [01;31m[K                        [&](const ignition::gazebo::components::Pose *_pose) -> bool[m[K
+[7.411s]       |                         [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[7.412s]    24 | [01;31m[K                {[m[K
+[7.412s]       |                 [01;31m[K~[m[K                                             
+[7.412s]    25 | [01;31m[K                        ignition::math::Pose3d light_pose = _pose->Data();[m[K
+[7.412s]       |                         [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[7.412s]    26 | [01;31m[K                        lightSourcesPoses.push_back(light_pose);[m[K
+[7.412s]       |                         [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[7.412s]    27 | 
+[7.412s]       |                                                               
+[7.412s]    28 | [01;31m[K                })[m[K;
+[7.412s]       |                 [01;31m[K~~[m[K                                            
+[7.413s] In file included from [01m[K/usr/include/ignition/gazebo6/gz/sim/Light.hh:33[m[K,
+[7.413s]                  from [01m[K/usr/include/ignition/gazebo6/ignition/gazebo/Light.hh:18[m[K,
+[7.413s]                  from [01m[K/home/paolo/light_sensor_plugin/src/light_sensor_custom/src/LightSensor.cc:1[m[K:
+[7.413s] [01m[K/usr/include/ignition/gazebo6/gz/sim/EntityComponentManager.hh:463:20:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class ... ComponentTypeTs> void ignition::gazebo::v6::EntityComponentManager::Each(typename ignition::gazebo::v6::EntityComponentManager::identity<std::function<bool(const long unsigned int&, const ComponentTypeTs* ...)> >::type) const[m[K’
+[7.413s]   463 |               void [01;36m[KEach[m[K(typename identity<std::function<
+[7.413s]       |                    [01;36m[K^~~~[m[K
+[7.413s] [01m[K/usr/include/ignition/gazebo6/gz/sim/EntityComponentManager.hh:463:20:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[7.413s] [01m[K/home/paolo/light_sensor_plugin/src/light_sensor_custom/src/LightSensor.cc:22:62:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[7.413s]    22 |                 [01;31m[K_ecm.Each<ignition::gazebo::Light::Intensity>([m[K
+[7.413s]       |                 [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^[m[K
+[7.414s]    23 | [01;31m[K                        [&](const ignition::gazebo::components::Pose *_pose) -> bool[m[K
+[7.414s]       |                         [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[7.414s]    24 | [01;31m[K                {[m[K
+[7.414s]       |                 [01;31m[K~[m[K                                             
+[7.414s]    25 | [01;31m[K                        ignition::math::Pose3d light_pose = _pose->Data();[m[K
+[7.414s]       |                         [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[7.414s]    26 | [01;31m[K                        lightSourcesPoses.push_back(light_pose);[m[K
+[7.414s]       |                         [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[7.414s]    27 | 
+[7.414s]       |                                                               
+[7.415s]    28 | [01;31m[K                })[m[K;
+[7.415s]       |                 [01;31m[K~~[m[K                                            
+[7.415s] In file included from [01m[K/usr/include/ignition/gazebo6/gz/sim/Light.hh:33[m[K,
+[7.415s]                  from [01m[K/usr/include/ignition/gazebo6/ignition/gazebo/Light.hh:18[m[K,
+[7.415s]                  from [01m[K/home/paolo/light_sensor_plugin/src/light_sensor_custom/src/LightSensor.cc:1[m[K:
+[7.415s] [01m[K/usr/include/ignition/gazebo6/gz/sim/EntityComponentManager.hh:480:20:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class ... ComponentTypeTs> void ignition::gazebo::v6::EntityComponentManager::Each(typename ignition::gazebo::v6::EntityComponentManager::identity<std::function<bool(const long unsigned int&, ComponentTypeTs* ...)> >::type)[m[K’
+[7.415s]   480 |               void [01;36m[KEach[m[K(typename identity<std::function<
+[7.415s]       |                    [01;36m[K^~~~[m[K
+[7.415s] [01m[K/usr/include/ignition/gazebo6/gz/sim/EntityComponentManager.hh:480:20:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[7.415s] [01m[K/home/paolo/light_sensor_plugin/src/light_sensor_custom/src/LightSensor.cc:22:62:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[7.416s]    22 |                 [01;31m[K_ecm.Each<ignition::gazebo::Light::Intensity>([m[K
+[7.416s]       |                 [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^[m[K
+[7.416s]    23 | [01;31m[K                        [&](const ignition::gazebo::components::Pose *_pose) -> bool[m[K
+[7.416s]       |                         [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[7.416s]    24 | [01;31m[K                {[m[K
+[7.416s]       |                 [01;31m[K~[m[K                                             
+[7.416s]    25 | [01;31m[K                        ignition::math::Pose3d light_pose = _pose->Data();[m[K
+[7.416s]       |                         [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[7.416s]    26 | [01;31m[K                        lightSourcesPoses.push_back(light_pose);[m[K
+[7.416s]       |                         [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[7.417s]    27 | 
+[7.417s]       |                                                               
+[7.417s]    28 | [01;31m[K                })[m[K;
+[7.417s]       |                 [01;31m[K~~[m[K                                            
+[7.421s] [01m[K/home/paolo/light_sensor_plugin/src/light_sensor_custom/src/LightSensor.cc:35:56:[m[K [01;31m[Kerror: [m[K‘[01m[Kigntion[m[K’ was not declared in this scope; did you mean ‘[01m[Kignition[m[K’?
+[7.421s]    35 |                 this->publisher = this->node.Advertise<[01;31m[Kigntion[m[K::msgs::Float>(topic);
+[7.421s]       |                                                        [01;31m[K^~~~~~~[m[K
+[7.421s]       |                                                        [32m[Kignition[m[K
+[7.422s] [01m[K/home/paolo/light_sensor_plugin/src/light_sensor_custom/src/LightSensor.cc:35:46:[m[K [01;31m[Kerror: [m[Kparse error in template argument list
+[7.422s]    35 |                 this->publisher = this->node.[01;31m[KAdvertise<igntion::msgs::Float>[m[K(topic);
+[7.422s]       |                                              [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[7.422s] [01m[K/home/paolo/light_sensor_plugin/src/light_sensor_custom/src/LightSensor.cc:35:77:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kignition::transport::v11::Node::Advertise<<expression error> >(std::string&)[m[K’
+[7.422s]    35 |                 this->publisher = [01;31m[Kthis->node.Advertise<igntion::msgs::Float>(topic)[m[K;
+[7.422s]       |                                   [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~[m[K
+[7.422s] In file included from [01m[K/usr/include/ignition/gazebo6/gz/sim/comms/MsgManager.hh:26[m[K,
+[7.422s]                  from [01m[K/usr/include/ignition/gazebo6/gz/sim/comms/Broker.hh:25[m[K,
+[7.422s]                  from [01m[K/usr/include/ignition/gazebo6/gz/gazebo.hh:23[m[K,
+[7.422s]                  from [01m[K/usr/include/ignition/gazebo6/gz/sim.hh:27[m[K,
+[7.423s]                  from [01m[K/usr/include/ignition/gazebo6/ignition/gazebo.hh:18[m[K,
+[7.423s]                  from [01m[K/home/paolo/light_sensor_plugin/src/light_sensor_custom/src/LightSensor.cc:4[m[K:
+[7.423s] [01m[K/usr/include/ignition/transport11/gz/transport/Node.hh:226:23:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class MessageT> ignition::transport::v11::Node::Publisher ignition::transport::v11::Node::Advertise(const string&, const ignition::transport::v11::AdvertiseMessageOptions&)[m[K’
+[7.423s]   226 |       Node::Publisher [01;36m[KAdvertise[m[K(
+[7.423s]       |                       [01;36m[K^~~~~~~~~[m[K
+[7.423s] [01m[K/usr/include/ignition/transport11/gz/transport/Node.hh:226:23:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[7.423s] [01m[K/home/paolo/light_sensor_plugin/src/light_sensor_custom/src/LightSensor.cc:35:77:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[7.423s]    35 |                 this->publisher = [01;31m[Kthis->node.Advertise<igntion::msgs::Float>(topic)[m[K;
+[7.423s]       |                                   [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~[m[K
+[7.424s] In file included from [01m[K/usr/include/ignition/gazebo6/gz/sim/comms/MsgManager.hh:26[m[K,
+[7.424s]                  from [01m[K/usr/include/ignition/gazebo6/gz/sim/comms/Broker.hh:25[m[K,
+[7.424s]                  from [01m[K/usr/include/ignition/gazebo6/gz/gazebo.hh:23[m[K,
+[7.424s]                  from [01m[K/usr/include/ignition/gazebo6/gz/sim.hh:27[m[K,
+[7.424s]                  from [01m[K/usr/include/ignition/gazebo6/ignition/gazebo.hh:18[m[K,
+[7.424s]                  from [01m[K/home/paolo/light_sensor_plugin/src/light_sensor_custom/src/LightSensor.cc:4[m[K:
+[7.424s] [01m[K/usr/include/ignition/transport11/gz/transport/Node.hh:372:12:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class RequestT, class ReplyT> bool ignition::transport::v11::Node::Advertise(const string&, bool (*)(const RequestT&, ReplyT&), const ignition::transport::v11::AdvertiseServiceOptions&)[m[K’
+[7.424s]   372 |       bool [01;36m[KAdvertise[m[K(
+[7.425s]       |            [01;36m[K^~~~~~~~~[m[K
+[7.425s] [01m[K/usr/include/ignition/transport11/gz/transport/Node.hh:372:12:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[7.425s] [01m[K/home/paolo/light_sensor_plugin/src/light_sensor_custom/src/LightSensor.cc:35:77:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[7.425s]    35 |                 this->publisher = [01;31m[Kthis->node.Advertise<igntion::msgs::Float>(topic)[m[K;
+[7.425s]       |                                   [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~[m[K
+[7.425s] In file included from [01m[K/usr/include/ignition/gazebo6/gz/sim/comms/MsgManager.hh:26[m[K,
+[7.425s]                  from [01m[K/usr/include/ignition/gazebo6/gz/sim/comms/Broker.hh:25[m[K,
+[7.425s]                  from [01m[K/usr/include/ignition/gazebo6/gz/gazebo.hh:23[m[K,
+[7.425s]                  from [01m[K/usr/include/ignition/gazebo6/gz/sim.hh:27[m[K,
+[7.425s]                  from [01m[K/usr/include/ignition/gazebo6/ignition/gazebo.hh:18[m[K,
+[7.425s]                  from [01m[K/home/paolo/light_sensor_plugin/src/light_sensor_custom/src/LightSensor.cc:4[m[K:
+[7.426s] [01m[K/usr/include/ignition/transport11/gz/transport/Node.hh:389:12:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class ReplyT> bool ignition::transport::v11::Node::Advertise(const string&, bool (*)(ReplyT&), const ignition::transport::v11::AdvertiseServiceOptions&)[m[K’
+[7.426s]   389 |       bool [01;36m[KAdvertise[m[K(
+[7.426s]       |            [01;36m[K^~~~~~~~~[m[K
+[7.426s] [01m[K/usr/include/ignition/transport11/gz/transport/Node.hh:389:12:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[7.426s] [01m[K/home/paolo/light_sensor_plugin/src/light_sensor_custom/src/LightSensor.cc:35:77:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[7.426s]    35 |                 this->publisher = [01;31m[Kthis->node.Advertise<igntion::msgs::Float>(topic)[m[K;
+[7.426s]       |                                   [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~[m[K
+[7.426s] In file included from [01m[K/usr/include/ignition/gazebo6/gz/sim/comms/MsgManager.hh:26[m[K,
+[7.426s]                  from [01m[K/usr/include/ignition/gazebo6/gz/sim/comms/Broker.hh:25[m[K,
+[7.426s]                  from [01m[K/usr/include/ignition/gazebo6/gz/gazebo.hh:23[m[K,
+[7.426s]                  from [01m[K/usr/include/ignition/gazebo6/gz/sim.hh:27[m[K,
+[7.427s]                  from [01m[K/usr/include/ignition/gazebo6/ignition/gazebo.hh:18[m[K,
+[7.427s]                  from [01m[K/home/paolo/light_sensor_plugin/src/light_sensor_custom/src/LightSensor.cc:4[m[K:
+[7.427s] [01m[K/usr/include/ignition/transport11/gz/transport/Node.hh:405:12:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class RequestT> bool ignition::transport::v11::Node::Advertise(const string&, void (*)(const RequestT&), const ignition::transport::v11::AdvertiseServiceOptions&)[m[K’
+[7.427s]   405 |       bool [01;36m[KAdvertise[m[K(
+[7.427s]       |            [01;36m[K^~~~~~~~~[m[K
+[7.427s] [01m[K/usr/include/ignition/transport11/gz/transport/Node.hh:405:12:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[7.427s] [01m[K/home/paolo/light_sensor_plugin/src/light_sensor_custom/src/LightSensor.cc:35:77:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[7.427s]    35 |                 this->publisher = [01;31m[Kthis->node.Advertise<igntion::msgs::Float>(topic)[m[K;
+[7.427s]       |                                   [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~[m[K
+[7.427s] In file included from [01m[K/usr/include/ignition/gazebo6/gz/sim/comms/MsgManager.hh:26[m[K,
+[7.427s]                  from [01m[K/usr/include/ignition/gazebo6/gz/sim/comms/Broker.hh:25[m[K,
+[7.428s]                  from [01m[K/usr/include/ignition/gazebo6/gz/gazebo.hh:23[m[K,
+[7.428s]                  from [01m[K/usr/include/ignition/gazebo6/gz/sim.hh:27[m[K,
+[7.428s]                  from [01m[K/usr/include/ignition/gazebo6/ignition/gazebo.hh:18[m[K,
+[7.428s]                  from [01m[K/home/paolo/light_sensor_plugin/src/light_sensor_custom/src/LightSensor.cc:4[m[K:
+[7.428s] [01m[K/usr/include/ignition/transport11/gz/transport/Node.hh:423:12:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class RequestT, class ReplyT> bool ignition::transport::v11::Node::Advertise(const string&, std::function<bool(const Req&, Rep&)>, const ignition::transport::v11::AdvertiseServiceOptions&)[m[K’
+[7.428s]   423 |       bool [01;36m[KAdvertise[m[K(
+[7.428s]       |            [01;36m[K^~~~~~~~~[m[K
+[7.428s] [01m[K/usr/include/ignition/transport11/gz/transport/Node.hh:423:12:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[7.428s] [01m[K/home/paolo/light_sensor_plugin/src/light_sensor_custom/src/LightSensor.cc:35:77:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[7.428s]    35 |                 this->publisher = [01;31m[Kthis->node.Advertise<igntion::msgs::Float>(topic)[m[K;
+[7.428s]       |                                   [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~[m[K
+[7.429s] In file included from [01m[K/usr/include/ignition/gazebo6/gz/sim/comms/MsgManager.hh:26[m[K,
+[7.429s]                  from [01m[K/usr/include/ignition/gazebo6/gz/sim/comms/Broker.hh:25[m[K,
+[7.429s]                  from [01m[K/usr/include/ignition/gazebo6/gz/gazebo.hh:23[m[K,
+[7.429s]                  from [01m[K/usr/include/ignition/gazebo6/gz/sim.hh:27[m[K,
+[7.429s]                  from [01m[K/usr/include/ignition/gazebo6/ignition/gazebo.hh:18[m[K,
+[7.429s]                  from [01m[K/home/paolo/light_sensor_plugin/src/light_sensor_custom/src/LightSensor.cc:4[m[K:
+[7.429s] [01m[K/usr/include/ignition/transport11/gz/transport/Node.hh:441:12:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class ReplyT> bool ignition::transport::v11::Node::Advertise(const string&, std::function<bool(ReplyT&)>&, const ignition::transport::v11::AdvertiseServiceOptions&)[m[K’
+[7.429s]   441 |       bool [01;36m[KAdvertise[m[K(
+[7.429s]       |            [01;36m[K^~~~~~~~~[m[K
+[7.429s] [01m[K/usr/include/ignition/transport11/gz/transport/Node.hh:441:12:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[7.430s] [01m[K/home/paolo/light_sensor_plugin/src/light_sensor_custom/src/LightSensor.cc:35:77:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[7.430s]    35 |                 this->publisher = [01;31m[Kthis->node.Advertise<igntion::msgs::Float>(topic)[m[K;
+[7.430s]       |                                   [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~[m[K
+[7.430s] In file included from [01m[K/usr/include/ignition/gazebo6/gz/sim/comms/MsgManager.hh:26[m[K,
+[7.430s]                  from [01m[K/usr/include/ignition/gazebo6/gz/sim/comms/Broker.hh:25[m[K,
+[7.430s]                  from [01m[K/usr/include/ignition/gazebo6/gz/gazebo.hh:23[m[K,
+[7.430s]                  from [01m[K/usr/include/ignition/gazebo6/gz/sim.hh:27[m[K,
+[7.430s]                  from [01m[K/usr/include/ignition/gazebo6/ignition/gazebo.hh:18[m[K,
+[7.430s]                  from [01m[K/home/paolo/light_sensor_plugin/src/light_sensor_custom/src/LightSensor.cc:4[m[K:
+[7.430s] [01m[K/usr/include/ignition/transport11/gz/transport/Node.hh:457:12:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class RequestT> bool ignition::transport::v11::Node::Advertise(const string&, std::function<void(const T&)>&, const ignition::transport::v11::AdvertiseServiceOptions&)[m[K’
+[7.430s]   457 |       bool [01;36m[KAdvertise[m[K(
+[7.431s]       |            [01;36m[K^~~~~~~~~[m[K
+[7.431s] [01m[K/usr/include/ignition/transport11/gz/transport/Node.hh:457:12:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[7.431s] [01m[K/home/paolo/light_sensor_plugin/src/light_sensor_custom/src/LightSensor.cc:35:77:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[7.431s]    35 |                 this->publisher = [01;31m[Kthis->node.Advertise<igntion::msgs::Float>(topic)[m[K;
+[7.431s]       |                                   [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~[m[K
+[7.431s] In file included from [01m[K/usr/include/ignition/gazebo6/gz/sim/comms/MsgManager.hh:26[m[K,
+[7.431s]                  from [01m[K/usr/include/ignition/gazebo6/gz/sim/comms/Broker.hh:25[m[K,
+[7.431s]                  from [01m[K/usr/include/ignition/gazebo6/gz/gazebo.hh:23[m[K,
+[7.431s]                  from [01m[K/usr/include/ignition/gazebo6/gz/sim.hh:27[m[K,
+[7.431s]                  from [01m[K/usr/include/ignition/gazebo6/ignition/gazebo.hh:18[m[K,
+[7.431s]                  from [01m[K/home/paolo/light_sensor_plugin/src/light_sensor_custom/src/LightSensor.cc:4[m[K:
+[7.432s] [01m[K/usr/include/ignition/transport11/gz/transport/Node.hh:476:12:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class ClassT, class RequestT, class ReplyT> bool ignition::transport::v11::Node::Advertise(const string&, bool (ClassT::*)(const RequestT&, ReplyT&), ClassT*, const ignition::transport::v11::AdvertiseServiceOptions&)[m[K’
+[7.432s]   476 |       bool [01;36m[KAdvertise[m[K(
+[7.432s]       |            [01;36m[K^~~~~~~~~[m[K
+[7.432s] [01m[K/usr/include/ignition/transport11/gz/transport/Node.hh:476:12:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[7.432s] [01m[K/home/paolo/light_sensor_plugin/src/light_sensor_custom/src/LightSensor.cc:35:77:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[7.432s]    35 |                 this->publisher = [01;31m[Kthis->node.Advertise<igntion::msgs::Float>(topic)[m[K;
+[7.432s]       |                                   [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~[m[K
+[7.432s] In file included from [01m[K/usr/include/ignition/gazebo6/gz/sim/comms/MsgManager.hh:26[m[K,
+[7.432s]                  from [01m[K/usr/include/ignition/gazebo6/gz/sim/comms/Broker.hh:25[m[K,
+[7.432s]                  from [01m[K/usr/include/ignition/gazebo6/gz/gazebo.hh:23[m[K,
+[7.432s]                  from [01m[K/usr/include/ignition/gazebo6/gz/sim.hh:27[m[K,
+[7.433s]                  from [01m[K/usr/include/ignition/gazebo6/ignition/gazebo.hh:18[m[K,
+[7.433s]                  from [01m[K/home/paolo/light_sensor_plugin/src/light_sensor_custom/src/LightSensor.cc:4[m[K:
+[7.433s] [01m[K/usr/include/ignition/transport11/gz/transport/Node.hh:495:12:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class ClassT, class ReplyT> bool ignition::transport::v11::Node::Advertise(const string&, bool (ClassT::*)(ReplyT&), ClassT*, const ignition::transport::v11::AdvertiseServiceOptions&)[m[K’
+[7.433s]   495 |       bool [01;36m[KAdvertise[m[K(
+[7.433s]       |            [01;36m[K^~~~~~~~~[m[K
+[7.433s] [01m[K/usr/include/ignition/transport11/gz/transport/Node.hh:495:12:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[7.433s] [01m[K/home/paolo/light_sensor_plugin/src/light_sensor_custom/src/LightSensor.cc:35:77:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[7.433s]    35 |                 this->publisher = [01;31m[Kthis->node.Advertise<igntion::msgs::Float>(topic)[m[K;
+[7.433s]       |                                   [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~[m[K
+[7.433s] In file included from [01m[K/usr/include/ignition/gazebo6/gz/sim/comms/MsgManager.hh:26[m[K,
+[7.434s]                  from [01m[K/usr/include/ignition/gazebo6/gz/sim/comms/Broker.hh:25[m[K,
+[7.434s]                  from [01m[K/usr/include/ignition/gazebo6/gz/gazebo.hh:23[m[K,
+[7.434s]                  from [01m[K/usr/include/ignition/gazebo6/gz/sim.hh:27[m[K,
+[7.434s]                  from [01m[K/usr/include/ignition/gazebo6/ignition/gazebo.hh:18[m[K,
+[7.434s]                  from [01m[K/home/paolo/light_sensor_plugin/src/light_sensor_custom/src/LightSensor.cc:4[m[K:
+[7.434s] [01m[K/usr/include/ignition/transport11/gz/transport/Node.hh:513:12:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class ClassT, class RequestT> bool ignition::transport::v11::Node::Advertise(const string&, void (ClassT::*)(const RequestT&), ClassT*, const ignition::transport::v11::AdvertiseServiceOptions&)[m[K’
+[7.434s]   513 |       bool [01;36m[KAdvertise[m[K(
+[7.434s]       |            [01;36m[K^~~~~~~~~[m[K
+[7.434s] [01m[K/usr/include/ignition/transport11/gz/transport/Node.hh:513:12:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[7.434s] [01m[K/home/paolo/light_sensor_plugin/src/light_sensor_custom/src/LightSensor.cc:35:77:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[7.435s]    35 |                 this->publisher = [01;31m[Kthis->node.Advertise<igntion::msgs::Float>(topic)[m[K;
+[7.435s]       |                                   [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~[m[K
+[7.435s] [01m[K/home/paolo/light_sensor_plugin/src/light_sensor_custom/src/LightSensor.cc:[m[K In member function ‘[01m[Kvirtual void custom_light_sensor::LightSensor::PostUpdate(const ignition::gazebo::v6::UpdateInfo&, const ignition::gazebo::v6::EntityComponentManager&)[m[K’:
+[7.435s] [01m[K/home/paolo/light_sensor_plugin/src/light_sensor_custom/src/LightSensor.cc:72:68:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass custom_light_sensor::LightSensor[m[K’ has no member named ‘[01m[Kentity[m[K’
+[7.435s]    72 |                                 ignition::gazebo::scopedName(this->[01;31m[Kentity[m[K, _ecm, "::", false), "::");
+[7.435s]       |                                                                    [01;31m[K^~~~~~[m[K
+[7.435s] [01m[K/home/paolo/light_sensor_plugin/src/light_sensor_custom/src/LightSensor.cc:[m[K At global scope:
+[7.435s] [01m[K/home/paolo/light_sensor_plugin/src/light_sensor_custom/src/LightSensor.cc:85:40:[m[K [01;31m[Kerror: [m[Kexpected constructor, destructor, or type conversion at end of input
+[7.435s]    85 |         LightSensor::ISystemPostUpdate)
+[7.435s]       |                                        [01;31m[K^[m[K
+[10.818s] gmake[2]: *** [CMakeFiles/LightSensor.dir/build.make:76: CMakeFiles/LightSensor.dir/src/LightSensor.cc.o] Error 1
+[10.818s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/LightSensor.dir/all] Error 2
+[10.818s] gmake: *** [Makefile:146: all] Error 2
+[10.821s] Invoked command in '/home/paolo/light_sensor_plugin/build/light_sensor' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/paolo/turtlebot4_controller_ws/install/turtlebot4_controller:/opt/ros/humble /usr/bin/cmake --build /home/paolo/light_sensor_plugin/build/light_sensor -- -j8 -l8

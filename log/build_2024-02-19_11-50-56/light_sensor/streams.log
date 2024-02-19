@@ -1,0 +1,22 @@
+[0.112s] Invoking command in '/home/paolo/light_sensor_plugin/build/light_sensor': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/paolo/turtlebot4_controller_ws/install/turtlebot4_controller:/opt/ros/humble /usr/bin/cmake --build /home/paolo/light_sensor_plugin/build/light_sensor -- -j8 -l8
+[0.166s] [35m[1mConsolidate compiler generated dependencies of target LightSensor[0m
+[0.197s] [ 50%] [32mBuilding CXX object CMakeFiles/LightSensor.dir/src/LightSensor.cc.o[0m
+[7.460s] [01m[K/home/paolo/light_sensor_plugin/src/light_sensor_custom/src/LightSensor.cc:[m[K In member function ‘[01m[Kvirtual void custom_light_sensor::LightSensor::PostUpdate(const ignition::gazebo::v6::UpdateInfo&, const ignition::gazebo::v6::EntityComponentManager&)[m[K’:
+[7.460s] [01m[K/home/paolo/light_sensor_plugin/src/light_sensor_custom/src/LightSensor.cc:77:62:[m[K [01;31m[Kerror: [m[Kinvalid initialization of reference of type ‘[01m[Kconst Entity&[m[K’ {aka ‘[01m[Kconst long unsigned int&[m[K’} from expression of type ‘[01m[Kconst ignition::gazebo::v6::EntityComponentManager[m[K’
+[7.460s]    77 |                                 ignition::gazebo::scopedName([01;31m[K_ecm[m[K, "::", false), "::");
+[7.461s]       |                                                              [01;31m[K^~~~[m[K
+[7.461s] In file included from [01m[K/usr/include/ignition/gazebo6/gz/gazebo.hh:167[m[K,
+[7.461s]                  from [01m[K/usr/include/ignition/gazebo6/gz/sim.hh:27[m[K,
+[7.461s]                  from [01m[K/usr/include/ignition/gazebo6/ignition/gazebo.hh:18[m[K,
+[7.461s]                  from [01m[K/home/paolo/light_sensor_plugin/src/light_sensor_custom/src/LightSensor.cc:4[m[K:
+[7.461s] [01m[K/usr/include/ignition/gazebo6/gz/sim/Util.hh:53:66:[m[K [01;36m[Knote: [m[Kin passing argument 1 of ‘[01m[Kstd::string ignition::gazebo::v6::scopedName(const Entity&, const ignition::gazebo::v6::EntityComponentManager&, const string&, bool)[m[K’
+[7.461s]    53 |     std::string IGNITION_GAZEBO_VISIBLE scopedName([01;36m[Kconst Entity &_entity[m[K,
+[7.461s]       |                                                    [01;36m[K~~~~~~~~~~~~~~^~~~~~~[m[K
+[7.461s] [01m[K/home/paolo/light_sensor_plugin/src/light_sensor_custom/src/LightSensor.cc:[m[K At global scope:
+[7.461s] [01m[K/home/paolo/light_sensor_plugin/src/light_sensor_custom/src/LightSensor.cc:90:40:[m[K [01;31m[Kerror: [m[Kexpected constructor, destructor, or type conversion at end of input
+[7.462s]    90 |         LightSensor::ISystemPostUpdate)
+[7.462s]       |                                        [01;31m[K^[m[K
+[11.192s] gmake[2]: *** [CMakeFiles/LightSensor.dir/build.make:76: CMakeFiles/LightSensor.dir/src/LightSensor.cc.o] Error 1
+[11.192s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/LightSensor.dir/all] Error 2
+[11.193s] gmake: *** [Makefile:146: all] Error 2
+[11.195s] Invoked command in '/home/paolo/light_sensor_plugin/build/light_sensor' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/paolo/turtlebot4_controller_ws/install/turtlebot4_controller:/opt/ros/humble /usr/bin/cmake --build /home/paolo/light_sensor_plugin/build/light_sensor -- -j8 -l8

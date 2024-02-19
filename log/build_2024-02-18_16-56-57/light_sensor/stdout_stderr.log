@@ -1,0 +1,38 @@
+[35m[1mConsolidate compiler generated dependencies of target LightSensor[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/LightSensor.dir/src/LightSensor.cc.o[0m
+[01m[K/home/paolo/light_sensor_plugin/src/light_sensor_custom/src/LightSensor.cc:[m[K In member function ‘[01m[Kvirtual void custom_light_sensor::LightSensor::PostUpdate(const ignition::gazebo::v6::UpdateInfo&, const ignition::gazebo::v6::EntityComponentManager&)[m[K’:
+[01m[K/home/paolo/light_sensor_plugin/src/light_sensor_custom/src/LightSensor.cc:100:61:[m[K [01;31m[Kerror: [m[K‘[01m[KPose[m[K’ in namespace ‘[01m[Kignition::gazebo::v6::components[m[K’ does not name a type
+  100 |                         const ignition::gazebo::components::[01;31m[KPose[m[K *poseComp =
+      |                                                             [01;31m[K^~~~[m[K
+[01m[K/home/paolo/light_sensor_plugin/src/light_sensor_custom/src/LightSensor.cc:103:61:[m[K [01;31m[Kerror: [m[K‘[01m[KposeComp[m[K’ was not declared in this scope
+  103 |                         ignition::math::Pose3d entityPose = [01;31m[KposeComp[m[K->Data();
+      |                                                             [01;31m[K^~~~~~~~[m[K
+[01m[K/home/paolo/light_sensor_plugin/src/light_sensor_custom/src/LightSensor.cc:113:47:[m[K [01;31m[Kerror: [m[K‘[01m[KPose[m[K’ is not a member of ‘[01m[Kignition::gazebo::v6::components[m[K’; did you mean ‘[01m[Kignition::msgs::Pose[m[K’?
+  113 |                 ignition::gazebo::components::[01;31m[KPose[m[K,
+      |                                               [01;31m[K^~~~[m[K
+In file included from [01m[K/usr/include/ignition/msgs8/ignition/msgs/actor.pb.h:37[m[K,
+                 from [01m[K/usr/include/ignition/msgs8/ignition/msgs/MessageTypes.hh:31[m[K,
+                 from [01m[K/usr/include/ignition/msgs8/ignition/msgs/Utility.hh:34[m[K,
+                 from [01m[K/usr/include/ignition/msgs8/ignition/msgs.hh:29[m[K,
+                 from [01m[K/home/paolo/light_sensor_plugin/src/light_sensor_custom/src/LightSensor.cc:1[m[K:
+[01m[K/usr/include/ignition/msgs8/ignition/msgs/pose.pb.h:86:29:[m[K [01;36m[Knote: [m[K‘[01m[Kignition::msgs::Pose[m[K’ declared here
+   86 | class IGNITION_MSGS_VISIBLE [01;36m[KPose[m[K PROTOBUF_FINAL :
+      |                             [01;36m[K^~~~[m[K
+[01m[K/home/paolo/light_sensor_plugin/src/light_sensor_custom/src/LightSensor.cc:117:61:[m[K [01;31m[Kerror: [m[K‘[01m[KPose[m[K’ in namespace ‘[01m[Kignition::gazebo::v6::components[m[K’ does not name a type
+  117 |                         const ignition::gazebo::components::[01;31m[KPose[m[K *_pose,
+      |                                                             [01;31m[K^~~~[m[K
+[01m[K/home/paolo/light_sensor_plugin/src/light_sensor_custom/src/LightSensor.cc:[m[K In lambda function:
+[01m[K/home/paolo/light_sensor_plugin/src/light_sensor_custom/src/LightSensor.cc:140:27:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K{[m[K’ before ‘[01m[K;[m[K’ token
+  140 |                         })[01;31m[K;[m[K
+      |                           [01;31m[K^[m[K
+[01m[K/home/paolo/light_sensor_plugin/src/light_sensor_custom/src/LightSensor.cc:[m[K In member function ‘[01m[Kvirtual void custom_light_sensor::LightSensor::PostUpdate(const ignition::gazebo::v6::UpdateInfo&, const ignition::gazebo::v6::EntityComponentManager&)[m[K’:
+[01m[K/home/paolo/light_sensor_plugin/src/light_sensor_custom/src/LightSensor.cc:140:27:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[K;[m[K’ token
+  140 |                         })[01;31m[K;[m[K
+      |                           [01;31m[K^[m[K
+      |                           [32m[K)[m[K
+[01m[K/home/paolo/light_sensor_plugin/src/light_sensor_custom/src/LightSensor.cc:114:60:[m[K [01;36m[Knote: [m[Kto match this ‘[01m[K([m[K’
+  114 |                 ignition::gazebo::components::ParentEntity>[01;36m[K([m[K
+      |                                                            [01;36m[K^[m[K
+gmake[2]: *** [CMakeFiles/LightSensor.dir/build.make:76: CMakeFiles/LightSensor.dir/src/LightSensor.cc.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/LightSensor.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

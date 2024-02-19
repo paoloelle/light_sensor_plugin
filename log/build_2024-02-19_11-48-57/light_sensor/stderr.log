@@ -1,0 +1,11 @@
+[01m[K/home/paolo/light_sensor_plugin/src/light_sensor_custom/src/LightSensor.cc:[m[K In member function ‘[01m[Kvirtual void custom_light_sensor::LightSensor::PostUpdate(const ignition::gazebo::v6::UpdateInfo&, const ignition::gazebo::v6::EntityComponentManager&)[m[K’:
+[01m[K/home/paolo/light_sensor_plugin/src/light_sensor_custom/src/LightSensor.cc:77:68:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass custom_light_sensor::LightSensor[m[K’ has no member named ‘[01m[Kentity[m[K’
+   77 |                                 ignition::gazebo::scopedName(this->[01;31m[Kentity[m[K, _ecm, "::", false), "::");
+      |                                                                    [01;31m[K^~~~~~[m[K
+[01m[K/home/paolo/light_sensor_plugin/src/light_sensor_custom/src/LightSensor.cc:[m[K At global scope:
+[01m[K/home/paolo/light_sensor_plugin/src/light_sensor_custom/src/LightSensor.cc:90:40:[m[K [01;31m[Kerror: [m[Kexpected constructor, destructor, or type conversion at end of input
+   90 |         LightSensor::ISystemPostUpdate)
+      |                                        [01;31m[K^[m[K
+gmake[2]: *** [CMakeFiles/LightSensor.dir/build.make:76: CMakeFiles/LightSensor.dir/src/LightSensor.cc.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/LightSensor.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2
