@@ -1,0 +1,264 @@
+[0.000000] (-) TimerEvent: {}
+[0.000171] (light_sensor) JobQueued: {'identifier': 'light_sensor', 'dependencies': OrderedDict()}
+[0.000221] (light_sensor) JobStarted: {'identifier': 'light_sensor'}
+[0.099831] (-) TimerEvent: {}
+[0.104940] (light_sensor) JobProgress: {'identifier': 'light_sensor', 'progress': 'cmake'}
+[0.105799] (light_sensor) JobProgress: {'identifier': 'light_sensor', 'progress': 'build'}
+[0.106598] (light_sensor) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/paolo/light_sensor_plugin/build/light_sensor', '--', '-j8', '-l8'], 'cwd': '/home/paolo/light_sensor_plugin/build/light_sensor', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'paolo'), ('LC_TIME', 'it_IT.UTF-8'), ('IGNITION_VERSION', 'fortress'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/paolo/turtlebot4_ws/install/turtlebot4_msgs/lib:/home/paolo/create3_ws/install/irobot_create_nodes/lib:/home/paolo/create3_ws/install/irobot_create_ignition_toolbox/lib:/home/paolo/create3_ws/install/irobot_create_toolbox/lib:/home/paolo/create3_ws/install/irobot_create_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/paolo'), ('OLDPWD', '/home/paolo'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'it_IT.UTF-8'), ('MANAGERPID', '990'), ('SYSTEMD_EXEC_PID', '1166'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '12473'), ('_colcon_cd_root', '/opt/ros/humble/'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/paolo/turtlebot4_controller_ws/install:/home/paolo/turtlebot4_ws/install:/home/paolo/create3_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'paolo'), ('JOURNAL_STREAM', '8:27999'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'paolo'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/paolo-VivoBook-S15-X510UF:@/tmp/.ICE-unix/1143,unix/paolo-VivoBook-S15-X510UF:/tmp/.ICE-unix/1143'), ('INVOCATION_ID', '2f2b369fc9ec4b36b1d0c45d9955141b'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'it_IT.UTF-8'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('LC_TELEPHONE', 'it_IT.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.IFREJ2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/paolo/turtlebot4_controller_ws/install/turtlebot4_controller:/home/paolo/turtlebot4_ws/install/turtlebot4_simulator:/home/paolo/turtlebot4_ws/install/turtlebot4_ignition_bringup:/home/paolo/turtlebot4_ws/install/turtlebot4_desktop:/home/paolo/turtlebot4_ws/install/turtlebot4_viz:/home/paolo/turtlebot4_ws/install/turtlebot4_setup:/home/paolo/turtlebot4_ws/install/turtlebot4_node:/home/paolo/turtlebot4_ws/install/turtlebot4_navigation:/home/paolo/turtlebot4_ws/install/turtlebot4_ignition_toolbox:/home/paolo/turtlebot4_ws/install/turtlebot4_msgs:/home/paolo/turtlebot4_ws/install/turtlebot4_ignition_gui_plugins:/home/paolo/turtlebot4_ws/install/turtlebot4_description:/home/paolo/create3_ws/install/irobot_create_ignition_sim:/home/paolo/create3_ws/install/irobot_create_ignition_bringup:/home/paolo/create3_ws/install/irobot_create_common_bringup:/home/paolo/create3_ws/install/irobot_create_nodes:/home/paolo/create3_ws/install/irobot_create_ignition_toolbox:/home/paolo/create3_ws/install/irobot_create_toolbox:/home/paolo/create3_ws/install/irobot_create_msgs:/home/paolo/create3_ws/install/irobot_create_ignition_plugins:/home/paolo/create3_ws/install/irobot_create_description:/home/paolo/create3_ws/install/irobot_create_control:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'it_IT.UTF-8'), ('TERMINATOR_UUID', 'urn:uuid:9c6313d9-7ca9-4067-b3d5-9b4fee3246a7'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'it_IT.UTF-8'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'it_IT.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/paolo/light_sensor_plugin/build/light_sensor'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/paolo/turtlebot4_controller_ws/build/turtlebot4_controller:/home/paolo/turtlebot4_controller_ws/install/turtlebot4_controller/lib/python3.10/site-packages:/home/paolo/turtlebot4_ws/install/turtlebot4_setup/local/lib/python3.10/dist-packages:/home/paolo/turtlebot4_ws/install/turtlebot4_navigation/local/lib/python3.10/dist-packages:/home/paolo/turtlebot4_ws/install/turtlebot4_msgs/local/lib/python3.10/dist-packages:/home/paolo/create3_ws/install/irobot_create_common_bringup/local/lib/python3.10/dist-packages:/home/paolo/create3_ws/install/irobot_create_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'it_IT.UTF-8'), ('LC_PAPER', 'it_IT.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/paolo/turtlebot4_ws/install/turtlebot4_simulator:/home/paolo/turtlebot4_ws/install/turtlebot4_ignition_bringup:/home/paolo/turtlebot4_ws/install/turtlebot4_desktop:/home/paolo/turtlebot4_ws/install/turtlebot4_viz:/home/paolo/turtlebot4_ws/install/turtlebot4_setup:/home/paolo/turtlebot4_ws/install/turtlebot4_node:/home/paolo/turtlebot4_ws/install/turtlebot4_navigation:/home/paolo/turtlebot4_ws/install/turtlebot4_ignition_toolbox:/home/paolo/turtlebot4_ws/install/turtlebot4_msgs:/home/paolo/turtlebot4_ws/install/turtlebot4_ignition_gui_plugins:/home/paolo/turtlebot4_ws/install/turtlebot4_description:/home/paolo/create3_ws/install/irobot_create_ignition_sim:/home/paolo/create3_ws/install/irobot_create_ignition_bringup:/home/paolo/create3_ws/install/irobot_create_common_bringup:/home/paolo/create3_ws/install/irobot_create_nodes:/home/paolo/create3_ws/install/irobot_create_ignition_toolbox:/home/paolo/create3_ws/install/irobot_create_toolbox:/home/paolo/create3_ws/install/irobot_create_msgs:/home/paolo/create3_ws/install/irobot_create_ignition_plugins:/home/paolo/create3_ws/install/irobot_create_description:/home/paolo/create3_ws/install/irobot_create_control:/home/paolo/turtlebot4_controller_ws/install/turtlebot4_controller:/opt/ros/humble')]), 'shell': False}
+[0.157846] (light_sensor) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target LightSensor\x1b[0m\n'}
+[0.188592] (light_sensor) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/LightSensor.dir/src/LightSensor.cc.o\x1b[0m\n'}
+[0.199958] (-) TimerEvent: {}
+[0.300250] (-) TimerEvent: {}
+[0.400531] (-) TimerEvent: {}
+[0.500764] (-) TimerEvent: {}
+[0.601084] (-) TimerEvent: {}
+[0.701451] (-) TimerEvent: {}
+[0.801775] (-) TimerEvent: {}
+[0.902059] (-) TimerEvent: {}
+[1.002403] (-) TimerEvent: {}
+[1.102778] (-) TimerEvent: {}
+[1.203146] (-) TimerEvent: {}
+[1.303523] (-) TimerEvent: {}
+[1.403832] (-) TimerEvent: {}
+[1.504155] (-) TimerEvent: {}
+[1.604524] (-) TimerEvent: {}
+[1.704840] (-) TimerEvent: {}
+[1.805162] (-) TimerEvent: {}
+[1.905531] (-) TimerEvent: {}
+[2.005877] (-) TimerEvent: {}
+[2.106234] (-) TimerEvent: {}
+[2.206611] (-) TimerEvent: {}
+[2.306963] (-) TimerEvent: {}
+[2.407302] (-) TimerEvent: {}
+[2.507655] (-) TimerEvent: {}
+[2.607977] (-) TimerEvent: {}
+[2.708309] (-) TimerEvent: {}
+[2.808607] (-) TimerEvent: {}
+[2.908946] (-) TimerEvent: {}
+[3.009240] (-) TimerEvent: {}
+[3.109542] (-) TimerEvent: {}
+[3.209831] (-) TimerEvent: {}
+[3.310166] (-) TimerEvent: {}
+[3.410449] (-) TimerEvent: {}
+[3.510731] (-) TimerEvent: {}
+[3.611013] (-) TimerEvent: {}
+[3.711295] (-) TimerEvent: {}
+[3.811591] (-) TimerEvent: {}
+[3.911897] (-) TimerEvent: {}
+[4.012188] (-) TimerEvent: {}
+[4.112469] (-) TimerEvent: {}
+[4.212748] (-) TimerEvent: {}
+[4.313022] (-) TimerEvent: {}
+[4.413288] (-) TimerEvent: {}
+[4.513551] (-) TimerEvent: {}
+[4.613830] (-) TimerEvent: {}
+[4.714105] (-) TimerEvent: {}
+[4.814389] (-) TimerEvent: {}
+[4.914683] (-) TimerEvent: {}
+[5.014989] (-) TimerEvent: {}
+[5.115287] (-) TimerEvent: {}
+[5.215532] (-) TimerEvent: {}
+[5.315833] (-) TimerEvent: {}
+[5.416135] (-) TimerEvent: {}
+[5.516442] (-) TimerEvent: {}
+[5.616697] (-) TimerEvent: {}
+[5.716990] (-) TimerEvent: {}
+[5.817287] (-) TimerEvent: {}
+[5.917546] (-) TimerEvent: {}
+[6.017927] (-) TimerEvent: {}
+[6.118354] (-) TimerEvent: {}
+[6.218676] (-) TimerEvent: {}
+[6.319021] (-) TimerEvent: {}
+[6.419349] (-) TimerEvent: {}
+[6.519709] (-) TimerEvent: {}
+[6.620027] (-) TimerEvent: {}
+[6.720327] (-) TimerEvent: {}
+[6.820629] (-) TimerEvent: {}
+[6.920930] (-) TimerEvent: {}
+[7.021227] (-) TimerEvent: {}
+[7.121540] (-) TimerEvent: {}
+[7.221841] (-) TimerEvent: {}
+[7.274288] (light_sensor) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/ignition/gazebo6/gz/sim/EntityComponentManager.hh:848\x1b[m\x1b[K,\n'}
+[7.274918] (light_sensor) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/ignition/gazebo6/gz/sim/Light.hh:33\x1b[m\x1b[K,\n'}
+[7.274993] (light_sensor) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/ignition/gazebo6/ignition/gazebo/Light.hh:18\x1b[m\x1b[K,\n'}
+[7.275057] (light_sensor) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/paolo/light_sensor_plugin/src/light_sensor_custom/src/LightSensor.cc:1\x1b[m\x1b[K:\n'}
+[7.275116] (light_sensor) StderrLine: {'line': b'/usr/include/ignition/gazebo6/gz/sim/detail/EntityComponentManager.hh: In instantiation of \xe2\x80\x98\x1b[01m\x1b[Kignition::gazebo::v6::detail::View* ignition::gazebo::v6::EntityComponentManager::FindView() const [with ComponentTypeTs = {ignition::gazebo::v6::components::LightTag, ignition::gazebo::v6::components::Component<ignition::math::v6::Pose3<double>, ignition::gazebo::v6::components::PoseTag, ignition::gazebo::v6::serializers::DefaultSerializer<ignition::math::v6::Pose3<double> > >}]\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[7.275191] (light_sensor) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/ignition/gazebo6/gz/sim/detail/EntityComponentManager.hh:447:49:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kvoid ignition::gazebo::v6::EntityComponentManager::Each(typename ignition::gazebo::v6::EntityComponentManager::identity<std::function<bool(const long unsigned int&, ComponentTypeTs* ...)> >::type) [with ComponentTypeTs = {ignition::gazebo::v6::components::LightTag, ignition::gazebo::v6::components::Component<ignition::math::v6::Pose3<double>, ignition::gazebo::v6::components::PoseTag, ignition::gazebo::v6::serializers::DefaultSerializer<ignition::math::v6::Pose3<double> > >}; typename ignition::gazebo::v6::EntityComponentManager::identity<std::function<bool(const long unsigned int&, ComponentTypeTs* ...)> >::type = std::function<bool(const long unsigned int&, ignition::gazebo::v6::components::LightTag*, ignition::gazebo::v6::components::Component<ignition::math::v6::Pose3<double>, ignition::gazebo::v6::components::PoseTag>*)>]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[7.275259] (light_sensor) StderrLine: {'line': b'\x1b[01m\x1b[K/home/paolo/light_sensor_plugin/src/light_sensor_custom/src/LightSensor.cc:34:41:\x1b[m\x1b[K   required from here\n'}
+[7.275319] (light_sensor) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/ignition/gazebo6/gz/sim/detail/EntityComponentManager.hh:539:64:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kincomplete type \xe2\x80\x98\x1b[01m\x1b[Kignition::gazebo::v6::components::LightTag\x1b[m\x1b[K\xe2\x80\x99 used in nested name specifier\n'}
+[7.275379] (light_sensor) StderrLine: {'line': b'  539 |   auto viewKey = std::vector<ComponentTypeId>{ComponentTypeTs::\x1b[01;31m\x1b[KtypeId\x1b[m\x1b[K...};\n'}
+[7.275437] (light_sensor) StderrLine: {'line': b'      |                                                                \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[7.275494] (light_sensor) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/ignition/gazebo6/gz/sim/detail/EntityComponentManager.hh:539:8:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno matching function for call to \xe2\x80\x98\x1b[01m\x1b[Kstd::vector<long unsigned int>::vector(<brace-enclosed initializer list>)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[7.275553] (light_sensor) StderrLine: {'line': b'  539 |   auto \x1b[01;31m\x1b[KviewKey\x1b[m\x1b[K = std::vector<ComponentTypeId>{ComponentTypeTs::typeId...};\n'}
+[7.275609] (light_sensor) StderrLine: {'line': b'      |        \x1b[01;31m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[7.275664] (light_sensor) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/vector:67\x1b[m\x1b[K,\n'}
+[7.275720] (light_sensor) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/ignition/gazebo6/gz/sim/Light.hh:23\x1b[m\x1b[K,\n'}
+[7.275776] (light_sensor) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/ignition/gazebo6/ignition/gazebo/Light.hh:18\x1b[m\x1b[K,\n'}
+[7.275831] (light_sensor) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/paolo/light_sensor_plugin/src/light_sensor_custom/src/LightSensor.cc:1\x1b[m\x1b[K:\n'}
+[7.275888] (light_sensor) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/stl_vector.h:653:9:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _InputIterator, class> std::vector<_Tp, _Alloc>::vector(_InputIterator, _InputIterator, const allocator_type&) [with _InputIterator = _InputIterator; <template-parameter-2-2> = <template-parameter-1-2>; _Tp = long unsigned int; _Alloc = std::allocator<long unsigned int>]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[7.275960] (light_sensor) StderrLine: {'line': b'  653 |         \x1b[01;36m\x1b[Kvector\x1b[m\x1b[K(_InputIterator __first, _InputIterator __last,\n'}
+[7.276017] (light_sensor) StderrLine: {'line': b'      |         \x1b[01;36m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[7.276073] (light_sensor) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/stl_vector.h:653:9:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[7.276135] (light_sensor) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/stl_vector.h:625:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kstd::vector<_Tp, _Alloc>::vector(std::initializer_list<_Tp>, const allocator_type&) [with _Tp = long unsigned int; _Alloc = std::allocator<long unsigned int>; std::vector<_Tp, _Alloc>::allocator_type = std::allocator<long unsigned int>]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[7.276206] (light_sensor) StderrLine: {'line': b'  625 |       \x1b[01;36m\x1b[Kvector\x1b[m\x1b[K(initializer_list<value_type> __l,\n'}
+[7.276262] (light_sensor) StderrLine: {'line': b'      |       \x1b[01;36m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[7.276317] (light_sensor) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/stl_vector.h:625:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  conversion of argument 1 would be ill-formed:\n'}
+[7.276373] (light_sensor) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/stl_vector.h:607:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kstd::vector<_Tp, _Alloc>::vector(std::vector<_Tp, _Alloc>&&, const allocator_type&) [with _Tp = long unsigned int; _Alloc = std::allocator<long unsigned int>; std::vector<_Tp, _Alloc>::allocator_type = std::allocator<long unsigned int>]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[7.276432] (light_sensor) StderrLine: {'line': b'  607 |       \x1b[01;36m\x1b[Kvector\x1b[m\x1b[K(vector&& __rv, const allocator_type& __m)\n'}
+[7.276488] (light_sensor) StderrLine: {'line': b'      |       \x1b[01;36m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[7.276543] (light_sensor) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/stl_vector.h:607:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  candidate expects 2 arguments, 1 provided\n'}
+[7.276599] (light_sensor) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/stl_vector.h:589:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kstd::vector<_Tp, _Alloc>::vector(std::vector<_Tp, _Alloc>&&, const allocator_type&, std::false_type) [with _Tp = long unsigned int; _Alloc = std::allocator<long unsigned int>; std::vector<_Tp, _Alloc>::allocator_type = std::allocator<long unsigned int>; std::false_type = std::integral_constant<bool, false>]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[7.276658] (light_sensor) StderrLine: {'line': b'  589 |       \x1b[01;36m\x1b[Kvector\x1b[m\x1b[K(vector&& __rv, const allocator_type& __m, false_type)\n'}
+[7.276715] (light_sensor) StderrLine: {'line': b'      |       \x1b[01;36m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[7.276770] (light_sensor) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/stl_vector.h:589:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  candidate expects 3 arguments, 1 provided\n'}
+[7.276826] (light_sensor) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/stl_vector.h:585:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kstd::vector<_Tp, _Alloc>::vector(std::vector<_Tp, _Alloc>&&, const allocator_type&, std::true_type) [with _Tp = long unsigned int; _Alloc = std::allocator<long unsigned int>; std::vector<_Tp, _Alloc>::allocator_type = std::allocator<long unsigned int>; std::true_type = std::integral_constant<bool, true>]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[7.276885] (light_sensor) StderrLine: {'line': b'  585 |       \x1b[01;36m\x1b[Kvector\x1b[m\x1b[K(vector&& __rv, const allocator_type& __m, true_type) noexcept\n'}
+[7.276941] (light_sensor) StderrLine: {'line': b'      |       \x1b[01;36m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[7.276996] (light_sensor) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/stl_vector.h:585:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  candidate expects 3 arguments, 1 provided\n'}
+[7.277052] (light_sensor) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/stl_vector.h:575:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kstd::vector<_Tp, _Alloc>::vector(const std::vector<_Tp, _Alloc>&, const allocator_type&) [with _Tp = long unsigned int; _Alloc = std::allocator<long unsigned int>; std::vector<_Tp, _Alloc>::allocator_type = std::allocator<long unsigned int>]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[7.277116] (light_sensor) StderrLine: {'line': b'  575 |       \x1b[01;36m\x1b[Kvector\x1b[m\x1b[K(const vector& __x, const allocator_type& __a)\n'}
+[7.277172] (light_sensor) StderrLine: {'line': b'      |       \x1b[01;36m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[7.277227] (light_sensor) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/stl_vector.h:575:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  candidate expects 2 arguments, 1 provided\n'}
+[7.277283] (light_sensor) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/stl_vector.h:572:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kstd::vector<_Tp, _Alloc>::vector(std::vector<_Tp, _Alloc>&&) [with _Tp = long unsigned int; _Alloc = std::allocator<long unsigned int>]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[7.277340] (light_sensor) StderrLine: {'line': b'  572 |       \x1b[01;36m\x1b[Kvector\x1b[m\x1b[K(vector&&) noexcept = default;\n'}
+[7.277428] (light_sensor) StderrLine: {'line': b'      |       \x1b[01;36m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[7.277495] (light_sensor) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/stl_vector.h:572:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  conversion of argument 1 would be ill-formed:\n'}
+[7.277559] (light_sensor) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/stl_vector.h:553:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kstd::vector<_Tp, _Alloc>::vector(const std::vector<_Tp, _Alloc>&) [with _Tp = long unsigned int; _Alloc = std::allocator<long unsigned int>]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[7.277619] (light_sensor) StderrLine: {'line': b'  553 |       \x1b[01;36m\x1b[Kvector\x1b[m\x1b[K(const vector& __x)\n'}
+[7.277676] (light_sensor) StderrLine: {'line': b'      |       \x1b[01;36m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[7.277733] (light_sensor) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/stl_vector.h:553:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  conversion of argument 1 would be ill-formed:\n'}
+[7.277790] (light_sensor) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/stl_vector.h:522:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kstd::vector<_Tp, _Alloc>::vector(std::vector<_Tp, _Alloc>::size_type, const value_type&, const allocator_type&) [with _Tp = long unsigned int; _Alloc = std::allocator<long unsigned int>; std::vector<_Tp, _Alloc>::size_type = long unsigned int; std::vector<_Tp, _Alloc>::value_type = long unsigned int; std::vector<_Tp, _Alloc>::allocator_type = std::allocator<long unsigned int>]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[7.277862] (light_sensor) StderrLine: {'line': b'  522 |       \x1b[01;36m\x1b[Kvector\x1b[m\x1b[K(size_type __n, const value_type& __value,\n'}
+[7.277919] (light_sensor) StderrLine: {'line': b'      |       \x1b[01;36m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[7.277975] (light_sensor) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/stl_vector.h:522:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  candidate expects 3 arguments, 1 provided\n'}
+[7.278033] (light_sensor) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/stl_vector.h:510:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kstd::vector<_Tp, _Alloc>::vector(std::vector<_Tp, _Alloc>::size_type, const allocator_type&) [with _Tp = long unsigned int; _Alloc = std::allocator<long unsigned int>; std::vector<_Tp, _Alloc>::size_type = long unsigned int; std::vector<_Tp, _Alloc>::allocator_type = std::allocator<long unsigned int>]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[7.278093] (light_sensor) StderrLine: {'line': b'  510 |       \x1b[01;36m\x1b[Kvector\x1b[m\x1b[K(size_type __n, const allocator_type& __a = allocator_type())\n'}
+[7.278156] (light_sensor) StderrLine: {'line': b'      |       \x1b[01;36m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[7.278213] (light_sensor) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/stl_vector.h:510:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  conversion of argument 1 would be ill-formed:\n'}
+[7.278270] (light_sensor) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/stl_vector.h:497:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kstd::vector<_Tp, _Alloc>::vector(const allocator_type&) [with _Tp = long unsigned int; _Alloc = std::allocator<long unsigned int>; std::vector<_Tp, _Alloc>::allocator_type = std::allocator<long unsigned int>]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[7.278329] (light_sensor) StderrLine: {'line': b'  497 |       \x1b[01;36m\x1b[Kvector\x1b[m\x1b[K(const allocator_type& __a) _GLIBCXX_NOEXCEPT\n'}
+[7.278386] (light_sensor) StderrLine: {'line': b'      |       \x1b[01;36m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[7.278443] (light_sensor) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/stl_vector.h:497:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  conversion of argument 1 would be ill-formed:\n'}
+[7.278500] (light_sensor) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/stl_vector.h:487:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kstd::vector<_Tp, _Alloc>::vector() [with _Tp = long unsigned int; _Alloc = std::allocator<long unsigned int>]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[7.278558] (light_sensor) StderrLine: {'line': b'  487 |       \x1b[01;36m\x1b[Kvector\x1b[m\x1b[K() = default;\n'}
+[7.278615] (light_sensor) StderrLine: {'line': b'      |       \x1b[01;36m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[7.278691] (light_sensor) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/stl_vector.h:487:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  candidate expects 0 arguments, 1 provided\n'}
+[7.282858] (light_sensor) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/ignition/gazebo6/gz/sim/EntityComponentManager.hh:848\x1b[m\x1b[K,\n'}
+[7.282976] (light_sensor) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/ignition/gazebo6/gz/sim/Light.hh:33\x1b[m\x1b[K,\n'}
+[7.283267] (light_sensor) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/ignition/gazebo6/ignition/gazebo/Light.hh:18\x1b[m\x1b[K,\n'}
+[7.283341] (light_sensor) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/paolo/light_sensor_plugin/src/light_sensor_custom/src/LightSensor.cc:1\x1b[m\x1b[K:\n'}
+[7.283404] (light_sensor) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/ignition/gazebo6/gz/sim/detail/EntityComponentManager.hh:579:64:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kincomplete type \xe2\x80\x98\x1b[01m\x1b[Kignition::gazebo::v6::components::LightTag\x1b[m\x1b[K\xe2\x80\x99 used in nested name specifier\n'}
+[7.283465] (light_sensor) StderrLine: {'line': b'  579 |   detail::View view(std::set<ComponentTypeId>{ComponentTypeTs::\x1b[01;31m\x1b[KtypeId\x1b[m\x1b[K...});\n'}
+[7.283522] (light_sensor) StderrLine: {'line': b'      |                                                                \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[7.283580] (light_sensor) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/ignition/gazebo6/gz/sim/detail/EntityComponentManager.hh:579:16:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno matching function for call to \xe2\x80\x98\x1b[01m\x1b[Kstd::set<long unsigned int>::set(<brace-enclosed initializer list>)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[7.283649] (light_sensor) StderrLine: {'line': b'  579 |   detail::View \x1b[01;31m\x1b[Kview\x1b[m\x1b[K(std::set<ComponentTypeId>{ComponentTypeTs::typeId...});\n'}
+[7.283707] (light_sensor) StderrLine: {'line': b'      |                \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[7.283763] (light_sensor) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/set:61\x1b[m\x1b[K,\n'}
+[7.283819] (light_sensor) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/google/protobuf/stubs/common.h:42\x1b[m\x1b[K,\n'}
+[7.283882] (light_sensor) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/google/protobuf/io/coded_stream.h:141\x1b[m\x1b[K,\n'}
+[7.283938] (light_sensor) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/ignition/msgs8/ignition/msgs/serialized.pb.h:23\x1b[m\x1b[K,\n'}
+[7.283994] (light_sensor) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/ignition/msgs8/gz/msgs/serialized.pb.h:18\x1b[m\x1b[K,\n'}
+[7.284050] (light_sensor) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/ignition/gazebo6/gz/sim/EntityComponentManager.hh:20\x1b[m\x1b[K,\n'}
+[7.284106] (light_sensor) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/ignition/gazebo6/gz/sim/Light.hh:33\x1b[m\x1b[K,\n'}
+[7.284168] (light_sensor) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/ignition/gazebo6/ignition/gazebo/Light.hh:18\x1b[m\x1b[K,\n'}
+[7.284224] (light_sensor) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/paolo/light_sensor_plugin/src/light_sensor_custom/src/LightSensor.cc:1\x1b[m\x1b[K:\n'}
+[7.284285] (light_sensor) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/stl_set.h:271:9:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _InputIterator> std::set<_Key, _Compare, _Alloc>::set(_InputIterator, _InputIterator, const allocator_type&) [with _InputIterator = _InputIterator; _Key = long unsigned int; _Compare = std::less<long unsigned int>; _Alloc = std::allocator<long unsigned int>]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[7.284346] (light_sensor) StderrLine: {'line': b'  271 |         \x1b[01;36m\x1b[Kset\x1b[m\x1b[K(_InputIterator __first, _InputIterator __last,\n'}
+[7.284402] (light_sensor) StderrLine: {'line': b'      |         \x1b[01;36m\x1b[K^~~\x1b[m\x1b[K\n'}
+[7.284457] (light_sensor) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/stl_set.h:271:9:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[7.284514] (light_sensor) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/stl_set.h:208:9:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _InputIterator> std::set<_Key, _Compare, _Alloc>::set(_InputIterator, _InputIterator, const _Compare&, const allocator_type&) [with _InputIterator = _InputIterator; _Key = long unsigned int; _Compare = std::less<long unsigned int>; _Alloc = std::allocator<long unsigned int>]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[7.284573] (light_sensor) StderrLine: {'line': b'  208 |         \x1b[01;36m\x1b[Kset\x1b[m\x1b[K(_InputIterator __first, _InputIterator __last,\n'}
+[7.284629] (light_sensor) StderrLine: {'line': b'      |         \x1b[01;36m\x1b[K^~~\x1b[m\x1b[K\n'}
+[7.284685] (light_sensor) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/stl_set.h:208:9:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[7.284741] (light_sensor) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/stl_set.h:191:9:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _InputIterator> std::set<_Key, _Compare, _Alloc>::set(_InputIterator, _InputIterator) [with _InputIterator = _InputIterator; _Key = long unsigned int; _Compare = std::less<long unsigned int>; _Alloc = std::allocator<long unsigned int>]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[7.284896] (light_sensor) StderrLine: {'line': b'  191 |         \x1b[01;36m\x1b[Kset\x1b[m\x1b[K(_InputIterator __first, _InputIterator __last)\n'}
+[7.284954] (light_sensor) StderrLine: {'line': b'      |         \x1b[01;36m\x1b[K^~~\x1b[m\x1b[K\n'}
+[7.285010] (light_sensor) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/stl_set.h:191:9:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[7.285066] (light_sensor) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/stl_set.h:265:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kstd::set<_Key, _Compare, _Alloc>::set(std::initializer_list<_Tp>, const allocator_type&) [with _Key = long unsigned int; _Compare = std::less<long unsigned int>; _Alloc = std::allocator<long unsigned int>; std::set<_Key, _Compare, _Alloc>::allocator_type = std::allocator<long unsigned int>]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[7.285132] (light_sensor) StderrLine: {'line': b'  265 |       \x1b[01;36m\x1b[Kset\x1b[m\x1b[K(initializer_list<value_type> __l, const allocator_type& __a)\n'}
+[7.285188] (light_sensor) StderrLine: {'line': b'      |       \x1b[01;36m\x1b[K^~~\x1b[m\x1b[K\n'}
+[7.285243] (light_sensor) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/stl_set.h:265:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  candidate expects 2 arguments, 1 provided\n'}
+[7.285299] (light_sensor) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/stl_set.h:259:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kstd::set<_Key, _Compare, _Alloc>::set(std::set<_Key, _Compare, _Alloc>&&, const allocator_type&) [with _Key = long unsigned int; _Compare = std::less<long unsigned int>; _Alloc = std::allocator<long unsigned int>; std::set<_Key, _Compare, _Alloc>::allocator_type = std::allocator<long unsigned int>]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[7.285364] (light_sensor) StderrLine: {'line': b'  259 |       \x1b[01;36m\x1b[Kset\x1b[m\x1b[K(set&& __x, const allocator_type& __a)\n'}
+[7.285444] (light_sensor) StderrLine: {'line': b'      |       \x1b[01;36m\x1b[K^~~\x1b[m\x1b[K\n'}
+[7.285502] (light_sensor) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/stl_set.h:259:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  candidate expects 2 arguments, 1 provided\n'}
+[7.285559] (light_sensor) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/stl_set.h:255:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kstd::set<_Key, _Compare, _Alloc>::set(const std::set<_Key, _Compare, _Alloc>&, const allocator_type&) [with _Key = long unsigned int; _Compare = std::less<long unsigned int>; _Alloc = std::allocator<long unsigned int>; std::set<_Key, _Compare, _Alloc>::allocator_type = std::allocator<long unsigned int>]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[7.285619] (light_sensor) StderrLine: {'line': b'  255 |       \x1b[01;36m\x1b[Kset\x1b[m\x1b[K(const set& __x, const allocator_type& __a)\n'}
+[7.285676] (light_sensor) StderrLine: {'line': b'      |       \x1b[01;36m\x1b[K^~~\x1b[m\x1b[K\n'}
+[7.285732] (light_sensor) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/stl_set.h:255:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  candidate expects 2 arguments, 1 provided\n'}
+[7.285789] (light_sensor) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/stl_set.h:251:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kstd::set<_Key, _Compare, _Alloc>::set(const allocator_type&) [with _Key = long unsigned int; _Compare = std::less<long unsigned int>; _Alloc = std::allocator<long unsigned int>; std::set<_Key, _Compare, _Alloc>::allocator_type = std::allocator<long unsigned int>]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[7.285865] (light_sensor) StderrLine: {'line': b'  251 |       \x1b[01;36m\x1b[Kset\x1b[m\x1b[K(const allocator_type& __a)\n'}
+[7.285923] (light_sensor) StderrLine: {'line': b'      |       \x1b[01;36m\x1b[K^~~\x1b[m\x1b[K\n'}
+[7.285978] (light_sensor) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/stl_set.h:251:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  conversion of argument 1 would be ill-formed:\n'}
+[7.286035] (light_sensor) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/stl_set.h:243:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kstd::set<_Key, _Compare, _Alloc>::set(std::initializer_list<_Tp>, const _Compare&, const allocator_type&) [with _Key = long unsigned int; _Compare = std::less<long unsigned int>; _Alloc = std::allocator<long unsigned int>; std::set<_Key, _Compare, _Alloc>::allocator_type = std::allocator<long unsigned int>]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[7.286100] (light_sensor) StderrLine: {'line': b'  243 |       \x1b[01;36m\x1b[Kset\x1b[m\x1b[K(initializer_list<value_type> __l,\n'}
+[7.286157] (light_sensor) StderrLine: {'line': b'      |       \x1b[01;36m\x1b[K^~~\x1b[m\x1b[K\n'}
+[7.286212] (light_sensor) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/stl_set.h:243:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  conversion of argument 1 would be ill-formed:\n'}
+[7.286268] (light_sensor) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/stl_set.h:231:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kstd::set<_Key, _Compare, _Alloc>::set(std::set<_Key, _Compare, _Alloc>&&) [with _Key = long unsigned int; _Compare = std::less<long unsigned int>; _Alloc = std::allocator<long unsigned int>]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[7.286327] (light_sensor) StderrLine: {'line': b'  231 |       \x1b[01;36m\x1b[Kset\x1b[m\x1b[K(set&&) = default;\n'}
+[7.286383] (light_sensor) StderrLine: {'line': b'      |       \x1b[01;36m\x1b[K^~~\x1b[m\x1b[K\n'}
+[7.286439] (light_sensor) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/stl_set.h:231:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  conversion of argument 1 would be ill-formed:\n'}
+[7.286495] (light_sensor) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/stl_set.h:223:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kstd::set<_Key, _Compare, _Alloc>::set(const std::set<_Key, _Compare, _Alloc>&) [with _Key = long unsigned int; _Compare = std::less<long unsigned int>; _Alloc = std::allocator<long unsigned int>]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[7.286554] (light_sensor) StderrLine: {'line': b'  223 |       \x1b[01;36m\x1b[Kset\x1b[m\x1b[K(const set&) = default;\n'}
+[7.286611] (light_sensor) StderrLine: {'line': b'      |       \x1b[01;36m\x1b[K^~~\x1b[m\x1b[K\n'}
+[7.286666] (light_sensor) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/stl_set.h:223:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  conversion of argument 1 would be ill-formed:\n'}
+[7.286722] (light_sensor) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/stl_set.h:176:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kstd::set<_Key, _Compare, _Alloc>::set(const _Compare&, const allocator_type&) [with _Key = long unsigned int; _Compare = std::less<long unsigned int>; _Alloc = std::allocator<long unsigned int>; std::set<_Key, _Compare, _Alloc>::allocator_type = std::allocator<long unsigned int>]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[7.286787] (light_sensor) StderrLine: {'line': b'  176 |       \x1b[01;36m\x1b[Kset\x1b[m\x1b[K(const _Compare& __comp,\n'}
+[7.286844] (light_sensor) StderrLine: {'line': b'      |       \x1b[01;36m\x1b[K^~~\x1b[m\x1b[K\n'}
+[7.286899] (light_sensor) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/stl_set.h:176:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  conversion of argument 1 would be ill-formed:\n'}
+[7.286956] (light_sensor) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/stl_set.h:167:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kstd::set<_Key, _Compare, _Alloc>::set() [with _Key = long unsigned int; _Compare = std::less<long unsigned int>; _Alloc = std::allocator<long unsigned int>]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[7.287018] (light_sensor) StderrLine: {'line': b'  167 |       \x1b[01;36m\x1b[Kset\x1b[m\x1b[K() = default;\n'}
+[7.287074] (light_sensor) StderrLine: {'line': b'      |       \x1b[01;36m\x1b[K^~~\x1b[m\x1b[K\n'}
+[7.287130] (light_sensor) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/stl_set.h:167:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  candidate expects 0 arguments, 1 provided\n'}
+[7.287186] (light_sensor) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/ignition/gazebo6/gz/sim/EntityComponentManager.hh:848\x1b[m\x1b[K,\n'}
+[7.287304] (light_sensor) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/ignition/gazebo6/gz/sim/Light.hh:33\x1b[m\x1b[K,\n'}
+[7.287361] (light_sensor) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/ignition/gazebo6/ignition/gazebo/Light.hh:18\x1b[m\x1b[K,\n'}
+[7.287417] (light_sensor) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/paolo/light_sensor_plugin/src/light_sensor_custom/src/LightSensor.cc:1\x1b[m\x1b[K:\n'}
+[7.287473] (light_sensor) StderrLine: {'line': b'/usr/include/ignition/gazebo6/gz/sim/detail/EntityComponentManager.hh: In instantiation of \xe2\x80\x98\x1b[01m\x1b[Kconstexpr bool ignition::gazebo::v6::detail::applyFunctionImpl(const FuncT&, const Entity&, const std::vector<BaseComponentT*>&, std::index_sequence<Is ...>) [with ComponentTypeTs = {ignition::gazebo::v6::components::LightTag, ignition::gazebo::v6::components::Component<ignition::math::v6::Pose3<double>, ignition::gazebo::v6::components::PoseTag, ignition::gazebo::v6::serializers::DefaultSerializer<ignition::math::v6::Pose3<double> > >}; FuncT = std::function<bool(const long unsigned int&, ignition::gazebo::v6::components::LightTag*, ignition::gazebo::v6::components::Component<ignition::math::v6::Pose3<double>, ignition::gazebo::v6::components::PoseTag>*)>; BaseComponentT = ignition::gazebo::v6::components::BaseComponent; long unsigned int ...Is = {0, 1}; ignition::gazebo::v6::Entity = long unsigned int; std::index_sequence<Is ...> = std::integer_sequence<long unsigned int, 0, 1>]\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[7.287548] (light_sensor) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/ignition/gazebo6/gz/sim/detail/EntityComponentManager.hh:414:47:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kconstexpr bool ignition::gazebo::v6::detail::applyFunction(const FuncT&, const Entity&, const std::vector<BaseComponentT*>&) [with ComponentTypeTs = {ignition::gazebo::v6::components::LightTag, ignition::gazebo::v6::components::Component<ignition::math::v6::Pose3<double>, ignition::gazebo::v6::components::PoseTag, ignition::gazebo::v6::serializers::DefaultSerializer<ignition::math::v6::Pose3<double> > >}; FuncT = std::function<bool(const long unsigned int&, ignition::gazebo::v6::components::LightTag*, ignition::gazebo::v6::components::Component<ignition::math::v6::Pose3<double>, ignition::gazebo::v6::components::PoseTag>*)>; BaseComponentT = ignition::gazebo::v6::components::BaseComponent; ignition::gazebo::v6::Entity = long unsigned int]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[7.287615] (light_sensor) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/ignition/gazebo6/gz/sim/detail/EntityComponentManager.hh:454:51:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kvoid ignition::gazebo::v6::EntityComponentManager::Each(typename ignition::gazebo::v6::EntityComponentManager::identity<std::function<bool(const long unsigned int&, ComponentTypeTs* ...)> >::type) [with ComponentTypeTs = {ignition::gazebo::v6::components::LightTag, ignition::gazebo::v6::components::Component<ignition::math::v6::Pose3<double>, ignition::gazebo::v6::components::PoseTag, ignition::gazebo::v6::serializers::DefaultSerializer<ignition::math::v6::Pose3<double> > >}; typename ignition::gazebo::v6::EntityComponentManager::identity<std::function<bool(const long unsigned int&, ComponentTypeTs* ...)> >::type = std::function<bool(const long unsigned int&, ignition::gazebo::v6::components::LightTag*, ignition::gazebo::v6::components::Component<ignition::math::v6::Pose3<double>, ignition::gazebo::v6::components::PoseTag>*)>]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[7.287682] (light_sensor) StderrLine: {'line': b'\x1b[01m\x1b[K/home/paolo/light_sensor_plugin/src/light_sensor_custom/src/LightSensor.cc:34:41:\x1b[m\x1b[K   required from here\n'}
+[7.287745] (light_sensor) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/ignition/gazebo6/gz/sim/detail/EntityComponentManager.hh:396:22:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid \xe2\x80\x98\x1b[01m\x1b[Kstatic_cast\x1b[m\x1b[K\xe2\x80\x99 from type \xe2\x80\x98\x1b[01m\x1b[Kconst value_type\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kignition::gazebo::v6::components::BaseComponent* const\x1b[m\x1b[K\xe2\x80\x99} to type \xe2\x80\x98\x1b[01m\x1b[Kignition::gazebo::v6::components::LightTag*\x1b[m\x1b[K\xe2\x80\x99\n'}
+[7.287809] (light_sensor) StderrLine: {'line': b'  396 |   return _f(_entity, \x1b[01;31m\x1b[Kstatic_cast<ComponentTypeTs *>(_data[Is])\x1b[m\x1b[K...);\n'}
+[7.287866] (light_sensor) StderrLine: {'line': b'      |                      \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[7.287922] (light_sensor) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/ignition/gazebo6/gz/sim/components.hh:73\x1b[m\x1b[K,\n'}
+[7.287978] (light_sensor) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/ignition/gazebo6/ignition/gazebo/components.hh:18\x1b[m\x1b[K,\n'}
+[7.288034] (light_sensor) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/paolo/light_sensor_plugin/src/light_sensor_custom/src/LightSensor.cc:2\x1b[m\x1b[K:\n'}
+[7.288090] (light_sensor) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/ignition/gazebo6/gz/sim/components/Light.hh:48:35:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kclass type \xe2\x80\x98\x1b[01m\x1b[Kignition::gazebo::v6::components::LightTag\x1b[m\x1b[K\xe2\x80\x99 is incomplete\n'}
+[7.288148] (light_sensor) StderrLine: {'line': b'   48 |       Component<sdf::Light, class \x1b[01;36m\x1b[KLightTag\x1b[m\x1b[K, serializers::LightSerializer>;\n'}
+[7.288204] (light_sensor) StderrLine: {'line': b'      |                                   \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[7.321959] (-) TimerEvent: {}
+[7.422256] (-) TimerEvent: {}
+[7.522558] (-) TimerEvent: {}
+[7.622866] (-) TimerEvent: {}
+[7.723167] (-) TimerEvent: {}
+[7.823464] (-) TimerEvent: {}
+[7.923722] (-) TimerEvent: {}
+[8.024019] (-) TimerEvent: {}
+[8.124316] (-) TimerEvent: {}
+[8.224614] (-) TimerEvent: {}
+[8.324920] (-) TimerEvent: {}
+[8.425219] (-) TimerEvent: {}
+[8.525521] (-) TimerEvent: {}
+[8.625819] (-) TimerEvent: {}
+[8.726112] (-) TimerEvent: {}
+[8.826410] (-) TimerEvent: {}
+[8.926679] (-) TimerEvent: {}
+[9.026973] (-) TimerEvent: {}
+[9.127270] (-) TimerEvent: {}
+[9.227569] (-) TimerEvent: {}
+[9.327862] (-) TimerEvent: {}
+[9.428178] (-) TimerEvent: {}
+[9.528477] (-) TimerEvent: {}
+[9.628774] (-) TimerEvent: {}
+[9.729074] (-) TimerEvent: {}
+[9.829376] (-) TimerEvent: {}
+[9.929675] (-) TimerEvent: {}
+[10.030006] (-) TimerEvent: {}
+[10.065275] (light_sensor) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/LightSensor.dir/build.make:76: CMakeFiles/LightSensor.dir/src/LightSensor.cc.o] Error 1\n'}
+[10.065545] (light_sensor) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/LightSensor.dir/all] Error 2\n'}
+[10.065848] (light_sensor) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[10.068309] (light_sensor) CommandEnded: {'returncode': 2}
+[10.130195] (-) TimerEvent: {}
+[10.180566] (light_sensor) JobEnded: {'identifier': 'light_sensor', 'rc': 2}
+[10.191205] (-) EventReactorShutdown: {}

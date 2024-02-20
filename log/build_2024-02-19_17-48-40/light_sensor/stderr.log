@@ -1,0 +1,30 @@
+[01m[K/home/paolo/light_sensor_plugin/src/light_sensor_custom/src/LightSensor.cc:[m[K In lambda function:
+[01m[K/home/paolo/light_sensor_plugin/src/light_sensor_custom/src/LightSensor.cc:44:41:[m[K [01;31m[Kerror: [m[K‘[01m[KPose[m[K’ is not a member of ‘[01m[Kignition::math[m[K’
+   44 |                         ignition::math::[01;31m[KPose[m[K light_pose = _pose->Data();
+      |                                         [01;31m[K^~~~[m[K
+[01m[K/home/paolo/light_sensor_plugin/src/light_sensor_custom/src/LightSensor.cc:44:41:[m[K [01;36m[Knote: [m[Ksuggested alternatives:
+In file included from [01m[K/usr/include/ignition/msgs8/ignition/msgs/actor.pb.h:37[m[K,
+                 from [01m[K/usr/include/ignition/msgs8/gz/msgs/actor.pb.h:18[m[K,
+                 from [01m[K/usr/include/ignition/gazebo6/gz/sim/components/Actor.hh:20[m[K,
+                 from [01m[K/usr/include/ignition/gazebo6/gz/sim/components.hh:21[m[K,
+                 from [01m[K/usr/include/ignition/gazebo6/ignition/gazebo/components.hh:18[m[K,
+                 from [01m[K/home/paolo/light_sensor_plugin/src/light_sensor_custom/src/LightSensor.cc:2[m[K:
+[01m[K/usr/include/ignition/msgs8/ignition/msgs/pose.pb.h:86:29:[m[K [01;36m[Knote: [m[K  ‘[01m[Kignition::msgs::Pose[m[K’
+   86 | class IGNITION_MSGS_VISIBLE [01;36m[KPose[m[K PROTOBUF_FINAL :
+      |                             [01;36m[K^~~~[m[K
+In file included from [01m[K/usr/include/ignition/physics5/gz/physics/ContactProperties.hh:26[m[K,
+                 from [01m[K/usr/include/ignition/gazebo6/gz/sim/physics/Events.hh:24[m[K,
+                 from [01m[K/usr/include/ignition/gazebo6/gz/gazebo.hh:142[m[K,
+                 from [01m[K/usr/include/ignition/gazebo6/gz/sim.hh:27[m[K,
+                 from [01m[K/usr/include/ignition/gazebo6/ignition/gazebo.hh:18[m[K,
+                 from [01m[K/home/paolo/light_sensor_plugin/src/light_sensor_custom/src/LightSensor.cc:4[m[K:
+[01m[K/usr/include/ignition/physics5/gz/physics/Geometry.hh:44:11:[m[K [01;36m[Knote: [m[K  ‘[01m[Kignition::physics::Pose[m[K’
+   44 |     using [01;36m[KPose[m[K = Eigen::Transform<Scalar, Dim, Eigen::Isometry>;
+      |           [01;36m[K^~~~[m[K
+[01m[K/home/paolo/light_sensor_plugin/src/light_sensor_custom/src/LightSensor.cc:45:46:[m[K [01;31m[Kerror: [m[K‘[01m[Klight_pose[m[K’ was not declared in this scope; did you mean ‘[01m[KlightPoses[m[K’?
+   45 |                         lightPoses.push_back([01;31m[Klight_pose[m[K);
+      |                                              [01;31m[K^~~~~~~~~~[m[K
+      |                                              [32m[KlightPoses[m[K
+gmake[2]: *** [CMakeFiles/LightSensor.dir/build.make:76: CMakeFiles/LightSensor.dir/src/LightSensor.cc.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/LightSensor.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

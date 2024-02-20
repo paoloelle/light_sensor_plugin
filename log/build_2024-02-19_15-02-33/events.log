@@ -1,0 +1,209 @@
+[0.000000] (-) TimerEvent: {}
+[0.000158] (light_sensor) JobQueued: {'identifier': 'light_sensor', 'dependencies': OrderedDict()}
+[0.000190] (light_sensor) JobStarted: {'identifier': 'light_sensor'}
+[0.099358] (-) TimerEvent: {}
+[0.100781] (light_sensor) JobProgress: {'identifier': 'light_sensor', 'progress': 'cmake'}
+[0.101893] (light_sensor) JobProgress: {'identifier': 'light_sensor', 'progress': 'build'}
+[0.101927] (light_sensor) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/paolo/light_sensor_plugin/build/light_sensor', '--', '-j8', '-l8'], 'cwd': '/home/paolo/light_sensor_plugin/build/light_sensor', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'paolo'), ('LC_TIME', 'it_IT.UTF-8'), ('IGNITION_VERSION', 'fortress'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/paolo/turtlebot4_ws/install/turtlebot4_msgs/lib:/home/paolo/create3_ws/install/irobot_create_nodes/lib:/home/paolo/create3_ws/install/irobot_create_ignition_toolbox/lib:/home/paolo/create3_ws/install/irobot_create_toolbox/lib:/home/paolo/create3_ws/install/irobot_create_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/paolo'), ('OLDPWD', '/home/paolo'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'it_IT.UTF-8'), ('MANAGERPID', '990'), ('SYSTEMD_EXEC_PID', '1166'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '12473'), ('_colcon_cd_root', '/opt/ros/humble/'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/paolo/turtlebot4_controller_ws/install:/home/paolo/turtlebot4_ws/install:/home/paolo/create3_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'paolo'), ('JOURNAL_STREAM', '8:27999'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'paolo'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/paolo-VivoBook-S15-X510UF:@/tmp/.ICE-unix/1143,unix/paolo-VivoBook-S15-X510UF:/tmp/.ICE-unix/1143'), ('INVOCATION_ID', '2f2b369fc9ec4b36b1d0c45d9955141b'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'it_IT.UTF-8'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('LC_TELEPHONE', 'it_IT.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.IFREJ2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/paolo/turtlebot4_controller_ws/install/turtlebot4_controller:/home/paolo/turtlebot4_ws/install/turtlebot4_simulator:/home/paolo/turtlebot4_ws/install/turtlebot4_ignition_bringup:/home/paolo/turtlebot4_ws/install/turtlebot4_desktop:/home/paolo/turtlebot4_ws/install/turtlebot4_viz:/home/paolo/turtlebot4_ws/install/turtlebot4_setup:/home/paolo/turtlebot4_ws/install/turtlebot4_node:/home/paolo/turtlebot4_ws/install/turtlebot4_navigation:/home/paolo/turtlebot4_ws/install/turtlebot4_ignition_toolbox:/home/paolo/turtlebot4_ws/install/turtlebot4_msgs:/home/paolo/turtlebot4_ws/install/turtlebot4_ignition_gui_plugins:/home/paolo/turtlebot4_ws/install/turtlebot4_description:/home/paolo/create3_ws/install/irobot_create_ignition_sim:/home/paolo/create3_ws/install/irobot_create_ignition_bringup:/home/paolo/create3_ws/install/irobot_create_common_bringup:/home/paolo/create3_ws/install/irobot_create_nodes:/home/paolo/create3_ws/install/irobot_create_ignition_toolbox:/home/paolo/create3_ws/install/irobot_create_toolbox:/home/paolo/create3_ws/install/irobot_create_msgs:/home/paolo/create3_ws/install/irobot_create_ignition_plugins:/home/paolo/create3_ws/install/irobot_create_description:/home/paolo/create3_ws/install/irobot_create_control:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'it_IT.UTF-8'), ('TERMINATOR_UUID', 'urn:uuid:9c6313d9-7ca9-4067-b3d5-9b4fee3246a7'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'it_IT.UTF-8'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'it_IT.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/paolo/light_sensor_plugin/build/light_sensor'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/paolo/turtlebot4_controller_ws/build/turtlebot4_controller:/home/paolo/turtlebot4_controller_ws/install/turtlebot4_controller/lib/python3.10/site-packages:/home/paolo/turtlebot4_ws/install/turtlebot4_setup/local/lib/python3.10/dist-packages:/home/paolo/turtlebot4_ws/install/turtlebot4_navigation/local/lib/python3.10/dist-packages:/home/paolo/turtlebot4_ws/install/turtlebot4_msgs/local/lib/python3.10/dist-packages:/home/paolo/create3_ws/install/irobot_create_common_bringup/local/lib/python3.10/dist-packages:/home/paolo/create3_ws/install/irobot_create_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'it_IT.UTF-8'), ('LC_PAPER', 'it_IT.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/paolo/turtlebot4_ws/install/turtlebot4_simulator:/home/paolo/turtlebot4_ws/install/turtlebot4_ignition_bringup:/home/paolo/turtlebot4_ws/install/turtlebot4_desktop:/home/paolo/turtlebot4_ws/install/turtlebot4_viz:/home/paolo/turtlebot4_ws/install/turtlebot4_setup:/home/paolo/turtlebot4_ws/install/turtlebot4_node:/home/paolo/turtlebot4_ws/install/turtlebot4_navigation:/home/paolo/turtlebot4_ws/install/turtlebot4_ignition_toolbox:/home/paolo/turtlebot4_ws/install/turtlebot4_msgs:/home/paolo/turtlebot4_ws/install/turtlebot4_ignition_gui_plugins:/home/paolo/turtlebot4_ws/install/turtlebot4_description:/home/paolo/create3_ws/install/irobot_create_ignition_sim:/home/paolo/create3_ws/install/irobot_create_ignition_bringup:/home/paolo/create3_ws/install/irobot_create_common_bringup:/home/paolo/create3_ws/install/irobot_create_nodes:/home/paolo/create3_ws/install/irobot_create_ignition_toolbox:/home/paolo/create3_ws/install/irobot_create_toolbox:/home/paolo/create3_ws/install/irobot_create_msgs:/home/paolo/create3_ws/install/irobot_create_ignition_plugins:/home/paolo/create3_ws/install/irobot_create_description:/home/paolo/create3_ws/install/irobot_create_control:/home/paolo/turtlebot4_controller_ws/install/turtlebot4_controller:/opt/ros/humble')]), 'shell': False}
+[0.151956] (light_sensor) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target LightSensor\x1b[0m\n'}
+[0.183112] (light_sensor) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/LightSensor.dir/src/LightSensor.cc.o\x1b[0m\n'}
+[0.199479] (-) TimerEvent: {}
+[0.299762] (-) TimerEvent: {}
+[0.400031] (-) TimerEvent: {}
+[0.500389] (-) TimerEvent: {}
+[0.600687] (-) TimerEvent: {}
+[0.700986] (-) TimerEvent: {}
+[0.801289] (-) TimerEvent: {}
+[0.901598] (-) TimerEvent: {}
+[1.001886] (-) TimerEvent: {}
+[1.102164] (-) TimerEvent: {}
+[1.202477] (-) TimerEvent: {}
+[1.302758] (-) TimerEvent: {}
+[1.403104] (-) TimerEvent: {}
+[1.503493] (-) TimerEvent: {}
+[1.603878] (-) TimerEvent: {}
+[1.704233] (-) TimerEvent: {}
+[1.804527] (-) TimerEvent: {}
+[1.904842] (-) TimerEvent: {}
+[2.005136] (-) TimerEvent: {}
+[2.105492] (-) TimerEvent: {}
+[2.205790] (-) TimerEvent: {}
+[2.306082] (-) TimerEvent: {}
+[2.406367] (-) TimerEvent: {}
+[2.506714] (-) TimerEvent: {}
+[2.607014] (-) TimerEvent: {}
+[2.707379] (-) TimerEvent: {}
+[2.807773] (-) TimerEvent: {}
+[2.908105] (-) TimerEvent: {}
+[3.008416] (-) TimerEvent: {}
+[3.108744] (-) TimerEvent: {}
+[3.209057] (-) TimerEvent: {}
+[3.309371] (-) TimerEvent: {}
+[3.409684] (-) TimerEvent: {}
+[3.509983] (-) TimerEvent: {}
+[3.610378] (-) TimerEvent: {}
+[3.710688] (-) TimerEvent: {}
+[3.811078] (-) TimerEvent: {}
+[3.911366] (-) TimerEvent: {}
+[4.011648] (-) TimerEvent: {}
+[4.111910] (-) TimerEvent: {}
+[4.212161] (-) TimerEvent: {}
+[4.312509] (-) TimerEvent: {}
+[4.412753] (-) TimerEvent: {}
+[4.513026] (-) TimerEvent: {}
+[4.613318] (-) TimerEvent: {}
+[4.713644] (-) TimerEvent: {}
+[4.814004] (-) TimerEvent: {}
+[4.914348] (-) TimerEvent: {}
+[5.014640] (-) TimerEvent: {}
+[5.114933] (-) TimerEvent: {}
+[5.215224] (-) TimerEvent: {}
+[5.315521] (-) TimerEvent: {}
+[5.415811] (-) TimerEvent: {}
+[5.516111] (-) TimerEvent: {}
+[5.616406] (-) TimerEvent: {}
+[5.716694] (-) TimerEvent: {}
+[5.816991] (-) TimerEvent: {}
+[5.917284] (-) TimerEvent: {}
+[6.017536] (-) TimerEvent: {}
+[6.117803] (-) TimerEvent: {}
+[6.218095] (-) TimerEvent: {}
+[6.318374] (-) TimerEvent: {}
+[6.418677] (-) TimerEvent: {}
+[6.518991] (-) TimerEvent: {}
+[6.619314] (-) TimerEvent: {}
+[6.719615] (-) TimerEvent: {}
+[6.819917] (-) TimerEvent: {}
+[6.920209] (-) TimerEvent: {}
+[7.020501] (-) TimerEvent: {}
+[7.120794] (-) TimerEvent: {}
+[7.221089] (-) TimerEvent: {}
+[7.321385] (-) TimerEvent: {}
+[7.421677] (-) TimerEvent: {}
+[7.521973] (-) TimerEvent: {}
+[7.622265] (-) TimerEvent: {}
+[7.722525] (-) TimerEvent: {}
+[7.822806] (-) TimerEvent: {}
+[7.923109] (-) TimerEvent: {}
+[8.023401] (-) TimerEvent: {}
+[8.123693] (-) TimerEvent: {}
+[8.224011] (-) TimerEvent: {}
+[8.324305] (-) TimerEvent: {}
+[8.424596] (-) TimerEvent: {}
+[8.524894] (-) TimerEvent: {}
+[8.625194] (-) TimerEvent: {}
+[8.725485] (-) TimerEvent: {}
+[8.825775] (-) TimerEvent: {}
+[8.926069] (-) TimerEvent: {}
+[9.026349] (-) TimerEvent: {}
+[9.126654] (-) TimerEvent: {}
+[9.226961] (-) TimerEvent: {}
+[9.327276] (-) TimerEvent: {}
+[9.427566] (-) TimerEvent: {}
+[9.527858] (-) TimerEvent: {}
+[9.628151] (-) TimerEvent: {}
+[9.728466] (-) TimerEvent: {}
+[9.828764] (-) TimerEvent: {}
+[9.929061] (-) TimerEvent: {}
+[10.029360] (-) TimerEvent: {}
+[10.129681] (-) TimerEvent: {}
+[10.229944] (-) TimerEvent: {}
+[10.330242] (-) TimerEvent: {}
+[10.430512] (-) TimerEvent: {}
+[10.530815] (-) TimerEvent: {}
+[10.631103] (-) TimerEvent: {}
+[10.731387] (-) TimerEvent: {}
+[10.831671] (-) TimerEvent: {}
+[10.931963] (-) TimerEvent: {}
+[11.032258] (-) TimerEvent: {}
+[11.132547] (-) TimerEvent: {}
+[11.232835] (-) TimerEvent: {}
+[11.333123] (-) TimerEvent: {}
+[11.433405] (-) TimerEvent: {}
+[11.533700] (-) TimerEvent: {}
+[11.633999] (-) TimerEvent: {}
+[11.734295] (-) TimerEvent: {}
+[11.834579] (-) TimerEvent: {}
+[11.934873] (-) TimerEvent: {}
+[12.035164] (-) TimerEvent: {}
+[12.135453] (-) TimerEvent: {}
+[12.235752] (-) TimerEvent: {}
+[12.336022] (-) TimerEvent: {}
+[12.436347] (-) TimerEvent: {}
+[12.536635] (-) TimerEvent: {}
+[12.636918] (-) TimerEvent: {}
+[12.737203] (-) TimerEvent: {}
+[12.837484] (-) TimerEvent: {}
+[12.937767] (-) TimerEvent: {}
+[13.038052] (-) TimerEvent: {}
+[13.138335] (-) TimerEvent: {}
+[13.238617] (-) TimerEvent: {}
+[13.338906] (-) TimerEvent: {}
+[13.439193] (-) TimerEvent: {}
+[13.539475] (-) TimerEvent: {}
+[13.639761] (-) TimerEvent: {}
+[13.740013] (-) TimerEvent: {}
+[13.840343] (-) TimerEvent: {}
+[13.940665] (-) TimerEvent: {}
+[14.040987] (-) TimerEvent: {}
+[14.141304] (-) TimerEvent: {}
+[14.241621] (-) TimerEvent: {}
+[14.341938] (-) TimerEvent: {}
+[14.442256] (-) TimerEvent: {}
+[14.542519] (-) TimerEvent: {}
+[14.642801] (-) TimerEvent: {}
+[14.743084] (-) TimerEvent: {}
+[14.843372] (-) TimerEvent: {}
+[14.943657] (-) TimerEvent: {}
+[15.043950] (-) TimerEvent: {}
+[15.144230] (-) TimerEvent: {}
+[15.244820] (-) TimerEvent: {}
+[15.345136] (-) TimerEvent: {}
+[15.445400] (-) TimerEvent: {}
+[15.545700] (-) TimerEvent: {}
+[15.645992] (-) TimerEvent: {}
+[15.746298] (-) TimerEvent: {}
+[15.846586] (-) TimerEvent: {}
+[15.946888] (-) TimerEvent: {}
+[16.047208] (-) TimerEvent: {}
+[16.125834] (light_sensor) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX shared library libLightSensor.so\x1b[0m\n'}
+[16.147336] (-) TimerEvent: {}
+[16.247628] (-) TimerEvent: {}
+[16.347942] (-) TimerEvent: {}
+[16.448259] (-) TimerEvent: {}
+[16.548552] (-) TimerEvent: {}
+[16.648816] (-) TimerEvent: {}
+[16.749109] (-) TimerEvent: {}
+[16.849402] (-) TimerEvent: {}
+[16.949699] (-) TimerEvent: {}
+[16.990259] (light_sensor) StdoutLine: {'line': b'[100%] Built target LightSensor\n'}
+[17.001469] (light_sensor) CommandEnded: {'returncode': 0}
+[17.029889] (light_sensor) JobProgress: {'identifier': 'light_sensor', 'progress': 'install'}
+[17.039826] (light_sensor) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/paolo/light_sensor_plugin/build/light_sensor'], 'cwd': '/home/paolo/light_sensor_plugin/build/light_sensor', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'paolo'), ('LC_TIME', 'it_IT.UTF-8'), ('IGNITION_VERSION', 'fortress'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/paolo/turtlebot4_ws/install/turtlebot4_msgs/lib:/home/paolo/create3_ws/install/irobot_create_nodes/lib:/home/paolo/create3_ws/install/irobot_create_ignition_toolbox/lib:/home/paolo/create3_ws/install/irobot_create_toolbox/lib:/home/paolo/create3_ws/install/irobot_create_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/paolo'), ('OLDPWD', '/home/paolo'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'it_IT.UTF-8'), ('MANAGERPID', '990'), ('SYSTEMD_EXEC_PID', '1166'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '12473'), ('_colcon_cd_root', '/opt/ros/humble/'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/paolo/turtlebot4_controller_ws/install:/home/paolo/turtlebot4_ws/install:/home/paolo/create3_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'paolo'), ('JOURNAL_STREAM', '8:27999'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'paolo'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/paolo-VivoBook-S15-X510UF:@/tmp/.ICE-unix/1143,unix/paolo-VivoBook-S15-X510UF:/tmp/.ICE-unix/1143'), ('INVOCATION_ID', '2f2b369fc9ec4b36b1d0c45d9955141b'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'it_IT.UTF-8'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('LC_TELEPHONE', 'it_IT.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.IFREJ2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/paolo/turtlebot4_controller_ws/install/turtlebot4_controller:/home/paolo/turtlebot4_ws/install/turtlebot4_simulator:/home/paolo/turtlebot4_ws/install/turtlebot4_ignition_bringup:/home/paolo/turtlebot4_ws/install/turtlebot4_desktop:/home/paolo/turtlebot4_ws/install/turtlebot4_viz:/home/paolo/turtlebot4_ws/install/turtlebot4_setup:/home/paolo/turtlebot4_ws/install/turtlebot4_node:/home/paolo/turtlebot4_ws/install/turtlebot4_navigation:/home/paolo/turtlebot4_ws/install/turtlebot4_ignition_toolbox:/home/paolo/turtlebot4_ws/install/turtlebot4_msgs:/home/paolo/turtlebot4_ws/install/turtlebot4_ignition_gui_plugins:/home/paolo/turtlebot4_ws/install/turtlebot4_description:/home/paolo/create3_ws/install/irobot_create_ignition_sim:/home/paolo/create3_ws/install/irobot_create_ignition_bringup:/home/paolo/create3_ws/install/irobot_create_common_bringup:/home/paolo/create3_ws/install/irobot_create_nodes:/home/paolo/create3_ws/install/irobot_create_ignition_toolbox:/home/paolo/create3_ws/install/irobot_create_toolbox:/home/paolo/create3_ws/install/irobot_create_msgs:/home/paolo/create3_ws/install/irobot_create_ignition_plugins:/home/paolo/create3_ws/install/irobot_create_description:/home/paolo/create3_ws/install/irobot_create_control:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'it_IT.UTF-8'), ('TERMINATOR_UUID', 'urn:uuid:9c6313d9-7ca9-4067-b3d5-9b4fee3246a7'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'it_IT.UTF-8'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'it_IT.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/paolo/light_sensor_plugin/build/light_sensor'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/paolo/turtlebot4_controller_ws/build/turtlebot4_controller:/home/paolo/turtlebot4_controller_ws/install/turtlebot4_controller/lib/python3.10/site-packages:/home/paolo/turtlebot4_ws/install/turtlebot4_setup/local/lib/python3.10/dist-packages:/home/paolo/turtlebot4_ws/install/turtlebot4_navigation/local/lib/python3.10/dist-packages:/home/paolo/turtlebot4_ws/install/turtlebot4_msgs/local/lib/python3.10/dist-packages:/home/paolo/create3_ws/install/irobot_create_common_bringup/local/lib/python3.10/dist-packages:/home/paolo/create3_ws/install/irobot_create_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'it_IT.UTF-8'), ('LC_PAPER', 'it_IT.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/paolo/turtlebot4_ws/install/turtlebot4_simulator:/home/paolo/turtlebot4_ws/install/turtlebot4_ignition_bringup:/home/paolo/turtlebot4_ws/install/turtlebot4_desktop:/home/paolo/turtlebot4_ws/install/turtlebot4_viz:/home/paolo/turtlebot4_ws/install/turtlebot4_setup:/home/paolo/turtlebot4_ws/install/turtlebot4_node:/home/paolo/turtlebot4_ws/install/turtlebot4_navigation:/home/paolo/turtlebot4_ws/install/turtlebot4_ignition_toolbox:/home/paolo/turtlebot4_ws/install/turtlebot4_msgs:/home/paolo/turtlebot4_ws/install/turtlebot4_ignition_gui_plugins:/home/paolo/turtlebot4_ws/install/turtlebot4_description:/home/paolo/create3_ws/install/irobot_create_ignition_sim:/home/paolo/create3_ws/install/irobot_create_ignition_bringup:/home/paolo/create3_ws/install/irobot_create_common_bringup:/home/paolo/create3_ws/install/irobot_create_nodes:/home/paolo/create3_ws/install/irobot_create_ignition_toolbox:/home/paolo/create3_ws/install/irobot_create_toolbox:/home/paolo/create3_ws/install/irobot_create_msgs:/home/paolo/create3_ws/install/irobot_create_ignition_plugins:/home/paolo/create3_ws/install/irobot_create_description:/home/paolo/create3_ws/install/irobot_create_control:/home/paolo/turtlebot4_controller_ws/install/turtlebot4_controller:/opt/ros/humble')]), 'shell': False}
+[17.047651] (light_sensor) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[17.047956] (light_sensor) StdoutLine: {'line': b'-- Up-to-date: /home/paolo/light_sensor_plugin/install/share/light_sensor/environment/resource_paths.dsv\n'}
+[17.048102] (light_sensor) StdoutLine: {'line': b'-- Up-to-date: /home/paolo/light_sensor_plugin/install/share/light_sensor/environment/resource_paths.sh\n'}
+[17.048197] (light_sensor) StdoutLine: {'line': b'-- Installing: /home/paolo/light_sensor_plugin/install/lib/libLightSensor.so\n'}
+[17.049779] (-) TimerEvent: {}
+[17.061498] (light_sensor) StdoutLine: {'line': b'-- Up-to-date: /home/paolo/light_sensor_plugin/install/share/light_sensor/model\n'}
+[17.061799] (light_sensor) StdoutLine: {'line': b'-- Up-to-date: /home/paolo/light_sensor_plugin/install/share/light_sensor/model/model.sdf\n'}
+[17.062038] (light_sensor) StdoutLine: {'line': b'-- Up-to-date: /home/paolo/light_sensor_plugin/install/share/ament_index/resource_index/package_run_dependencies/light_sensor\n'}
+[17.062166] (light_sensor) StdoutLine: {'line': b'-- Up-to-date: /home/paolo/light_sensor_plugin/install/share/ament_index/resource_index/parent_prefix_path/light_sensor\n'}
+[17.062309] (light_sensor) StdoutLine: {'line': b'-- Up-to-date: /home/paolo/light_sensor_plugin/install/share/light_sensor/environment/ament_prefix_path.sh\n'}
+[17.062454] (light_sensor) StdoutLine: {'line': b'-- Up-to-date: /home/paolo/light_sensor_plugin/install/share/light_sensor/environment/ament_prefix_path.dsv\n'}
+[17.062553] (light_sensor) StdoutLine: {'line': b'-- Up-to-date: /home/paolo/light_sensor_plugin/install/share/light_sensor/environment/path.sh\n'}
+[17.062659] (light_sensor) StdoutLine: {'line': b'-- Up-to-date: /home/paolo/light_sensor_plugin/install/share/light_sensor/environment/path.dsv\n'}
+[17.062754] (light_sensor) StdoutLine: {'line': b'-- Up-to-date: /home/paolo/light_sensor_plugin/install/share/light_sensor/local_setup.bash\n'}
+[17.062850] (light_sensor) StdoutLine: {'line': b'-- Up-to-date: /home/paolo/light_sensor_plugin/install/share/light_sensor/local_setup.sh\n'}
+[17.062945] (light_sensor) StdoutLine: {'line': b'-- Up-to-date: /home/paolo/light_sensor_plugin/install/share/light_sensor/local_setup.zsh\n'}
+[17.063040] (light_sensor) StdoutLine: {'line': b'-- Up-to-date: /home/paolo/light_sensor_plugin/install/share/light_sensor/local_setup.dsv\n'}
+[17.063140] (light_sensor) StdoutLine: {'line': b'-- Installing: /home/paolo/light_sensor_plugin/install/share/light_sensor/package.dsv\n'}
+[17.063236] (light_sensor) StdoutLine: {'line': b'-- Up-to-date: /home/paolo/light_sensor_plugin/install/share/ament_index/resource_index/packages/light_sensor\n'}
+[17.063331] (light_sensor) StdoutLine: {'line': b'-- Up-to-date: /home/paolo/light_sensor_plugin/install/share/light_sensor/cmake/light_sensorConfig.cmake\n'}
+[17.063426] (light_sensor) StdoutLine: {'line': b'-- Up-to-date: /home/paolo/light_sensor_plugin/install/share/light_sensor/cmake/light_sensorConfig-version.cmake\n'}
+[17.063722] (light_sensor) StdoutLine: {'line': b'-- Up-to-date: /home/paolo/light_sensor_plugin/install/share/light_sensor/package.xml\n'}
+[17.064501] (light_sensor) CommandEnded: {'returncode': 0}
+[17.149897] (-) TimerEvent: {}
+[17.250237] (-) TimerEvent: {}
+[17.255215] (light_sensor) JobEnded: {'identifier': 'light_sensor', 'rc': 0}
+[17.256195] (-) EventReactorShutdown: {}

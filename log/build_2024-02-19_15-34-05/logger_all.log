@@ -1,0 +1,151 @@
+[0.983s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--merge-install']
+[0.983s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=True, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=8, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x7fba16701c00>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7fba16700d30>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7fba16700d30>>)
+[1.028s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[1.028s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[1.028s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[1.028s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[1.028s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[1.029s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[1.029s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/paolo/light_sensor_plugin'
+[1.029s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[1.029s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[1.029s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[1.029s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[1.029s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[1.029s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[1.029s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[1.029s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[1.029s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[1.039s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[1.039s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[1.039s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[1.039s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[1.039s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[1.039s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[1.039s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[1.039s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[1.039s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[1.039s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[1.040s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[1.040s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[1.040s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[1.040s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[1.040s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[1.040s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[1.040s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[1.040s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[1.040s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[1.040s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[1.040s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[1.040s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[1.041s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[1.041s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[1.041s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[1.041s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[1.041s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[1.041s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[1.041s] Level 1:colcon.colcon_core.package_identification:_identify(src/light_sensor_custom) by extensions ['ignore', 'ignore_ament_install']
+[1.041s] Level 1:colcon.colcon_core.package_identification:_identify(src/light_sensor_custom) by extension 'ignore'
+[1.041s] Level 1:colcon.colcon_core.package_identification:_identify(src/light_sensor_custom) by extension 'ignore_ament_install'
+[1.041s] Level 1:colcon.colcon_core.package_identification:_identify(src/light_sensor_custom) by extensions ['colcon_pkg']
+[1.041s] Level 1:colcon.colcon_core.package_identification:_identify(src/light_sensor_custom) by extension 'colcon_pkg'
+[1.041s] Level 1:colcon.colcon_core.package_identification:_identify(src/light_sensor_custom) by extensions ['colcon_meta']
+[1.041s] Level 1:colcon.colcon_core.package_identification:_identify(src/light_sensor_custom) by extension 'colcon_meta'
+[1.041s] Level 1:colcon.colcon_core.package_identification:_identify(src/light_sensor_custom) by extensions ['ros']
+[1.041s] Level 1:colcon.colcon_core.package_identification:_identify(src/light_sensor_custom) by extension 'ros'
+[1.044s] DEBUG:colcon.colcon_core.package_identification:Package 'src/light_sensor_custom' with type 'ros.ament_cmake' and name 'light_sensor'
+[1.044s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[1.044s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[1.044s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[1.044s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[1.044s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[1.134s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[1.134s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[1.166s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 1 installed packages in /home/paolo/turtlebot4_controller_ws/install
+[1.183s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 11 installed packages in /home/paolo/turtlebot4_ws/install
+[1.202s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 10 installed packages in /home/paolo/create3_ws/install
+[1.228s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 394 installed packages in /opt/ros/humble
+[1.230s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[1.339s] Level 5:colcon.colcon_core.verb:set package 'light_sensor' build argument 'cmake_args' from command line to 'None'
+[1.339s] Level 5:colcon.colcon_core.verb:set package 'light_sensor' build argument 'cmake_target' from command line to 'None'
+[1.340s] Level 5:colcon.colcon_core.verb:set package 'light_sensor' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.340s] Level 5:colcon.colcon_core.verb:set package 'light_sensor' build argument 'cmake_clean_cache' from command line to 'False'
+[1.340s] Level 5:colcon.colcon_core.verb:set package 'light_sensor' build argument 'cmake_clean_first' from command line to 'False'
+[1.340s] Level 5:colcon.colcon_core.verb:set package 'light_sensor' build argument 'cmake_force_configure' from command line to 'False'
+[1.340s] Level 5:colcon.colcon_core.verb:set package 'light_sensor' build argument 'ament_cmake_args' from command line to 'None'
+[1.340s] Level 5:colcon.colcon_core.verb:set package 'light_sensor' build argument 'catkin_cmake_args' from command line to 'None'
+[1.340s] Level 5:colcon.colcon_core.verb:set package 'light_sensor' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.340s] DEBUG:colcon.colcon_core.verb:Building package 'light_sensor' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/paolo/light_sensor_plugin/build/light_sensor', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/paolo/light_sensor_plugin/install', 'merge_install': True, 'path': '/home/paolo/light_sensor_plugin/src/light_sensor_custom', 'symlink_install': False, 'test_result_base': None}
+[1.355s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[1.371s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[1.371s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/paolo/light_sensor_plugin/src/light_sensor_custom' with build type 'ament_cmake'
+[1.371s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/paolo/light_sensor_plugin/src/light_sensor_custom'
+[1.388s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[1.388s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.389s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.479s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/paolo/light_sensor_plugin/build/light_sensor': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/paolo/turtlebot4_controller_ws/install/turtlebot4_controller:/opt/ros/humble /usr/bin/cmake --build /home/paolo/light_sensor_plugin/build/light_sensor -- -j8 -l8
+[18.380s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/paolo/light_sensor_plugin/build/light_sensor' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/paolo/turtlebot4_controller_ws/install/turtlebot4_controller:/opt/ros/humble /usr/bin/cmake --build /home/paolo/light_sensor_plugin/build/light_sensor -- -j8 -l8
+[18.416s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/paolo/light_sensor_plugin/build/light_sensor': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/paolo/turtlebot4_controller_ws/install/turtlebot4_controller:/opt/ros/humble /usr/bin/cmake --install /home/paolo/light_sensor_plugin/build/light_sensor
+[18.441s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(light_sensor)
+[18.442s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/paolo/light_sensor_plugin/build/light_sensor' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/paolo/turtlebot4_controller_ws/install/turtlebot4_controller:/opt/ros/humble /usr/bin/cmake --install /home/paolo/light_sensor_plugin/build/light_sensor
+[18.463s] Level 1:colcon.colcon_core.environment:checking '/home/paolo/light_sensor_plugin/install' for CMake module files
+[18.463s] Level 1:colcon.colcon_core.environment:checking '/home/paolo/light_sensor_plugin/install' for CMake config files
+[18.463s] Level 1:colcon.colcon_core.shell:create_environment_hook('light_sensor', 'cmake_prefix_path')
+[18.478s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/paolo/light_sensor_plugin/install/share/light_sensor/hook/cmake_prefix_path.ps1'
+[18.479s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/paolo/light_sensor_plugin/install/share/light_sensor/hook/cmake_prefix_path.dsv'
+[18.479s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/paolo/light_sensor_plugin/install/share/light_sensor/hook/cmake_prefix_path.sh'
+[18.480s] Level 1:colcon.colcon_core.environment:checking '/home/paolo/light_sensor_plugin/install/lib'
+[18.480s] Level 1:colcon.colcon_core.shell:create_environment_hook('light_sensor', 'ld_library_path_lib')
+[18.496s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/paolo/light_sensor_plugin/install/share/light_sensor/hook/ld_library_path_lib.ps1'
+[18.497s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/paolo/light_sensor_plugin/install/share/light_sensor/hook/ld_library_path_lib.dsv'
+[18.497s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/paolo/light_sensor_plugin/install/share/light_sensor/hook/ld_library_path_lib.sh'
+[18.497s] Level 1:colcon.colcon_core.environment:checking '/home/paolo/light_sensor_plugin/install/bin'
+[18.497s] Level 1:colcon.colcon_core.environment:checking '/home/paolo/light_sensor_plugin/install/lib/pkgconfig/light_sensor.pc'
+[18.498s] Level 1:colcon.colcon_core.environment:checking '/home/paolo/light_sensor_plugin/install/lib/python3.10/site-packages'
+[18.498s] Level 1:colcon.colcon_core.environment:checking '/home/paolo/light_sensor_plugin/install/bin'
+[18.513s] INFO:colcon.colcon_core.shell:Creating package script '/home/paolo/light_sensor_plugin/install/share/light_sensor/package.ps1'
+[18.513s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/paolo/light_sensor_plugin/install/share/light_sensor/package.dsv'
+[18.514s] INFO:colcon.colcon_core.shell:Creating package script '/home/paolo/light_sensor_plugin/install/share/light_sensor/package.sh'
+[18.515s] INFO:colcon.colcon_core.shell:Creating package script '/home/paolo/light_sensor_plugin/install/share/light_sensor/package.bash'
+[18.515s] INFO:colcon.colcon_core.shell:Creating package script '/home/paolo/light_sensor_plugin/install/share/light_sensor/package.zsh'
+[18.516s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/paolo/light_sensor_plugin/install/share/colcon-core/packages/light_sensor)
+[18.560s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(light_sensor)
+[18.575s] Level 1:colcon.colcon_core.environment:checking '/home/paolo/light_sensor_plugin/install' for CMake module files
+[18.576s] Level 1:colcon.colcon_core.environment:checking '/home/paolo/light_sensor_plugin/install' for CMake config files
+[18.576s] Level 1:colcon.colcon_core.shell:create_environment_hook('light_sensor', 'cmake_prefix_path')
+[18.592s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/paolo/light_sensor_plugin/install/share/light_sensor/hook/cmake_prefix_path.ps1'
+[18.592s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/paolo/light_sensor_plugin/install/share/light_sensor/hook/cmake_prefix_path.dsv'
+[18.592s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/paolo/light_sensor_plugin/install/share/light_sensor/hook/cmake_prefix_path.sh'
+[18.593s] Level 1:colcon.colcon_core.environment:checking '/home/paolo/light_sensor_plugin/install/lib'
+[18.593s] Level 1:colcon.colcon_core.shell:create_environment_hook('light_sensor', 'ld_library_path_lib')
+[18.608s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/paolo/light_sensor_plugin/install/share/light_sensor/hook/ld_library_path_lib.ps1'
+[18.608s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/paolo/light_sensor_plugin/install/share/light_sensor/hook/ld_library_path_lib.dsv'
+[18.609s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/paolo/light_sensor_plugin/install/share/light_sensor/hook/ld_library_path_lib.sh'
+[18.609s] Level 1:colcon.colcon_core.environment:checking '/home/paolo/light_sensor_plugin/install/bin'
+[18.609s] Level 1:colcon.colcon_core.environment:checking '/home/paolo/light_sensor_plugin/install/lib/pkgconfig/light_sensor.pc'
+[18.609s] Level 1:colcon.colcon_core.environment:checking '/home/paolo/light_sensor_plugin/install/lib/python3.10/site-packages'
+[18.609s] Level 1:colcon.colcon_core.environment:checking '/home/paolo/light_sensor_plugin/install/bin'
+[18.625s] INFO:colcon.colcon_core.shell:Creating package script '/home/paolo/light_sensor_plugin/install/share/light_sensor/package.ps1'
+[18.626s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/paolo/light_sensor_plugin/install/share/light_sensor/package.dsv'
+[18.626s] INFO:colcon.colcon_core.shell:Creating package script '/home/paolo/light_sensor_plugin/install/share/light_sensor/package.sh'
+[18.627s] INFO:colcon.colcon_core.shell:Creating package script '/home/paolo/light_sensor_plugin/install/share/light_sensor/package.bash'
+[18.627s] INFO:colcon.colcon_core.shell:Creating package script '/home/paolo/light_sensor_plugin/install/share/light_sensor/package.zsh'
+[18.627s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/paolo/light_sensor_plugin/install/share/colcon-core/packages/light_sensor)
+[18.628s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[18.628s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[18.628s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[18.628s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[18.648s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[18.648s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[18.648s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[18.660s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[18.675s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/paolo/light_sensor_plugin/install/local_setup.ps1'
+[18.676s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/paolo/light_sensor_plugin/install/_local_setup_util_ps1.py'
+[18.677s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/paolo/light_sensor_plugin/install/setup.ps1'
+[18.695s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/paolo/light_sensor_plugin/install/local_setup.sh'
+[18.696s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/paolo/light_sensor_plugin/install/_local_setup_util_sh.py'
+[18.696s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/paolo/light_sensor_plugin/install/setup.sh'
+[18.713s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/paolo/light_sensor_plugin/install/local_setup.bash'
+[18.713s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/paolo/light_sensor_plugin/install/setup.bash'
+[18.732s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/paolo/light_sensor_plugin/install/local_setup.zsh'
+[18.732s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/paolo/light_sensor_plugin/install/setup.zsh'

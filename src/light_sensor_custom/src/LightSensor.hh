@@ -35,7 +35,7 @@ namespace custom_light_sensor
                 const ignition::gazebo::EntityComponentManager &_ecm) override;
 
         /// \brief store position of ligth sources
-        public: std::vector<ignition::math::Pose3d> lightSourcesPoses;
+        public: std::vector<ignition::math::Pose3d> lightPoses;
 
         /// \brief update rate
         public: double updateRate{5.0};

@@ -1,0 +1,69 @@
+[0.103s] Invoking command in '/home/paolo/light_sensor_plugin/build/light_sensor': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/paolo/turtlebot4_controller_ws/install/turtlebot4_controller:/opt/ros/humble /usr/bin/cmake --build /home/paolo/light_sensor_plugin/build/light_sensor -- -j8 -l8
+[0.155s] [35m[1mConsolidate compiler generated dependencies of target LightSensor[0m
+[0.188s] [ 50%] [32mBuilding CXX object CMakeFiles/LightSensor.dir/src/LightSensor.cc.o[0m
+[6.873s] [01m[K/home/paolo/light_sensor_plugin/src/light_sensor_custom/src/LightSensor.cc:[m[K In member function ‘[01m[Kvirtual void custom_light_sensor::LightSensor::Configure(const Entity&, const std::shared_ptr<const sdf::v12::Element>&, ignition::gazebo::v6::EntityComponentManager&, ignition::gazebo::v6::EventManager&)[m[K’:
+[6.873s] [01m[K/home/paolo/light_sensor_plugin/src/light_sensor_custom/src/LightSensor.cc:37:33:[m[K [01;31m[Kerror: [m[Klambda-expression in template-argument only available with ‘[01m[K-std=c++20[m[K’ or ‘[01m[K-std=gnu++20[m[K’
+[6.873s]    37 |                                 [01;31m[K[[m[K&](const ignition::gazebo::Entity &_entity,
+[6.874s]       |                                 [01;31m[K^[m[K
+[6.874s] [01m[K/home/paolo/light_sensor_plugin/src/light_sensor_custom/src/LightSensor.cc:36:22:[m[K [01;31m[Kerror: [m[Kparse error in template argument list
+[6.874s]    36 |                 _ecm.[01;31m[KEach<ignition::gazebo::components::Pose([m[K
+[6.874s]       |                      [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[6.874s]    37 | [01;31m[K                                [&](const ignition::gazebo::Entity &_entity,[m[K
+[6.874s]       |                                 [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[6.874s]    38 | [01;31m[K                                const ignition::gazebo::components::Pose *_pose) -> bool[m[K
+[6.874s]       |                                 [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[6.874s]    39 | [01;31m[K                {[m[K
+[6.874s]       |                 [01;31m[K~[m[K     
+[6.874s]    40 | 
+[6.874s]       |                       
+[6.874s]    41 | 
+[6.874s]       |                       
+[6.874s]    42 | [01;31m[K                        ignition::math::Pose3d light_pose = _pose->Data();[m[K
+[6.874s]       |                         [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[6.874s]    43 | [01;31m[K                        lightPoses.push_back(light_pose);[m[K
+[6.875s]       |                         [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[6.875s]    44 | 
+[6.875s]       |                       
+[6.875s]    45 | [01;31m[K                        std:: cout << lightPoses.size() << std::endl;[m[K
+[6.875s]       |                         [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[6.875s]    46 | 
+[6.875s]       |                       
+[6.875s]    47 | [01;31m[K                        return true;[m[K
+[6.875s]       |                         [01;31m[K~~~~~~~~~~~~[m[K
+[6.875s]    48 | 
+[6.875s]       |                       
+[6.875s]    49 | [01;31m[K                })[m[K;
+[6.875s]       |                 [01;31m[K~~[m[K    
+[6.875s] [01m[K/home/paolo/light_sensor_plugin/src/light_sensor_custom/src/LightSensor.cc:36:22:[m[K [01;31m[Kerror: [m[Kstatement cannot resolve address of overloaded function
+[6.875s]    36 |                 [01;31m[K_ecm.Each<ignition::gazebo::components::Pose([m[K
+[6.876s]       |                 [01;31m[K~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[6.876s]    37 | [01;31m[K                                [&](const ignition::gazebo::Entity &_entity,[m[K
+[6.876s]       |                                 [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[6.876s]    38 | [01;31m[K                                const ignition::gazebo::components::Pose *_pose) -> bool[m[K
+[6.876s]       |                                 [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[6.876s]    39 | [01;31m[K                {[m[K
+[6.876s]       |                 [01;31m[K~[m[K     
+[6.876s]    40 | 
+[6.876s]       |                       
+[6.876s]    41 | 
+[6.876s]       |                       
+[6.876s]    42 | [01;31m[K                        ignition::math::Pose3d light_pose = _pose->Data();[m[K
+[6.876s]       |                         [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[6.876s]    43 | [01;31m[K                        lightPoses.push_back(light_pose);[m[K
+[6.876s]       |                         [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[6.876s]    44 | 
+[6.876s]       |                       
+[6.877s]    45 | [01;31m[K                        std:: cout << lightPoses.size() << std::endl;[m[K
+[6.877s]       |                         [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[6.877s]    46 | 
+[6.877s]       |                       
+[6.877s]    47 | [01;31m[K                        return true;[m[K
+[6.877s]       |                         [01;31m[K~~~~~~~~~~~~[m[K
+[6.877s]    48 | 
+[6.877s]       |                       
+[6.877s]    49 | [01;31m[K                })[m[K;
+[6.877s]       |                 [01;31m[K~~[m[K    
+[10.260s] gmake[2]: *** [CMakeFiles/LightSensor.dir/build.make:76: CMakeFiles/LightSensor.dir/src/LightSensor.cc.o] Error 1
+[10.260s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/LightSensor.dir/all] Error 2
+[10.260s] gmake: *** [Makefile:146: all] Error 2
+[10.263s] Invoked command in '/home/paolo/light_sensor_plugin/build/light_sensor' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/paolo/turtlebot4_controller_ws/install/turtlebot4_controller:/opt/ros/humble /usr/bin/cmake --build /home/paolo/light_sensor_plugin/build/light_sensor -- -j8 -l8

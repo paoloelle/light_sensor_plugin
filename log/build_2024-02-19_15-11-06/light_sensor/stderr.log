@@ -1,0 +1,152 @@
+In file included from [01m[K/usr/include/ignition/gazebo6/gz/sim/EntityComponentManager.hh:848[m[K,
+                 from [01m[K/usr/include/ignition/gazebo6/gz/sim/Light.hh:33[m[K,
+                 from [01m[K/usr/include/ignition/gazebo6/ignition/gazebo/Light.hh:18[m[K,
+                 from [01m[K/home/paolo/light_sensor_plugin/src/light_sensor_custom/src/LightSensor.cc:1[m[K:
+/usr/include/ignition/gazebo6/gz/sim/detail/EntityComponentManager.hh: In instantiation of ‘[01m[Kignition::gazebo::v6::detail::View* ignition::gazebo::v6::EntityComponentManager::FindView() const [with ComponentTypeTs = {ignition::gazebo::v6::components::LightTag, ignition::gazebo::v6::components::Component<ignition::math::v6::Pose3<double>, ignition::gazebo::v6::components::PoseTag, ignition::gazebo::v6::serializers::DefaultSerializer<ignition::math::v6::Pose3<double> > >}][m[K’:
+[01m[K/usr/include/ignition/gazebo6/gz/sim/detail/EntityComponentManager.hh:447:49:[m[K   required from ‘[01m[Kvoid ignition::gazebo::v6::EntityComponentManager::Each(typename ignition::gazebo::v6::EntityComponentManager::identity<std::function<bool(const long unsigned int&, ComponentTypeTs* ...)> >::type) [with ComponentTypeTs = {ignition::gazebo::v6::components::LightTag, ignition::gazebo::v6::components::Component<ignition::math::v6::Pose3<double>, ignition::gazebo::v6::components::PoseTag, ignition::gazebo::v6::serializers::DefaultSerializer<ignition::math::v6::Pose3<double> > >}; typename ignition::gazebo::v6::EntityComponentManager::identity<std::function<bool(const long unsigned int&, ComponentTypeTs* ...)> >::type = std::function<bool(const long unsigned int&, ignition::gazebo::v6::components::LightTag*, ignition::gazebo::v6::components::Component<ignition::math::v6::Pose3<double>, ignition::gazebo::v6::components::PoseTag>*)>][m[K’
+[01m[K/home/paolo/light_sensor_plugin/src/light_sensor_custom/src/LightSensor.cc:34:41:[m[K   required from here
+[01m[K/usr/include/ignition/gazebo6/gz/sim/detail/EntityComponentManager.hh:539:64:[m[K [01;31m[Kerror: [m[Kincomplete type ‘[01m[Kignition::gazebo::v6::components::LightTag[m[K’ used in nested name specifier
+  539 |   auto viewKey = std::vector<ComponentTypeId>{ComponentTypeTs::[01;31m[KtypeId[m[K...};
+      |                                                                [01;31m[K^~~~~~[m[K
+[01m[K/usr/include/ignition/gazebo6/gz/sim/detail/EntityComponentManager.hh:539:8:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kstd::vector<long unsigned int>::vector(<brace-enclosed initializer list>)[m[K’
+  539 |   auto [01;31m[KviewKey[m[K = std::vector<ComponentTypeId>{ComponentTypeTs::typeId...};
+      |        [01;31m[K^~~~~~~[m[K
+In file included from [01m[K/usr/include/c++/11/vector:67[m[K,
+                 from [01m[K/usr/include/ignition/gazebo6/gz/sim/Light.hh:23[m[K,
+                 from [01m[K/usr/include/ignition/gazebo6/ignition/gazebo/Light.hh:18[m[K,
+                 from [01m[K/home/paolo/light_sensor_plugin/src/light_sensor_custom/src/LightSensor.cc:1[m[K:
+[01m[K/usr/include/c++/11/bits/stl_vector.h:653:9:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _InputIterator, class> std::vector<_Tp, _Alloc>::vector(_InputIterator, _InputIterator, const allocator_type&) [with _InputIterator = _InputIterator; <template-parameter-2-2> = <template-parameter-1-2>; _Tp = long unsigned int; _Alloc = std::allocator<long unsigned int>][m[K’
+  653 |         [01;36m[Kvector[m[K(_InputIterator __first, _InputIterator __last,
+      |         [01;36m[K^~~~~~[m[K
+[01m[K/usr/include/c++/11/bits/stl_vector.h:653:9:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/usr/include/c++/11/bits/stl_vector.h:625:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::vector<_Tp, _Alloc>::vector(std::initializer_list<_Tp>, const allocator_type&) [with _Tp = long unsigned int; _Alloc = std::allocator<long unsigned int>; std::vector<_Tp, _Alloc>::allocator_type = std::allocator<long unsigned int>][m[K’
+  625 |       [01;36m[Kvector[m[K(initializer_list<value_type> __l,
+      |       [01;36m[K^~~~~~[m[K
+[01m[K/usr/include/c++/11/bits/stl_vector.h:625:7:[m[K [01;36m[Knote: [m[K  conversion of argument 1 would be ill-formed:
+[01m[K/usr/include/c++/11/bits/stl_vector.h:607:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::vector<_Tp, _Alloc>::vector(std::vector<_Tp, _Alloc>&&, const allocator_type&) [with _Tp = long unsigned int; _Alloc = std::allocator<long unsigned int>; std::vector<_Tp, _Alloc>::allocator_type = std::allocator<long unsigned int>][m[K’
+  607 |       [01;36m[Kvector[m[K(vector&& __rv, const allocator_type& __m)
+      |       [01;36m[K^~~~~~[m[K
+[01m[K/usr/include/c++/11/bits/stl_vector.h:607:7:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 1 provided
+[01m[K/usr/include/c++/11/bits/stl_vector.h:589:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::vector<_Tp, _Alloc>::vector(std::vector<_Tp, _Alloc>&&, const allocator_type&, std::false_type) [with _Tp = long unsigned int; _Alloc = std::allocator<long unsigned int>; std::vector<_Tp, _Alloc>::allocator_type = std::allocator<long unsigned int>; std::false_type = std::integral_constant<bool, false>][m[K’
+  589 |       [01;36m[Kvector[m[K(vector&& __rv, const allocator_type& __m, false_type)
+      |       [01;36m[K^~~~~~[m[K
+[01m[K/usr/include/c++/11/bits/stl_vector.h:589:7:[m[K [01;36m[Knote: [m[K  candidate expects 3 arguments, 1 provided
+[01m[K/usr/include/c++/11/bits/stl_vector.h:585:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::vector<_Tp, _Alloc>::vector(std::vector<_Tp, _Alloc>&&, const allocator_type&, std::true_type) [with _Tp = long unsigned int; _Alloc = std::allocator<long unsigned int>; std::vector<_Tp, _Alloc>::allocator_type = std::allocator<long unsigned int>; std::true_type = std::integral_constant<bool, true>][m[K’
+  585 |       [01;36m[Kvector[m[K(vector&& __rv, const allocator_type& __m, true_type) noexcept
+      |       [01;36m[K^~~~~~[m[K
+[01m[K/usr/include/c++/11/bits/stl_vector.h:585:7:[m[K [01;36m[Knote: [m[K  candidate expects 3 arguments, 1 provided
+[01m[K/usr/include/c++/11/bits/stl_vector.h:575:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::vector<_Tp, _Alloc>::vector(const std::vector<_Tp, _Alloc>&, const allocator_type&) [with _Tp = long unsigned int; _Alloc = std::allocator<long unsigned int>; std::vector<_Tp, _Alloc>::allocator_type = std::allocator<long unsigned int>][m[K’
+  575 |       [01;36m[Kvector[m[K(const vector& __x, const allocator_type& __a)
+      |       [01;36m[K^~~~~~[m[K
+[01m[K/usr/include/c++/11/bits/stl_vector.h:575:7:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 1 provided
+[01m[K/usr/include/c++/11/bits/stl_vector.h:572:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::vector<_Tp, _Alloc>::vector(std::vector<_Tp, _Alloc>&&) [with _Tp = long unsigned int; _Alloc = std::allocator<long unsigned int>][m[K’
+  572 |       [01;36m[Kvector[m[K(vector&&) noexcept = default;
+      |       [01;36m[K^~~~~~[m[K
+[01m[K/usr/include/c++/11/bits/stl_vector.h:572:7:[m[K [01;36m[Knote: [m[K  conversion of argument 1 would be ill-formed:
+[01m[K/usr/include/c++/11/bits/stl_vector.h:553:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::vector<_Tp, _Alloc>::vector(const std::vector<_Tp, _Alloc>&) [with _Tp = long unsigned int; _Alloc = std::allocator<long unsigned int>][m[K’
+  553 |       [01;36m[Kvector[m[K(const vector& __x)
+      |       [01;36m[K^~~~~~[m[K
+[01m[K/usr/include/c++/11/bits/stl_vector.h:553:7:[m[K [01;36m[Knote: [m[K  conversion of argument 1 would be ill-formed:
+[01m[K/usr/include/c++/11/bits/stl_vector.h:522:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::vector<_Tp, _Alloc>::vector(std::vector<_Tp, _Alloc>::size_type, const value_type&, const allocator_type&) [with _Tp = long unsigned int; _Alloc = std::allocator<long unsigned int>; std::vector<_Tp, _Alloc>::size_type = long unsigned int; std::vector<_Tp, _Alloc>::value_type = long unsigned int; std::vector<_Tp, _Alloc>::allocator_type = std::allocator<long unsigned int>][m[K’
+  522 |       [01;36m[Kvector[m[K(size_type __n, const value_type& __value,
+      |       [01;36m[K^~~~~~[m[K
+[01m[K/usr/include/c++/11/bits/stl_vector.h:522:7:[m[K [01;36m[Knote: [m[K  candidate expects 3 arguments, 1 provided
+[01m[K/usr/include/c++/11/bits/stl_vector.h:510:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::vector<_Tp, _Alloc>::vector(std::vector<_Tp, _Alloc>::size_type, const allocator_type&) [with _Tp = long unsigned int; _Alloc = std::allocator<long unsigned int>; std::vector<_Tp, _Alloc>::size_type = long unsigned int; std::vector<_Tp, _Alloc>::allocator_type = std::allocator<long unsigned int>][m[K’
+  510 |       [01;36m[Kvector[m[K(size_type __n, const allocator_type& __a = allocator_type())
+      |       [01;36m[K^~~~~~[m[K
+[01m[K/usr/include/c++/11/bits/stl_vector.h:510:7:[m[K [01;36m[Knote: [m[K  conversion of argument 1 would be ill-formed:
+[01m[K/usr/include/c++/11/bits/stl_vector.h:497:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::vector<_Tp, _Alloc>::vector(const allocator_type&) [with _Tp = long unsigned int; _Alloc = std::allocator<long unsigned int>; std::vector<_Tp, _Alloc>::allocator_type = std::allocator<long unsigned int>][m[K’
+  497 |       [01;36m[Kvector[m[K(const allocator_type& __a) _GLIBCXX_NOEXCEPT
+      |       [01;36m[K^~~~~~[m[K
+[01m[K/usr/include/c++/11/bits/stl_vector.h:497:7:[m[K [01;36m[Knote: [m[K  conversion of argument 1 would be ill-formed:
+[01m[K/usr/include/c++/11/bits/stl_vector.h:487:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::vector<_Tp, _Alloc>::vector() [with _Tp = long unsigned int; _Alloc = std::allocator<long unsigned int>][m[K’
+  487 |       [01;36m[Kvector[m[K() = default;
+      |       [01;36m[K^~~~~~[m[K
+[01m[K/usr/include/c++/11/bits/stl_vector.h:487:7:[m[K [01;36m[Knote: [m[K  candidate expects 0 arguments, 1 provided
+In file included from [01m[K/usr/include/ignition/gazebo6/gz/sim/EntityComponentManager.hh:848[m[K,
+                 from [01m[K/usr/include/ignition/gazebo6/gz/sim/Light.hh:33[m[K,
+                 from [01m[K/usr/include/ignition/gazebo6/ignition/gazebo/Light.hh:18[m[K,
+                 from [01m[K/home/paolo/light_sensor_plugin/src/light_sensor_custom/src/LightSensor.cc:1[m[K:
+[01m[K/usr/include/ignition/gazebo6/gz/sim/detail/EntityComponentManager.hh:579:64:[m[K [01;31m[Kerror: [m[Kincomplete type ‘[01m[Kignition::gazebo::v6::components::LightTag[m[K’ used in nested name specifier
+  579 |   detail::View view(std::set<ComponentTypeId>{ComponentTypeTs::[01;31m[KtypeId[m[K...});
+      |                                                                [01;31m[K^~~~~~[m[K
+[01m[K/usr/include/ignition/gazebo6/gz/sim/detail/EntityComponentManager.hh:579:16:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kstd::set<long unsigned int>::set(<brace-enclosed initializer list>)[m[K’
+  579 |   detail::View [01;31m[Kview[m[K(std::set<ComponentTypeId>{ComponentTypeTs::typeId...});
+      |                [01;31m[K^~~~[m[K
+In file included from [01m[K/usr/include/c++/11/set:61[m[K,
+                 from [01m[K/usr/include/google/protobuf/stubs/common.h:42[m[K,
+                 from [01m[K/usr/include/google/protobuf/io/coded_stream.h:141[m[K,
+                 from [01m[K/usr/include/ignition/msgs8/ignition/msgs/serialized.pb.h:23[m[K,
+                 from [01m[K/usr/include/ignition/msgs8/gz/msgs/serialized.pb.h:18[m[K,
+                 from [01m[K/usr/include/ignition/gazebo6/gz/sim/EntityComponentManager.hh:20[m[K,
+                 from [01m[K/usr/include/ignition/gazebo6/gz/sim/Light.hh:33[m[K,
+                 from [01m[K/usr/include/ignition/gazebo6/ignition/gazebo/Light.hh:18[m[K,
+                 from [01m[K/home/paolo/light_sensor_plugin/src/light_sensor_custom/src/LightSensor.cc:1[m[K:
+[01m[K/usr/include/c++/11/bits/stl_set.h:271:9:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _InputIterator> std::set<_Key, _Compare, _Alloc>::set(_InputIterator, _InputIterator, const allocator_type&) [with _InputIterator = _InputIterator; _Key = long unsigned int; _Compare = std::less<long unsigned int>; _Alloc = std::allocator<long unsigned int>][m[K’
+  271 |         [01;36m[Kset[m[K(_InputIterator __first, _InputIterator __last,
+      |         [01;36m[K^~~[m[K
+[01m[K/usr/include/c++/11/bits/stl_set.h:271:9:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/usr/include/c++/11/bits/stl_set.h:208:9:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _InputIterator> std::set<_Key, _Compare, _Alloc>::set(_InputIterator, _InputIterator, const _Compare&, const allocator_type&) [with _InputIterator = _InputIterator; _Key = long unsigned int; _Compare = std::less<long unsigned int>; _Alloc = std::allocator<long unsigned int>][m[K’
+  208 |         [01;36m[Kset[m[K(_InputIterator __first, _InputIterator __last,
+      |         [01;36m[K^~~[m[K
+[01m[K/usr/include/c++/11/bits/stl_set.h:208:9:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/usr/include/c++/11/bits/stl_set.h:191:9:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _InputIterator> std::set<_Key, _Compare, _Alloc>::set(_InputIterator, _InputIterator) [with _InputIterator = _InputIterator; _Key = long unsigned int; _Compare = std::less<long unsigned int>; _Alloc = std::allocator<long unsigned int>][m[K’
+  191 |         [01;36m[Kset[m[K(_InputIterator __first, _InputIterator __last)
+      |         [01;36m[K^~~[m[K
+[01m[K/usr/include/c++/11/bits/stl_set.h:191:9:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/usr/include/c++/11/bits/stl_set.h:265:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::set<_Key, _Compare, _Alloc>::set(std::initializer_list<_Tp>, const allocator_type&) [with _Key = long unsigned int; _Compare = std::less<long unsigned int>; _Alloc = std::allocator<long unsigned int>; std::set<_Key, _Compare, _Alloc>::allocator_type = std::allocator<long unsigned int>][m[K’
+  265 |       [01;36m[Kset[m[K(initializer_list<value_type> __l, const allocator_type& __a)
+      |       [01;36m[K^~~[m[K
+[01m[K/usr/include/c++/11/bits/stl_set.h:265:7:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 1 provided
+[01m[K/usr/include/c++/11/bits/stl_set.h:259:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::set<_Key, _Compare, _Alloc>::set(std::set<_Key, _Compare, _Alloc>&&, const allocator_type&) [with _Key = long unsigned int; _Compare = std::less<long unsigned int>; _Alloc = std::allocator<long unsigned int>; std::set<_Key, _Compare, _Alloc>::allocator_type = std::allocator<long unsigned int>][m[K’
+  259 |       [01;36m[Kset[m[K(set&& __x, const allocator_type& __a)
+      |       [01;36m[K^~~[m[K
+[01m[K/usr/include/c++/11/bits/stl_set.h:259:7:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 1 provided
+[01m[K/usr/include/c++/11/bits/stl_set.h:255:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::set<_Key, _Compare, _Alloc>::set(const std::set<_Key, _Compare, _Alloc>&, const allocator_type&) [with _Key = long unsigned int; _Compare = std::less<long unsigned int>; _Alloc = std::allocator<long unsigned int>; std::set<_Key, _Compare, _Alloc>::allocator_type = std::allocator<long unsigned int>][m[K’
+  255 |       [01;36m[Kset[m[K(const set& __x, const allocator_type& __a)
+      |       [01;36m[K^~~[m[K
+[01m[K/usr/include/c++/11/bits/stl_set.h:255:7:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 1 provided
+[01m[K/usr/include/c++/11/bits/stl_set.h:251:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::set<_Key, _Compare, _Alloc>::set(const allocator_type&) [with _Key = long unsigned int; _Compare = std::less<long unsigned int>; _Alloc = std::allocator<long unsigned int>; std::set<_Key, _Compare, _Alloc>::allocator_type = std::allocator<long unsigned int>][m[K’
+  251 |       [01;36m[Kset[m[K(const allocator_type& __a)
+      |       [01;36m[K^~~[m[K
+[01m[K/usr/include/c++/11/bits/stl_set.h:251:7:[m[K [01;36m[Knote: [m[K  conversion of argument 1 would be ill-formed:
+[01m[K/usr/include/c++/11/bits/stl_set.h:243:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::set<_Key, _Compare, _Alloc>::set(std::initializer_list<_Tp>, const _Compare&, const allocator_type&) [with _Key = long unsigned int; _Compare = std::less<long unsigned int>; _Alloc = std::allocator<long unsigned int>; std::set<_Key, _Compare, _Alloc>::allocator_type = std::allocator<long unsigned int>][m[K’
+  243 |       [01;36m[Kset[m[K(initializer_list<value_type> __l,
+      |       [01;36m[K^~~[m[K
+[01m[K/usr/include/c++/11/bits/stl_set.h:243:7:[m[K [01;36m[Knote: [m[K  conversion of argument 1 would be ill-formed:
+[01m[K/usr/include/c++/11/bits/stl_set.h:231:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::set<_Key, _Compare, _Alloc>::set(std::set<_Key, _Compare, _Alloc>&&) [with _Key = long unsigned int; _Compare = std::less<long unsigned int>; _Alloc = std::allocator<long unsigned int>][m[K’
+  231 |       [01;36m[Kset[m[K(set&&) = default;
+      |       [01;36m[K^~~[m[K
+[01m[K/usr/include/c++/11/bits/stl_set.h:231:7:[m[K [01;36m[Knote: [m[K  conversion of argument 1 would be ill-formed:
+[01m[K/usr/include/c++/11/bits/stl_set.h:223:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::set<_Key, _Compare, _Alloc>::set(const std::set<_Key, _Compare, _Alloc>&) [with _Key = long unsigned int; _Compare = std::less<long unsigned int>; _Alloc = std::allocator<long unsigned int>][m[K’
+  223 |       [01;36m[Kset[m[K(const set&) = default;
+      |       [01;36m[K^~~[m[K
+[01m[K/usr/include/c++/11/bits/stl_set.h:223:7:[m[K [01;36m[Knote: [m[K  conversion of argument 1 would be ill-formed:
+[01m[K/usr/include/c++/11/bits/stl_set.h:176:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::set<_Key, _Compare, _Alloc>::set(const _Compare&, const allocator_type&) [with _Key = long unsigned int; _Compare = std::less<long unsigned int>; _Alloc = std::allocator<long unsigned int>; std::set<_Key, _Compare, _Alloc>::allocator_type = std::allocator<long unsigned int>][m[K’
+  176 |       [01;36m[Kset[m[K(const _Compare& __comp,
+      |       [01;36m[K^~~[m[K
+[01m[K/usr/include/c++/11/bits/stl_set.h:176:7:[m[K [01;36m[Knote: [m[K  conversion of argument 1 would be ill-formed:
+[01m[K/usr/include/c++/11/bits/stl_set.h:167:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::set<_Key, _Compare, _Alloc>::set() [with _Key = long unsigned int; _Compare = std::less<long unsigned int>; _Alloc = std::allocator<long unsigned int>][m[K’
+  167 |       [01;36m[Kset[m[K() = default;
+      |       [01;36m[K^~~[m[K
+[01m[K/usr/include/c++/11/bits/stl_set.h:167:7:[m[K [01;36m[Knote: [m[K  candidate expects 0 arguments, 1 provided
+In file included from [01m[K/usr/include/ignition/gazebo6/gz/sim/EntityComponentManager.hh:848[m[K,
+                 from [01m[K/usr/include/ignition/gazebo6/gz/sim/Light.hh:33[m[K,
+                 from [01m[K/usr/include/ignition/gazebo6/ignition/gazebo/Light.hh:18[m[K,
+                 from [01m[K/home/paolo/light_sensor_plugin/src/light_sensor_custom/src/LightSensor.cc:1[m[K:
+/usr/include/ignition/gazebo6/gz/sim/detail/EntityComponentManager.hh: In instantiation of ‘[01m[Kconstexpr bool ignition::gazebo::v6::detail::applyFunctionImpl(const FuncT&, const Entity&, const std::vector<BaseComponentT*>&, std::index_sequence<Is ...>) [with ComponentTypeTs = {ignition::gazebo::v6::components::LightTag, ignition::gazebo::v6::components::Component<ignition::math::v6::Pose3<double>, ignition::gazebo::v6::components::PoseTag, ignition::gazebo::v6::serializers::DefaultSerializer<ignition::math::v6::Pose3<double> > >}; FuncT = std::function<bool(const long unsigned int&, ignition::gazebo::v6::components::LightTag*, ignition::gazebo::v6::components::Component<ignition::math::v6::Pose3<double>, ignition::gazebo::v6::components::PoseTag>*)>; BaseComponentT = ignition::gazebo::v6::components::BaseComponent; long unsigned int ...Is = {0, 1}; ignition::gazebo::v6::Entity = long unsigned int; std::index_sequence<Is ...> = std::integer_sequence<long unsigned int, 0, 1>][m[K’:
+[01m[K/usr/include/ignition/gazebo6/gz/sim/detail/EntityComponentManager.hh:414:47:[m[K   required from ‘[01m[Kconstexpr bool ignition::gazebo::v6::detail::applyFunction(const FuncT&, const Entity&, const std::vector<BaseComponentT*>&) [with ComponentTypeTs = {ignition::gazebo::v6::components::LightTag, ignition::gazebo::v6::components::Component<ignition::math::v6::Pose3<double>, ignition::gazebo::v6::components::PoseTag, ignition::gazebo::v6::serializers::DefaultSerializer<ignition::math::v6::Pose3<double> > >}; FuncT = std::function<bool(const long unsigned int&, ignition::gazebo::v6::components::LightTag*, ignition::gazebo::v6::components::Component<ignition::math::v6::Pose3<double>, ignition::gazebo::v6::components::PoseTag>*)>; BaseComponentT = ignition::gazebo::v6::components::BaseComponent; ignition::gazebo::v6::Entity = long unsigned int][m[K’
+[01m[K/usr/include/ignition/gazebo6/gz/sim/detail/EntityComponentManager.hh:454:51:[m[K   required from ‘[01m[Kvoid ignition::gazebo::v6::EntityComponentManager::Each(typename ignition::gazebo::v6::EntityComponentManager::identity<std::function<bool(const long unsigned int&, ComponentTypeTs* ...)> >::type) [with ComponentTypeTs = {ignition::gazebo::v6::components::LightTag, ignition::gazebo::v6::components::Component<ignition::math::v6::Pose3<double>, ignition::gazebo::v6::components::PoseTag, ignition::gazebo::v6::serializers::DefaultSerializer<ignition::math::v6::Pose3<double> > >}; typename ignition::gazebo::v6::EntityComponentManager::identity<std::function<bool(const long unsigned int&, ComponentTypeTs* ...)> >::type = std::function<bool(const long unsigned int&, ignition::gazebo::v6::components::LightTag*, ignition::gazebo::v6::components::Component<ignition::math::v6::Pose3<double>, ignition::gazebo::v6::components::PoseTag>*)>][m[K’
+[01m[K/home/paolo/light_sensor_plugin/src/light_sensor_custom/src/LightSensor.cc:34:41:[m[K   required from here
+[01m[K/usr/include/ignition/gazebo6/gz/sim/detail/EntityComponentManager.hh:396:22:[m[K [01;31m[Kerror: [m[Kinvalid ‘[01m[Kstatic_cast[m[K’ from type ‘[01m[Kconst value_type[m[K’ {aka ‘[01m[Kignition::gazebo::v6::components::BaseComponent* const[m[K’} to type ‘[01m[Kignition::gazebo::v6::components::LightTag*[m[K’
+  396 |   return _f(_entity, [01;31m[Kstatic_cast<ComponentTypeTs *>(_data[Is])[m[K...);
+      |                      [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/usr/include/ignition/gazebo6/gz/sim/components.hh:73[m[K,
+                 from [01m[K/usr/include/ignition/gazebo6/ignition/gazebo/components.hh:18[m[K,
+                 from [01m[K/home/paolo/light_sensor_plugin/src/light_sensor_custom/src/LightSensor.cc:2[m[K:
+[01m[K/usr/include/ignition/gazebo6/gz/sim/components/Light.hh:48:35:[m[K [01;36m[Knote: [m[Kclass type ‘[01m[Kignition::gazebo::v6::components::LightTag[m[K’ is incomplete
+   48 |       Component<sdf::Light, class [01;36m[KLightTag[m[K, serializers::LightSerializer>;
+      |                                   [01;36m[K^~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/LightSensor.dir/build.make:76: CMakeFiles/LightSensor.dir/src/LightSensor.cc.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/LightSensor.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

@@ -2,60 +2,110 @@
 <sdf version="1.9">
     <world name="test">
 
-    	<light type="point" name="point_light1">
-			<intensity>1</intensity>
-			<pose>0 -0.6 1.5 0 0 0</pose>
-			<diffuse>1 1 0 1</diffuse>
-			<specular>.1 .1 .1 1</specular>
-			<attenuation>
-			  <range>4</range>
-			  <linear>1</linear>
-			  <constant>0.8</constant>
-			  <quadratic>0</quadratic>
-			</attenuation>
-			<cast_shadows>false</cast_shadows>
-		</light>
+		<model name="lights">
 
-		<light type="point" name="point_light2">
-			<intensity>1</intensity>
-			<pose>1.5 -0.6 1.5 0 0 0</pose>
-			<diffuse>1 1 0 1</diffuse>
-			<specular>.1 .1 .1 1</specular>
-			<attenuation>
-			  <range>4</range>
-			  <linear>1</linear>
-			  <constant>0.8</constant>
-			  <quadratic>0</quadratic>
-			</attenuation>
-			<cast_shadows>false</cast_shadows>
-		</light>
+    	<static>true</static>
+		<link name="link_light1">
+			<light type="point" name="point_light1">
+				<intensity>1</intensity>
+				<pose>0 -0.6 1.5 0 0 0</pose>
+				<diffuse>1 1 0 1</diffuse>
+				<specular>.1 .1 .1 1</specular>
+				<attenuation>
+					<range>4</range>
+					<linear>1</linear>
+					<constant>0.8</constant>
+					<quadratic>0</quadratic>
+				</attenuation>
+				<cast_shadows>false</cast_shadows>
+			</light>
+
+		</link>
+
+		<link name="link_light2">
+
+			<light type="point" name="point_light2">
+				<intensity>1</intensity>
+				<pose>1.5 -0.6 1.5 0 0 0</pose>
+				<diffuse>1 1 0 1</diffuse>
+				<specular>.1 .1 .1 1</specular>
+				<attenuation>
+					<range>4</range>
+					<linear>1</linear>
+					<constant>0.8</constant>
+					<quadratic>0</quadratic>
+				</attenuation>
+				<cast_shadows>false</cast_shadows>
+			</light>
+
+		</link>
+		
+		<link name="link_light3">
+
+			<light type="point" name="point_light3">
+				<intensity>1</intensity>
+				<pose>1.5 0.6 1.5 0 0 0</pose>
+				<diffuse>1 1 0 1</diffuse>
+				<specular>.1 .1 .1 1</specular>
+				<attenuation>
+					<range>4</range>
+					<linear>1</linear>
+					<constant>0.8</constant>
+					<quadratic>0</quadratic>
+				</attenuation>
+				<cast_shadows>false</cast_shadows>
+			</light>
+
+		</link>
+
+		<link name="link_light4">
+
+			<light type="point" name="point_light4">
+				<intensity>1</intensity>
+				<pose>0 0.6 1.5 0 0 0</pose>
+				<diffuse>1 1 0 1</diffuse>
+				<specular>.1 .1 .1 1</specular>
+				<attenuation>
+					<range>4</range>
+					<linear>1</linear>
+					<constant>0.8</constant>
+					<quadratic>0</quadratic>
+				</attenuation>
+				<cast_shadows>false</cast_shadows>
+			</light>
+
+		</link>
+		
+
+		</model>
 
 
-    <model name="light_sensor">
+		<model name="light_sensor">
 
-        <static>true</static>
-        <link name="sensor_link">
-            <visual name="visual_object">					
-				<geometry>
-					<cylinder>
-						<radius>.1</radius>
-			    		<length>0.08</length>
-					</cylinder>
-					</geometry>
-					<material>
-						<diffuse>1 0 0 1</diffuse>
-					</material>
-			</visual>
+			<static>true</static>
+			<link name="sensor_link">
+				<visual name="visual_object">					
+					<geometry>
+						<cylinder>
+							<radius>.1</radius>
+							<length>0.08</length>
+						</cylinder>
+						</geometry>
+						<material>
+							<diffuse>1 0 0 1</diffuse>
+						</material>
+				</visual>
 
-        </link>
-         <!--FIXME don't pass absoulte path-->
-        <plugin
-            filename="/home/paolo/light_sensor_plugin/install/lib/libLightSensor.so"
-            name="custom_light_sensor::LightSensor">
-        <update_rate>1</update_rate>
-        </plugin>
+			</link>
 
-    </model>
+			<!--FIXME no absoulte path-->
+			<plugin
+				filename="/home/paolo/light_sensor_plugin/install/lib/libLightSensor.so"
+				name="custom_light_sensor::LightSensor">
+				<update_rate>1</update_rate>
+			</plugin>
+
+		</model>
 
 
     </world>

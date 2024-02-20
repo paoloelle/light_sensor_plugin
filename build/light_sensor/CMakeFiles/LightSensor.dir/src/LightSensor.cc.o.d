@@ -1596,6 +1596,8 @@ CMakeFiles/LightSensor.dir/src/LightSensor.cc.o: \
  /usr/include/ignition/gazebo6/ignition/gazebo/components/Model.hh \
  /usr/include/ignition/gazebo6/ignition/gazebo/components/Pose.hh \
  /usr/include/ignition/gazebo6/ignition/gazebo/components/ParentEntity.hh \
+ /usr/include/ignition/gazebo6/ignition/gazebo/components/LightType.hh \
+ /usr/include/ignition/gazebo6/ignition/gazebo/components/Light.hh \
  /usr/include/ignition/gazebo6/ignition/gazebo/EntityComponentManager.hh \
  /home/paolo/light_sensor_plugin/src/light_sensor_custom/src/LightSensor.hh \
  /usr/include/ignition/gazebo6/ignition/gazebo/System.hh \

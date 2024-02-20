@@ -1,0 +1,108 @@
+[35m[1mConsolidate compiler generated dependencies of target LightSensor[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/LightSensor.dir/src/LightSensor.cc.o[0m
+[01m[K/home/paolo/light_sensor_plugin/src/light_sensor_custom/src/LightSensor.cc:[m[K In member function ‘[01m[Kvirtual void custom_light_sensor::LightSensor::Configure(const Entity&, const std::shared_ptr<const sdf::v12::Element>&, ignition::gazebo::v6::EntityComponentManager&, ignition::gazebo::v6::EventManager&)[m[K’:
+[01m[K/home/paolo/light_sensor_plugin/src/light_sensor_custom/src/LightSensor.cc:35:22:[m[K [01;31m[Kerror: [m[Kparse error in template argument list
+   35 |                 _ecm.[01;31m[KEach<ignition::gazebo::components::Light.name(),[m[K
+      |                      [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+   36 | [01;31m[K                                        ignition::gazebo::components::Pose>[m[K(
+      |                                         [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/paolo/light_sensor_plugin/src/light_sensor_custom/src/LightSensor.cc:38:74:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K,[m[K’ or ‘[01m[K...[m[K’ before ‘[01m[K.[m[K’ token
+   38 |                                 const ignition::gazebo::components::Light[01;31m[K.[m[Kname() *,
+      |                                                                          [01;31m[K^[m[K
+[01m[K/home/paolo/light_sensor_plugin/src/light_sensor_custom/src/LightSensor.cc:[m[K In lambda function:
+[01m[K/home/paolo/light_sensor_plugin/src/light_sensor_custom/src/LightSensor.cc:41:61:[m[K [01;31m[Kerror: [m[K‘[01m[K_pose[m[K’ was not declared in this scope
+   41 |                         ignition::math::Pose3d light_pose = [01;31m[K_pose[m[K->Data();
+      |                                                             [01;31m[K^~~~~[m[K
+[01m[K/home/paolo/light_sensor_plugin/src/light_sensor_custom/src/LightSensor.cc:[m[K In member function ‘[01m[Kvirtual void custom_light_sensor::LightSensor::Configure(const Entity&, const std::shared_ptr<const sdf::v12::Element>&, ignition::gazebo::v6::EntityComponentManager&, ignition::gazebo::v6::EventManager&)[m[K’:
+[01m[K/home/paolo/light_sensor_plugin/src/light_sensor_custom/src/LightSensor.cc:36:76:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kignition::gazebo::v6::EntityComponentManager::Each<<expression error>, ignition::gazebo::v6::components::Pose>(custom_light_sensor::LightSensor::Configure(const Entity&, const std::shared_ptr<const sdf::v12::Element>&, ignition::gazebo::v6::EntityComponentManager&, ignition::gazebo::v6::EventManager&)::<lambda(const Entity&, ignition::gazebo::v6::components::Light)>)[m[K’
+   35 |                 [01;31m[K_ecm.Each<ignition::gazebo::components::Light.name(),[m[K
+      |                 [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K       
+   36 | [01;31m[K                                        ignition::gazebo::components::Pose>([m[K
+      |                                         [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^[m[K
+   37 | [01;31m[K                        [&](const ignition::gazebo::Entity &_entity,[m[K
+      |                         [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K        
+   38 | [01;31m[K                                const ignition::gazebo::components::Light.name() *,[m[K
+      |                                 [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+   39 | [01;31m[K                                const ignition::gazebo::components::Pose *_pose) -> bool[m[K
+      |                                 [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+   40 | [01;31m[K                {[m[K
+      |                 [01;31m[K~[m[K                                                           
+   41 | [01;31m[K                        ignition::math::Pose3d light_pose = _pose->Data();[m[K
+      |                         [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K  
+   42 | [01;31m[K                        lightPoses.push_back(light_pose);[m[K
+      |                         [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K                   
+   43 | 
+      |                                                                             
+   44 | [01;31m[K                        return true;[m[K
+      |                         [01;31m[K~~~~~~~~~~~~[m[K                                        
+   45 | 
+      |                                                                             
+   46 | [01;31m[K                })[m[K;
+      |                 [01;31m[K~~[m[K                                                          
+In file included from [01m[K/usr/include/ignition/gazebo6/gz/sim/Light.hh:33[m[K,
+                 from [01m[K/usr/include/ignition/gazebo6/ignition/gazebo/Light.hh:18[m[K,
+                 from [01m[K/home/paolo/light_sensor_plugin/src/light_sensor_custom/src/LightSensor.cc:1[m[K:
+[01m[K/usr/include/ignition/gazebo6/gz/sim/EntityComponentManager.hh:463:20:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class ... ComponentTypeTs> void ignition::gazebo::v6::EntityComponentManager::Each(typename ignition::gazebo::v6::EntityComponentManager::identity<std::function<bool(const long unsigned int&, const ComponentTypeTs* ...)> >::type) const[m[K’
+  463 |               void [01;36m[KEach[m[K(typename identity<std::function<
+      |                    [01;36m[K^~~~[m[K
+[01m[K/usr/include/ignition/gazebo6/gz/sim/EntityComponentManager.hh:463:20:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/paolo/light_sensor_plugin/src/light_sensor_custom/src/LightSensor.cc:36:76:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   35 |                 [01;31m[K_ecm.Each<ignition::gazebo::components::Light.name(),[m[K
+      |                 [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K       
+   36 | [01;31m[K                                        ignition::gazebo::components::Pose>([m[K
+      |                                         [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^[m[K
+   37 | [01;31m[K                        [&](const ignition::gazebo::Entity &_entity,[m[K
+      |                         [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K        
+   38 | [01;31m[K                                const ignition::gazebo::components::Light.name() *,[m[K
+      |                                 [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+   39 | [01;31m[K                                const ignition::gazebo::components::Pose *_pose) -> bool[m[K
+      |                                 [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+   40 | [01;31m[K                {[m[K
+      |                 [01;31m[K~[m[K                                                           
+   41 | [01;31m[K                        ignition::math::Pose3d light_pose = _pose->Data();[m[K
+      |                         [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K  
+   42 | [01;31m[K                        lightPoses.push_back(light_pose);[m[K
+      |                         [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K                   
+   43 | 
+      |                                                                             
+   44 | [01;31m[K                        return true;[m[K
+      |                         [01;31m[K~~~~~~~~~~~~[m[K                                        
+   45 | 
+      |                                                                             
+   46 | [01;31m[K                })[m[K;
+      |                 [01;31m[K~~[m[K                                                          
+In file included from [01m[K/usr/include/ignition/gazebo6/gz/sim/Light.hh:33[m[K,
+                 from [01m[K/usr/include/ignition/gazebo6/ignition/gazebo/Light.hh:18[m[K,
+                 from [01m[K/home/paolo/light_sensor_plugin/src/light_sensor_custom/src/LightSensor.cc:1[m[K:
+[01m[K/usr/include/ignition/gazebo6/gz/sim/EntityComponentManager.hh:480:20:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class ... ComponentTypeTs> void ignition::gazebo::v6::EntityComponentManager::Each(typename ignition::gazebo::v6::EntityComponentManager::identity<std::function<bool(const long unsigned int&, ComponentTypeTs* ...)> >::type)[m[K’
+  480 |               void [01;36m[KEach[m[K(typename identity<std::function<
+      |                    [01;36m[K^~~~[m[K
+[01m[K/usr/include/ignition/gazebo6/gz/sim/EntityComponentManager.hh:480:20:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/paolo/light_sensor_plugin/src/light_sensor_custom/src/LightSensor.cc:36:76:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   35 |                 [01;31m[K_ecm.Each<ignition::gazebo::components::Light.name(),[m[K
+      |                 [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K       
+   36 | [01;31m[K                                        ignition::gazebo::components::Pose>([m[K
+      |                                         [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^[m[K
+   37 | [01;31m[K                        [&](const ignition::gazebo::Entity &_entity,[m[K
+      |                         [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K        
+   38 | [01;31m[K                                const ignition::gazebo::components::Light.name() *,[m[K
+      |                                 [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+   39 | [01;31m[K                                const ignition::gazebo::components::Pose *_pose) -> bool[m[K
+      |                                 [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+   40 | [01;31m[K                {[m[K
+      |                 [01;31m[K~[m[K                                                           
+   41 | [01;31m[K                        ignition::math::Pose3d light_pose = _pose->Data();[m[K
+      |                         [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K  
+   42 | [01;31m[K                        lightPoses.push_back(light_pose);[m[K
+      |                         [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K                   
+   43 | 
+      |                                                                             
+   44 | [01;31m[K                        return true;[m[K
+      |                         [01;31m[K~~~~~~~~~~~~[m[K                                        
+   45 | 
+      |                                                                             
+   46 | [01;31m[K                })[m[K;
+      |                 [01;31m[K~~[m[K                                                          
+gmake[2]: *** [CMakeFiles/LightSensor.dir/build.make:76: CMakeFiles/LightSensor.dir/src/LightSensor.cc.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/LightSensor.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

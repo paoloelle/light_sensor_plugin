@@ -14,7 +14,10 @@
 #include <ignition/gazebo/components/Model.hh>
 #include <ignition/gazebo/components/Pose.hh>
 #include <ignition/gazebo/components/ParentEntity.hh>
+#include <ignition/gazebo/components/LightType.hh>
+#include <ignition/gazebo/components/Light.hh>
 #include <ignition/gazebo/EntityComponentManager.hh>
+#include <sdf/Root.hh>
 
 #include "LightSensor.hh"
 
@@ -29,26 +32,36 @@ void LightSensor::Configure(const ignition::gazebo::Entity &_entity,
     ignition::gazebo::EntityComponentManager &_ecm,
     ignition::gazebo::EventManager &/*_eventMgr*/)
     {
+		
+		
 
-		_ecm.Each<ignition::gazebo::components::Model,
-					ignition::gazebo::components::Pose>(
-			[&](const ignition::gazebo::Entity &_entity,
-				const ignition::gazebo::components:: Model *,
+		// questo metoodo sembra funzionare solo all'interno dei modelli
+  		_ecm.Each<ignition::gazebo::components::Light,
+				ignition::gazebo::components::Pose>(
+				[&](const ignition::gazebo::Entity &_entity,
+				const ignition::gazebo::components::Light *,
 				const ignition::gazebo::components::Pose *_pose) -> bool
-		{
+		{	
+
+			
 			ignition::math::Pose3d light_pose = _pose->Data();
-			lightSourcesPoses.push_back(light_pose);
+			lightPoses.push_back(light_pose);
+
 
 			return true;
 
 		});
 
+		std::cout << lightPoses <<std::endl;
+
+
 		// set the topic for sensor data publication
-		std::string topic = ignition::gazebo::scopedName(_entity, _ecm) + "light_value";
+		std::string topic = ignition::gazebo::scopedName(_entity, _ecm) + "/" + "light_value";
 		topic = ignition::transport::TopicUtils::AsValidTopic(topic);
 
 		// create the publisher
 		this->publisher = this->node.Advertise<ignition::msgs::Float>(topic);
+
 
     }
 
@@ -70,11 +83,13 @@ void LightSensor::Configure(const ignition::gazebo::Entity &_entity,
             }
 
 			// populate and publish the message
-			double light_value = 1.0;
+			double light_value = 0.0;
 
-			/*for (const auto &pose : lightSourcesPoses){
+			/*for (const auto &pose : lightPoses){
 				light_value+=pose;
 			}*/
+
+			//std:: cout << lightPoses.size() << std::endl;
 
 			// time stamp the message with sim time
 			ignition::msgs::Float msg;
