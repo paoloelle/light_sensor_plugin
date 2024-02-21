@@ -39,6 +39,12 @@ namespace custom_light_sensor
                 const ignition::gazebo::UpdateInfo &_info,
                 const ignition::gazebo::EntityComponentManager &_ecm) override;
 
+        /// \brief Entity ID of the sensor
+        public: ignition::gazebo::Entity entity{ignition::gazebo::kNullEntity};
+
+        /// \brief Entity ID of the parent model
+        public: ignition::gazebo::Entity modelEntity{ignition::gazebo::kNullEntity};
+
         /// \brief store position of ligth sources
         public: std::vector<ignition::math::Pose3d> lightPoses;
 

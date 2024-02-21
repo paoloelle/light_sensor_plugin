@@ -1,7 +1,6 @@
 #include <ignition/gazebo/Light.hh>
 #include <ignition/gazebo/components.hh>
 #include <ignition/math.hh>
-#include <ignition/gazebo.hh>
 #include <ignition/transport/TopicUtils.hh>
 #include <ignition/msgs.hh>
 
@@ -57,8 +56,25 @@ void LightSensor::Configure(const ignition::gazebo::Entity &_entity,
 		});
 
 
-		// set the topic for sensor data publication
-		std::string topic = ignition::gazebo::scopedName(_entity, _ecm) + "/" + "light_value";
+		// Get top level model this entity belongs to
+		// this system is attached to a sensor model but we are only interested
+		// in the top level vehicle model pose - this is later used for
+		// computing distance to other models in the environment
+		auto parent = _ecm.Component<ignition::gazebo::components::ParentEntity>(
+			_entity);
+		this->entity = _entity;
+		this->modelEntity = _entity;
+		while (parent && _ecm.Component<ignition::gazebo::components::Model>(
+				parent->Data()))
+		{
+			this->modelEntity = parent->Data();
+			parent = _ecm.Component<ignition::gazebo::components::ParentEntity>(
+				parent->Data());
+		}
+
+
+		  // set topic to publish sensor data to
+		std::string topic = ignition::gazebo::scopedName(_entity, _ecm) + "/light_value";
 		topic = ignition::transport::TopicUtils::AsValidTopic(topic);
 
 		// create the publisher
@@ -84,15 +100,23 @@ void LightSensor::Configure(const ignition::gazebo::Entity &_entity,
                 this->nextUpdateTime += delta;
             }
 
-			// populate and publish the message
-			double light_value = 0.0;
+			  // get the pose of the model
+			const ignition::gazebo::components::Pose *poseComp =
+				_ecm.Component<ignition::gazebo::components::Pose>(this->modelEntity);
+			ignition::math::Pose3d entityPose = poseComp->Data();
 
 			/* TODO for now the light detected will be only porportional to the sum of distances from source lights
 			when I will find how to access to the attenuation factors I will change it (or I can hard code it :) ) */
 			
+			double light_value = 0.0; // light detected
 
-			//std:: cout << lightPoses.size() << std::endl;
+			for (auto & light_pose : lightPoses){
 
+				light_value += entityPose.Pos().Distance(light_pose.Pos());
+
+			}
+
+			
 			// time stamp the message with sim time
 			ignition::msgs::Float msg;
 			*msg.mutable_header()->mutable_stamp() = ignition::msgs::Convert(_info.simTime);

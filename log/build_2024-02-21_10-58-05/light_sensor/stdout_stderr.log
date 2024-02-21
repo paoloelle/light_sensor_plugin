@@ -1,0 +1,20 @@
+[35m[1mConsolidate compiler generated dependencies of target LightSensor[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/LightSensor.dir/src/LightSensor.cc.o[0m
+[01m[K/home/paolo/light_sensor_plugin/src/light_sensor_custom/src/LightSensor.cc:[m[K In member function ‘[01m[Kvirtual void custom_light_sensor::LightSensor::Configure(const Entity&, const std::shared_ptr<const sdf::v12::Element>&, ignition::gazebo::v6::EntityComponentManager&, ignition::gazebo::v6::EventManager&)[m[K’:
+[01m[K/home/paolo/light_sensor_plugin/src/light_sensor_custom/src/LightSensor.cc:65:23:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass custom_light_sensor::LightSensor[m[K’ has no member named ‘[01m[Kentity[m[K’
+   65 |                 this->[01;31m[Kentity[m[K = _entity;
+      |                       [01;31m[K^~~~~~[m[K
+[01m[K/home/paolo/light_sensor_plugin/src/light_sensor_custom/src/LightSensor.cc:66:23:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass custom_light_sensor::LightSensor[m[K’ has no member named ‘[01m[KmodelEntity[m[K’
+   66 |                 this->[01;31m[KmodelEntity[m[K = _entity;
+      |                       [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/paolo/light_sensor_plugin/src/light_sensor_custom/src/LightSensor.cc:70:31:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass custom_light_sensor::LightSensor[m[K’ has no member named ‘[01m[KmodelEntity[m[K’
+   70 |                         this->[01;31m[KmodelEntity[m[K = parent->Data();
+      |                               [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/paolo/light_sensor_plugin/src/light_sensor_custom/src/LightSensor.cc:[m[K In member function ‘[01m[Kvirtual void custom_light_sensor::LightSensor::PostUpdate(const ignition::gazebo::v6::UpdateInfo&, const ignition::gazebo::v6::EntityComponentManager&)[m[K’:
+[01m[K/home/paolo/light_sensor_plugin/src/light_sensor_custom/src/LightSensor.cc:105:90:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass custom_light_sensor::LightSensor[m[K’ has no member named ‘[01m[KmodelEntity[m[K’
+  105 |    _ecm.Component<ignition::gazebo::components::Pose>(this->[01;31m[KmodelEntity[m[K);
+      |                                                             [01;31m[K^~~~~~~~~~~[m[K
+
+gmake[2]: *** [CMakeFiles/LightSensor.dir/build.make:76: CMakeFiles/LightSensor.dir/src/LightSensor.cc.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/LightSensor.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2
