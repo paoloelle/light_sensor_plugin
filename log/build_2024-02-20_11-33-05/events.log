@@ -1,0 +1,275 @@
+[0.000000] (-) TimerEvent: {}
+[0.000702] (light_sensor) JobQueued: {'identifier': 'light_sensor', 'dependencies': OrderedDict()}
+[0.000787] (light_sensor) JobStarted: {'identifier': 'light_sensor'}
+[0.099635] (-) TimerEvent: {}
+[0.110677] (light_sensor) JobProgress: {'identifier': 'light_sensor', 'progress': 'cmake'}
+[0.112720] (light_sensor) JobProgress: {'identifier': 'light_sensor', 'progress': 'build'}
+[0.112816] (light_sensor) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/paolo/light_sensor_plugin/build/light_sensor', '--', '-j8', '-l8'], 'cwd': '/home/paolo/light_sensor_plugin/build/light_sensor', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'paolo'), ('LC_TIME', 'it_IT.UTF-8'), ('IGNITION_VERSION', 'fortress'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/paolo/turtlebot4_ws/install/turtlebot4_msgs/lib:/home/paolo/create3_ws/install/irobot_create_nodes/lib:/home/paolo/create3_ws/install/irobot_create_ignition_toolbox/lib:/home/paolo/create3_ws/install/irobot_create_toolbox/lib:/home/paolo/create3_ws/install/irobot_create_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/paolo'), ('OLDPWD', '/home/paolo'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'it_IT.UTF-8'), ('MANAGERPID', '1012'), ('SYSTEMD_EXEC_PID', '1179'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '6135'), ('_colcon_cd_root', '/opt/ros/humble/'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/paolo/turtlebot4_controller_ws/install:/home/paolo/turtlebot4_ws/install:/home/paolo/create3_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'paolo'), ('JOURNAL_STREAM', '8:28372'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'paolo'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/paolo-VivoBook-S15-X510UF:@/tmp/.ICE-unix/1156,unix/paolo-VivoBook-S15-X510UF:/tmp/.ICE-unix/1156'), ('INVOCATION_ID', '8815c411b99943d6a3b85bace465d327'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'it_IT.UTF-8'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('LC_TELEPHONE', 'it_IT.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.CT1IJ2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/paolo/turtlebot4_controller_ws/install/turtlebot4_controller:/home/paolo/turtlebot4_ws/install/turtlebot4_simulator:/home/paolo/turtlebot4_ws/install/turtlebot4_ignition_bringup:/home/paolo/turtlebot4_ws/install/turtlebot4_desktop:/home/paolo/turtlebot4_ws/install/turtlebot4_viz:/home/paolo/turtlebot4_ws/install/turtlebot4_setup:/home/paolo/turtlebot4_ws/install/turtlebot4_node:/home/paolo/turtlebot4_ws/install/turtlebot4_navigation:/home/paolo/turtlebot4_ws/install/turtlebot4_ignition_toolbox:/home/paolo/turtlebot4_ws/install/turtlebot4_msgs:/home/paolo/turtlebot4_ws/install/turtlebot4_ignition_gui_plugins:/home/paolo/turtlebot4_ws/install/turtlebot4_description:/home/paolo/create3_ws/install/irobot_create_ignition_sim:/home/paolo/create3_ws/install/irobot_create_ignition_bringup:/home/paolo/create3_ws/install/irobot_create_common_bringup:/home/paolo/create3_ws/install/irobot_create_nodes:/home/paolo/create3_ws/install/irobot_create_ignition_toolbox:/home/paolo/create3_ws/install/irobot_create_toolbox:/home/paolo/create3_ws/install/irobot_create_msgs:/home/paolo/create3_ws/install/irobot_create_ignition_plugins:/home/paolo/create3_ws/install/irobot_create_description:/home/paolo/create3_ws/install/irobot_create_control:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'it_IT.UTF-8'), ('TERMINATOR_UUID', 'urn:uuid:a7914836-84d9-4e4c-978f-bec577efb833'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'it_IT.UTF-8'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'it_IT.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/paolo/light_sensor_plugin/build/light_sensor'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/paolo/turtlebot4_controller_ws/build/turtlebot4_controller:/home/paolo/turtlebot4_controller_ws/install/turtlebot4_controller/lib/python3.10/site-packages:/home/paolo/turtlebot4_ws/install/turtlebot4_setup/local/lib/python3.10/dist-packages:/home/paolo/turtlebot4_ws/install/turtlebot4_navigation/local/lib/python3.10/dist-packages:/home/paolo/turtlebot4_ws/install/turtlebot4_msgs/local/lib/python3.10/dist-packages:/home/paolo/create3_ws/install/irobot_create_common_bringup/local/lib/python3.10/dist-packages:/home/paolo/create3_ws/install/irobot_create_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'it_IT.UTF-8'), ('LC_PAPER', 'it_IT.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/paolo/turtlebot4_ws/install/turtlebot4_simulator:/home/paolo/turtlebot4_ws/install/turtlebot4_ignition_bringup:/home/paolo/turtlebot4_ws/install/turtlebot4_desktop:/home/paolo/turtlebot4_ws/install/turtlebot4_viz:/home/paolo/turtlebot4_ws/install/turtlebot4_setup:/home/paolo/turtlebot4_ws/install/turtlebot4_node:/home/paolo/turtlebot4_ws/install/turtlebot4_navigation:/home/paolo/turtlebot4_ws/install/turtlebot4_ignition_toolbox:/home/paolo/turtlebot4_ws/install/turtlebot4_msgs:/home/paolo/turtlebot4_ws/install/turtlebot4_ignition_gui_plugins:/home/paolo/turtlebot4_ws/install/turtlebot4_description:/home/paolo/create3_ws/install/irobot_create_ignition_sim:/home/paolo/create3_ws/install/irobot_create_ignition_bringup:/home/paolo/create3_ws/install/irobot_create_common_bringup:/home/paolo/create3_ws/install/irobot_create_nodes:/home/paolo/create3_ws/install/irobot_create_ignition_toolbox:/home/paolo/create3_ws/install/irobot_create_toolbox:/home/paolo/create3_ws/install/irobot_create_msgs:/home/paolo/create3_ws/install/irobot_create_ignition_plugins:/home/paolo/create3_ws/install/irobot_create_description:/home/paolo/create3_ws/install/irobot_create_control:/home/paolo/turtlebot4_controller_ws/install/turtlebot4_controller:/opt/ros/humble')]), 'shell': False}
+[0.169027] (light_sensor) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target LightSensor\x1b[0m\n'}
+[0.199788] (-) TimerEvent: {}
+[0.202371] (light_sensor) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/LightSensor.dir/src/LightSensor.cc.o\x1b[0m\n'}
+[0.299915] (-) TimerEvent: {}
+[0.400176] (-) TimerEvent: {}
+[0.500533] (-) TimerEvent: {}
+[0.600843] (-) TimerEvent: {}
+[0.701149] (-) TimerEvent: {}
+[0.801445] (-) TimerEvent: {}
+[0.901824] (-) TimerEvent: {}
+[1.002166] (-) TimerEvent: {}
+[1.102434] (-) TimerEvent: {}
+[1.202734] (-) TimerEvent: {}
+[1.303042] (-) TimerEvent: {}
+[1.403320] (-) TimerEvent: {}
+[1.503613] (-) TimerEvent: {}
+[1.603948] (-) TimerEvent: {}
+[1.704266] (-) TimerEvent: {}
+[1.804689] (-) TimerEvent: {}
+[1.905052] (-) TimerEvent: {}
+[2.005431] (-) TimerEvent: {}
+[2.105769] (-) TimerEvent: {}
+[2.206083] (-) TimerEvent: {}
+[2.306364] (-) TimerEvent: {}
+[2.406657] (-) TimerEvent: {}
+[2.506948] (-) TimerEvent: {}
+[2.607224] (-) TimerEvent: {}
+[2.707487] (-) TimerEvent: {}
+[2.807763] (-) TimerEvent: {}
+[2.908062] (-) TimerEvent: {}
+[3.008352] (-) TimerEvent: {}
+[3.108580] (-) TimerEvent: {}
+[3.208845] (-) TimerEvent: {}
+[3.309115] (-) TimerEvent: {}
+[3.409394] (-) TimerEvent: {}
+[3.509705] (-) TimerEvent: {}
+[3.610003] (-) TimerEvent: {}
+[3.710293] (-) TimerEvent: {}
+[3.810597] (-) TimerEvent: {}
+[3.910871] (-) TimerEvent: {}
+[4.011230] (-) TimerEvent: {}
+[4.111495] (-) TimerEvent: {}
+[4.211728] (-) TimerEvent: {}
+[4.312009] (-) TimerEvent: {}
+[4.412304] (-) TimerEvent: {}
+[4.512584] (-) TimerEvent: {}
+[4.612875] (-) TimerEvent: {}
+[4.713163] (-) TimerEvent: {}
+[4.813489] (-) TimerEvent: {}
+[4.913768] (-) TimerEvent: {}
+[5.014065] (-) TimerEvent: {}
+[5.114365] (-) TimerEvent: {}
+[5.214707] (-) TimerEvent: {}
+[5.314986] (-) TimerEvent: {}
+[5.415226] (-) TimerEvent: {}
+[5.515506] (-) TimerEvent: {}
+[5.615800] (-) TimerEvent: {}
+[5.716104] (-) TimerEvent: {}
+[5.816397] (-) TimerEvent: {}
+[5.916664] (-) TimerEvent: {}
+[6.016949] (-) TimerEvent: {}
+[6.117225] (-) TimerEvent: {}
+[6.217460] (-) TimerEvent: {}
+[6.317756] (-) TimerEvent: {}
+[6.418028] (-) TimerEvent: {}
+[6.518338] (-) TimerEvent: {}
+[6.618668] (-) TimerEvent: {}
+[6.718992] (-) TimerEvent: {}
+[6.819303] (-) TimerEvent: {}
+[6.919597] (-) TimerEvent: {}
+[7.019894] (-) TimerEvent: {}
+[7.120182] (-) TimerEvent: {}
+[7.220472] (-) TimerEvent: {}
+[7.320737] (-) TimerEvent: {}
+[7.421025] (-) TimerEvent: {}
+[7.521314] (-) TimerEvent: {}
+[7.592430] (light_sensor) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/ignition/plugin1/gz/plugin/Register.hh:22\x1b[m\x1b[K,\n'}
+[7.592682] (light_sensor) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/ignition/plugin1/ignition/plugin/Register.hh:18\x1b[m\x1b[K,\n'}
+[7.592753] (light_sensor) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/paolo/light_sensor_plugin/src/light_sensor_custom/src/LightSensor.cc:9\x1b[m\x1b[K:\n'}
+[7.592817] (light_sensor) StderrLine: {'line': b'/usr/include/ignition/plugin1/gz/plugin/detail/Register.hh: In instantiation of \xe2\x80\x98\x1b[01m\x1b[Kstatic ignition::plugin::v1::Info ignition::plugin::detail::Registrar<PluginClass, Interfaces>::MakeInfo() [with PluginClass = custom_light_sensor::LightSensor; Interfaces = {ignition::gazebo::v6::System, ignition::gazebo::v6::ISystemPostUpdate}]\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[7.592883] (light_sensor) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/ignition/plugin1/gz/plugin/detail/Register.hh:396:31:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kstatic void ignition::plugin::detail::Registrar<PluginClass, Interfaces>::Register() [with PluginClass = custom_light_sensor::LightSensor; Interfaces = {ignition::gazebo::v6::System, ignition::gazebo::v6::ISystemPostUpdate}]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[7.593220] (light_sensor) StderrLine: {'line': b'\x1b[01m\x1b[K/home/paolo/light_sensor_plugin/src/light_sensor_custom/src/LightSensor.cc:121:1:\x1b[m\x1b[K   required from here\n'}
+[7.593310] (light_sensor) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/ignition/plugin1/gz/plugin/detail/Register.hh:373:39:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid new-expression of abstract class type \xe2\x80\x98\x1b[01m\x1b[Kcustom_light_sensor::LightSensor\x1b[m\x1b[K\xe2\x80\x99\n'}
+[7.593379] (light_sensor) StderrLine: {'line': b'  373 |             return static_cast<void*>(\x1b[01;31m\x1b[Knew PluginClass\x1b[m\x1b[K);\n'}
+[7.593444] (light_sensor) StderrLine: {'line': b'      |                                       \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[7.593510] (light_sensor) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/paolo/light_sensor_plugin/src/light_sensor_custom/src/LightSensor.cc:22\x1b[m\x1b[K:\n'}
+[7.594076] (light_sensor) StderrLine: {'line': b'\x1b[01m\x1b[K/home/paolo/light_sensor_plugin/src/light_sensor_custom/src/LightSensor.hh:16:11:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  because the following virtual functions are pure within \xe2\x80\x98\x1b[01m\x1b[Kcustom_light_sensor::LightSensor\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[7.594148] (light_sensor) StderrLine: {'line': b'   16 |     class \x1b[01;36m\x1b[KLightSensor\x1b[m\x1b[K:\n'}
+[7.594210] (light_sensor) StderrLine: {'line': b'      |           \x1b[01;36m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[7.594270] (light_sensor) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/ignition/gazebo6/gz/sim/comms/MsgManager.hh:30\x1b[m\x1b[K,\n'}
+[7.594328] (light_sensor) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/ignition/gazebo6/gz/sim/comms/Broker.hh:25\x1b[m\x1b[K,\n'}
+[7.594386] (light_sensor) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/ignition/gazebo6/gz/gazebo.hh:23\x1b[m\x1b[K,\n'}
+[7.594443] (light_sensor) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/ignition/gazebo6/gz/sim.hh:27\x1b[m\x1b[K,\n'}
+[7.594501] (light_sensor) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/ignition/gazebo6/ignition/gazebo.hh:18\x1b[m\x1b[K,\n'}
+[7.594558] (light_sensor) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/paolo/light_sensor_plugin/src/light_sensor_custom/src/LightSensor.cc:4\x1b[m\x1b[K:\n'}
+[7.594615] (light_sensor) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/ignition/gazebo6/gz/sim/System.hh:98:28:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K    \xe2\x80\x98\x1b[01m\x1b[Kvirtual void ignition::gazebo::v6::ISystemConfigure::Configure(const Entity&, const std::shared_ptr<const sdf::v12::Element>&, ignition::gazebo::v6::EntityComponentManager&, ignition::gazebo::v6::EventManager&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[7.594676] (light_sensor) StderrLine: {'line': b'   98 |       public: virtual void \x1b[01;36m\x1b[KConfigure\x1b[m\x1b[K(\n'}
+[7.594733] (light_sensor) StderrLine: {'line': b'      |                            \x1b[01;36m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[7.594790] (light_sensor) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/ignition/plugin1/gz/plugin/Register.hh:22\x1b[m\x1b[K,\n'}
+[7.594848] (light_sensor) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/ignition/plugin1/ignition/plugin/Register.hh:18\x1b[m\x1b[K,\n'}
+[7.594906] (light_sensor) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/paolo/light_sensor_plugin/src/light_sensor_custom/src/LightSensor.cc:9\x1b[m\x1b[K:\n'}
+[7.594963] (light_sensor) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/ignition/plugin1/gz/plugin/detail/Register.hh:361:24:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno match for \xe2\x80\x98\x1b[01m\x1b[Koperator=\x1b[m\x1b[K\xe2\x80\x99 (operand types are \xe2\x80\x98\x1b[01m\x1b[Kstd::function<void*()>\x1b[m\x1b[K\xe2\x80\x99 and \xe2\x80\x98\x1b[01m\x1b[Kignition::plugin::detail::Registrar<custom_light_sensor::LightSensor, ignition::gazebo::v6::System, ignition::gazebo::v6::ISystemPostUpdate>::MakeInfo()::<lambda()>\x1b[m\x1b[K\xe2\x80\x99)\n'}
+[7.595040] (light_sensor) StderrLine: {'line': b'  361 |           \x1b[01;31m\x1b[Kinfo.factory = [=]()\x1b[m\x1b[K\n'}
+[7.595099] (light_sensor) StderrLine: {'line': b'      |           \x1b[01;31m\x1b[K~~~~~~~~~~~~~^~~~~~~\x1b[m\x1b[K\n'}
+[7.595155] (light_sensor) StderrLine: {'line': b'  362 | \x1b[01;31m\x1b[K          {\x1b[m\x1b[K\n'}
+[7.595211] (light_sensor) StderrLine: {'line': b'      |           \x1b[01;31m\x1b[K~\x1b[m\x1b[K             \n'}
+[7.595268] (light_sensor) StderrLine: {'line': b'  363 | \x1b[01;31m\x1b[K            // vvvvvvvvvvvvvvvvvvvvvvvv  READ ME  vvvvvvvvvvvvvvvvvvvvvvvvvvvvv\x1b[m\x1b[K\n'}
+[7.595325] (light_sensor) StderrLine: {'line': b'      |             \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[7.595388] (light_sensor) StderrLine: {'line': b'  364 | \x1b[01;31m\x1b[K            // If you get a compilation error here, then you are trying to\x1b[m\x1b[K\n'}
+[7.595453] (light_sensor) StderrLine: {'line': b'      |             \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[7.595510] (light_sensor) StderrLine: {'line': b'  365 | \x1b[01;31m\x1b[K            // register an abstract class as a plugin, which is not allowed. To\x1b[m\x1b[K\n'}
+[7.595566] (light_sensor) StderrLine: {'line': b'      |             \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[7.595622] (light_sensor) StderrLine: {'line': b'  366 | \x1b[01;31m\x1b[K            // register a plugin class, every one if its virtual functions must\x1b[m\x1b[K\n'}
+[7.595678] (light_sensor) StderrLine: {'line': b'      |             \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[7.595734] (light_sensor) StderrLine: {'line': b'  367 | \x1b[01;31m\x1b[K            // have a definition.\x1b[m\x1b[K\n'}
+[7.595791] (light_sensor) StderrLine: {'line': b'      |             \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[7.595847] (light_sensor) StderrLine: {'line': b'  368 | \x1b[01;31m\x1b[K            //\x1b[m\x1b[K\n'}
+[7.595903] (light_sensor) StderrLine: {'line': b'      |             \x1b[01;31m\x1b[K~~\x1b[m\x1b[K          \n'}
+[7.595958] (light_sensor) StderrLine: {'line': b'  369 | \x1b[01;31m\x1b[K            // Read through the error produced by your compiler to see which\x1b[m\x1b[K\n'}
+[7.596014] (light_sensor) StderrLine: {'line': b'      |             \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[7.596069] (light_sensor) StderrLine: {'line': b'  370 | \x1b[01;31m\x1b[K            // pure virtual functions you are neglecting to provide overrides\x1b[m\x1b[K\n'}
+[7.596125] (light_sensor) StderrLine: {'line': b'      |             \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[7.596181] (light_sensor) StderrLine: {'line': b'  371 | \x1b[01;31m\x1b[K            // for.\x1b[m\x1b[K\n'}
+[7.596236] (light_sensor) StderrLine: {'line': b'      |             \x1b[01;31m\x1b[K~~~~~~~\x1b[m\x1b[K     \n'}
+[7.596291] (light_sensor) StderrLine: {'line': b'  372 | \x1b[01;31m\x1b[K            // ^^^^^^^^^^^^^ READ ABOVE FOR COMPILATION ERRORS ^^^^^^^^^^^^^^^^\x1b[m\x1b[K\n'}
+[7.596348] (light_sensor) StderrLine: {'line': b'      |             \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[7.596403] (light_sensor) StderrLine: {'line': b'  373 | \x1b[01;31m\x1b[K            return static_cast<void*>(new PluginClass);\x1b[m\x1b[K\n'}
+[7.596465] (light_sensor) StderrLine: {'line': b'      |             \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[7.596535] (light_sensor) StderrLine: {'line': b'  374 | \x1b[01;31m\x1b[K          }\x1b[m\x1b[K;\n'}
+[7.596595] (light_sensor) StderrLine: {'line': b'      |           \x1b[01;31m\x1b[K~\x1b[m\x1b[K             \n'}
+[7.596652] (light_sensor) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/functional:59\x1b[m\x1b[K,\n'}
+[7.596709] (light_sensor) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/pstl/glue_algorithm_defs.h:13\x1b[m\x1b[K,\n'}
+[7.596766] (light_sensor) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/algorithm:74\x1b[m\x1b[K,\n'}
+[7.596822] (light_sensor) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/ignition/math6/gz/math/Helpers.hh:20\x1b[m\x1b[K,\n'}
+[7.596878] (light_sensor) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/ignition/math6/gz/math/Angle.hh:21\x1b[m\x1b[K,\n'}
+[7.596934] (light_sensor) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/ignition/gazebo6/gz/sim/Light.hh:27\x1b[m\x1b[K,\n'}
+[7.596992] (light_sensor) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/ignition/gazebo6/ignition/gazebo/Light.hh:18\x1b[m\x1b[K,\n'}
+[7.597049] (light_sensor) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/paolo/light_sensor_plugin/src/light_sensor_custom/src/LightSensor.cc:1\x1b[m\x1b[K:\n'}
+[7.597106] (light_sensor) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/std_function.h:530:9:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Functor> std::function<_Res(_ArgTypes ...)>::_Requires<std::function<_Res(_ArgTypes ...)>::_Callable<_Functor>, std::function<_Res(_ArgTypes ...)>&> std::function<_Res(_ArgTypes ...)>::operator=(_Functor&&) [with _Functor = _Functor; _Res = void*; _ArgTypes = {}]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[7.597166] (light_sensor) StderrLine: {'line': b'  530 |         \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K=(_Functor&& __f)\n'}
+[7.597223] (light_sensor) StderrLine: {'line': b'      |         \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[7.597281] (light_sensor) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/std_function.h:530:9:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[7.597343] (light_sensor) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/bits/move.h:57\x1b[m\x1b[K,\n'}
+[7.597400] (light_sensor) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/bits/stl_pair.h:59\x1b[m\x1b[K,\n'}
+[7.597456] (light_sensor) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/bits/stl_algobase.h:64\x1b[m\x1b[K,\n'}
+[7.597512] (light_sensor) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/memory:63\x1b[m\x1b[K,\n'}
+[7.597569] (light_sensor) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/ignition/gazebo6/gz/sim/Light.hh:20\x1b[m\x1b[K,\n'}
+[7.597625] (light_sensor) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/ignition/gazebo6/ignition/gazebo/Light.hh:18\x1b[m\x1b[K,\n'}
+[7.597680] (light_sensor) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/paolo/light_sensor_plugin/src/light_sensor_custom/src/LightSensor.cc:1\x1b[m\x1b[K:\n'}
+[7.597737] (light_sensor) StderrLine: {'line': b'/usr/include/c++/11/type_traits: In substitution of \xe2\x80\x98\x1b[01m\x1b[Ktemplate<bool _Cond, class _Tp> using __enable_if_t = typename std::enable_if::type [with bool _Cond = false; _Tp = std::function<void*()>&]\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[7.597797] (light_sensor) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/std_function.h:353:8:\x1b[m\x1b[K   required by substitution of \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Res, class ... _ArgTypes> template<class _Cond, class _Tp> using _Requires = std::__enable_if_t<_Cond::value, _Tp> [with _Cond = std::function<void*()>::_Callable<ignition::plugin::detail::Registrar<custom_light_sensor::LightSensor, ignition::gazebo::v6::System, ignition::gazebo::v6::ISystemPostUpdate>::MakeInfo()::<lambda()>, ignition::plugin::detail::Registrar<custom_light_sensor::LightSensor, ignition::gazebo::v6::System, ignition::gazebo::v6::ISystemPostUpdate>::MakeInfo()::<lambda()>, std::__invoke_result<ignition::plugin::detail::Registrar<custom_light_sensor::LightSensor, ignition::gazebo::v6::System, ignition::gazebo::v6::ISystemPostUpdate>::MakeInfo()::<lambda()>&> >; _Tp = std::function<void*()>&; _Res = void*; _ArgTypes = {}]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[7.597876] (light_sensor) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/std_function.h:530:2:\x1b[m\x1b[K   required by substitution of \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Functor> std::function<void*()>::_Requires<std::function<void*()>::_Callable<_Functor, typename std::enable_if<(! std::is_same<typename std::remove_cv<typename std::remove_reference<_Tp>::type>::type, std::function<void*()> >::value), std::decay<_Tp> >::type::type, std::__invoke_result<typename std::enable_if<(! std::is_same<typename std::remove_cv<typename std::remove_reference<_Tp>::type>::type, std::function<void*()> >::value), std::decay<_Tp> >::type::type&> >, std::function<void*()>&> std::function<void*()>::operator=<_Functor>(_Functor&&) [with _Functor = ignition::plugin::detail::Registrar<custom_light_sensor::LightSensor, ignition::gazebo::v6::System, ignition::gazebo::v6::ISystemPostUpdate>::MakeInfo()::<lambda()>]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[7.597939] (light_sensor) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/ignition/plugin1/gz/plugin/detail/Register.hh:361:24:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kstatic ignition::plugin::v1::Info ignition::plugin::detail::Registrar<PluginClass, Interfaces>::MakeInfo() [with PluginClass = custom_light_sensor::LightSensor; Interfaces = {ignition::gazebo::v6::System, ignition::gazebo::v6::ISystemPostUpdate}]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[7.597999] (light_sensor) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/ignition/plugin1/gz/plugin/detail/Register.hh:396:31:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kstatic void ignition::plugin::detail::Registrar<PluginClass, Interfaces>::Register() [with PluginClass = custom_light_sensor::LightSensor; Interfaces = {ignition::gazebo::v6::System, ignition::gazebo::v6::ISystemPostUpdate}]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[7.598058] (light_sensor) StderrLine: {'line': b'\x1b[01m\x1b[K/home/paolo/light_sensor_plugin/src/light_sensor_custom/src/LightSensor.cc:121:1:\x1b[m\x1b[K   required from here\n'}
+[7.598115] (light_sensor) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/type_traits:2205:11:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno type named \xe2\x80\x98\x1b[01m\x1b[Ktype\x1b[m\x1b[K\xe2\x80\x99 in \xe2\x80\x98\x1b[01m\x1b[Kstruct std::enable_if<false, std::function<void*()>&>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[7.598173] (light_sensor) StderrLine: {'line': b' 2205 |     using \x1b[01;31m\x1b[K__enable_if_t\x1b[m\x1b[K = typename enable_if<_Cond, _Tp>::type;\n'}
+[7.598230] (light_sensor) StderrLine: {'line': b'      |           \x1b[01;31m\x1b[K^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[7.598286] (light_sensor) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/functional:59\x1b[m\x1b[K,\n'}
+[7.598342] (light_sensor) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/pstl/glue_algorithm_defs.h:13\x1b[m\x1b[K,\n'}
+[7.598398] (light_sensor) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/algorithm:74\x1b[m\x1b[K,\n'}
+[7.598459] (light_sensor) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/ignition/math6/gz/math/Helpers.hh:20\x1b[m\x1b[K,\n'}
+[7.598516] (light_sensor) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/ignition/math6/gz/math/Angle.hh:21\x1b[m\x1b[K,\n'}
+[7.598578] (light_sensor) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/ignition/gazebo6/gz/sim/Light.hh:27\x1b[m\x1b[K,\n'}
+[7.598635] (light_sensor) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/ignition/gazebo6/ignition/gazebo/Light.hh:18\x1b[m\x1b[K,\n'}
+[7.598691] (light_sensor) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/paolo/light_sensor_plugin/src/light_sensor_custom/src/LightSensor.cc:1\x1b[m\x1b[K:\n'}
+[7.598747] (light_sensor) StderrLine: {'line': b'/usr/include/ignition/plugin1/gz/plugin/detail/Register.hh: In instantiation of \xe2\x80\x98\x1b[01m\x1b[Kstatic ignition::plugin::v1::Info ignition::plugin::detail::Registrar<PluginClass, Interfaces>::MakeInfo() [with PluginClass = custom_light_sensor::LightSensor; Interfaces = {ignition::gazebo::v6::System, ignition::gazebo::v6::ISystemPostUpdate}]\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[7.598808] (light_sensor) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/ignition/plugin1/gz/plugin/detail/Register.hh:396:31:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kstatic void ignition::plugin::detail::Registrar<PluginClass, Interfaces>::Register() [with PluginClass = custom_light_sensor::LightSensor; Interfaces = {ignition::gazebo::v6::System, ignition::gazebo::v6::ISystemPostUpdate}]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[7.598873] (light_sensor) StderrLine: {'line': b'\x1b[01m\x1b[K/home/paolo/light_sensor_plugin/src/light_sensor_custom/src/LightSensor.cc:121:1:\x1b[m\x1b[K   required from here\n'}
+[7.598940] (light_sensor) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/std_function.h:540:9:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Functor> std::function<_Res(_ArgTypes ...)>& std::function<_Res(_ArgTypes ...)>::operator=(std::reference_wrapper<_Functor>) [with _Functor = _Functor; _Res = void*; _ArgTypes = {}]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[7.599001] (light_sensor) StderrLine: {'line': b'  540 |         \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K=(reference_wrapper<_Functor> __f) noexcept\n'}
+[7.599058] (light_sensor) StderrLine: {'line': b'      |         \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[7.599115] (light_sensor) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/std_function.h:540:9:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[7.599173] (light_sensor) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/ignition/plugin1/gz/plugin/Register.hh:22\x1b[m\x1b[K,\n'}
+[7.599229] (light_sensor) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/ignition/plugin1/ignition/plugin/Register.hh:18\x1b[m\x1b[K,\n'}
+[7.599285] (light_sensor) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/paolo/light_sensor_plugin/src/light_sensor_custom/src/LightSensor.cc:9\x1b[m\x1b[K:\n'}
+[7.599341] (light_sensor) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/ignition/plugin1/gz/plugin/detail/Register.hh:361:24:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kignition::plugin::detail::Registrar<custom_light_sensor::LightSensor, ignition::gazebo::v6::System, ignition::gazebo::v6::ISystemPostUpdate>::MakeInfo()::<lambda()>\x1b[m\x1b[K\xe2\x80\x99 is not derived from \xe2\x80\x98\x1b[01m\x1b[Kstd::reference_wrapper<_Tp>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[7.599401] (light_sensor) StderrLine: {'line': b'  361 |           \x1b[01;36m\x1b[Kinfo.factory = [=]()\x1b[m\x1b[K\n'}
+[7.599458] (light_sensor) StderrLine: {'line': b'      |           \x1b[01;36m\x1b[K~~~~~~~~~~~~~^~~~~~~\x1b[m\x1b[K\n'}
+[7.599514] (light_sensor) StderrLine: {'line': b'  362 | \x1b[01;36m\x1b[K          {\x1b[m\x1b[K\n'}
+[7.599571] (light_sensor) StderrLine: {'line': b'      |           \x1b[01;36m\x1b[K~\x1b[m\x1b[K             \n'}
+[7.599627] (light_sensor) StderrLine: {'line': b'  363 | \x1b[01;36m\x1b[K            // vvvvvvvvvvvvvvvvvvvvvvvv  READ ME  vvvvvvvvvvvvvvvvvvvvvvvvvvvvv\x1b[m\x1b[K\n'}
+[7.599690] (light_sensor) StderrLine: {'line': b'      |             \x1b[01;36m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[7.599747] (light_sensor) StderrLine: {'line': b'  364 | \x1b[01;36m\x1b[K            // If you get a compilation error here, then you are trying to\x1b[m\x1b[K\n'}
+[7.599803] (light_sensor) StderrLine: {'line': b'      |             \x1b[01;36m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[7.599860] (light_sensor) StderrLine: {'line': b'  365 | \x1b[01;36m\x1b[K            // register an abstract class as a plugin, which is not allowed. To\x1b[m\x1b[K\n'}
+[7.599918] (light_sensor) StderrLine: {'line': b'      |             \x1b[01;36m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[7.599975] (light_sensor) StderrLine: {'line': b'  366 | \x1b[01;36m\x1b[K            // register a plugin class, every one if its virtual functions must\x1b[m\x1b[K\n'}
+[7.600032] (light_sensor) StderrLine: {'line': b'      |             \x1b[01;36m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[7.600089] (light_sensor) StderrLine: {'line': b'  367 | \x1b[01;36m\x1b[K            // have a definition.\x1b[m\x1b[K\n'}
+[7.600145] (light_sensor) StderrLine: {'line': b'      |             \x1b[01;36m\x1b[K~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[7.600201] (light_sensor) StderrLine: {'line': b'  368 | \x1b[01;36m\x1b[K            //\x1b[m\x1b[K\n'}
+[7.600258] (light_sensor) StderrLine: {'line': b'      |             \x1b[01;36m\x1b[K~~\x1b[m\x1b[K          \n'}
+[7.600314] (light_sensor) StderrLine: {'line': b'  369 | \x1b[01;36m\x1b[K            // Read through the error produced by your compiler to see which\x1b[m\x1b[K\n'}
+[7.600376] (light_sensor) StderrLine: {'line': b'      |             \x1b[01;36m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[7.600434] (light_sensor) StderrLine: {'line': b'  370 | \x1b[01;36m\x1b[K            // pure virtual functions you are neglecting to provide overrides\x1b[m\x1b[K\n'}
+[7.600491] (light_sensor) StderrLine: {'line': b'      |             \x1b[01;36m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[7.600565] (light_sensor) StderrLine: {'line': b'  371 | \x1b[01;36m\x1b[K            // for.\x1b[m\x1b[K\n'}
+[7.600624] (light_sensor) StderrLine: {'line': b'      |             \x1b[01;36m\x1b[K~~~~~~~\x1b[m\x1b[K     \n'}
+[7.600681] (light_sensor) StderrLine: {'line': b'  372 | \x1b[01;36m\x1b[K            // ^^^^^^^^^^^^^ READ ABOVE FOR COMPILATION ERRORS ^^^^^^^^^^^^^^^^\x1b[m\x1b[K\n'}
+[7.600738] (light_sensor) StderrLine: {'line': b'      |             \x1b[01;36m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[7.600795] (light_sensor) StderrLine: {'line': b'  373 | \x1b[01;36m\x1b[K            return static_cast<void*>(new PluginClass);\x1b[m\x1b[K\n'}
+[7.600852] (light_sensor) StderrLine: {'line': b'      |             \x1b[01;36m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[7.600909] (light_sensor) StderrLine: {'line': b'  374 | \x1b[01;36m\x1b[K          }\x1b[m\x1b[K;\n'}
+[7.600965] (light_sensor) StderrLine: {'line': b'      |           \x1b[01;36m\x1b[K~\x1b[m\x1b[K             \n'}
+[7.601022] (light_sensor) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/functional:59\x1b[m\x1b[K,\n'}
+[7.601079] (light_sensor) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/pstl/glue_algorithm_defs.h:13\x1b[m\x1b[K,\n'}
+[7.601136] (light_sensor) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/algorithm:74\x1b[m\x1b[K,\n'}
+[7.601193] (light_sensor) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/ignition/math6/gz/math/Helpers.hh:20\x1b[m\x1b[K,\n'}
+[7.601254] (light_sensor) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/ignition/math6/gz/math/Angle.hh:21\x1b[m\x1b[K,\n'}
+[7.601317] (light_sensor) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/ignition/gazebo6/gz/sim/Light.hh:27\x1b[m\x1b[K,\n'}
+[7.601380] (light_sensor) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/ignition/gazebo6/ignition/gazebo/Light.hh:18\x1b[m\x1b[K,\n'}
+[7.601439] (light_sensor) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/paolo/light_sensor_plugin/src/light_sensor_custom/src/LightSensor.cc:1\x1b[m\x1b[K:\n'}
+[7.601503] (light_sensor) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/std_function.h:469:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kstd::function<_Res(_ArgTypes ...)>& std::function<_Res(_ArgTypes ...)>::operator=(const std::function<_Res(_ArgTypes ...)>&) [with _Res = void*; _ArgTypes = {}]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[7.601565] (light_sensor) StderrLine: {'line': b'  469 |       \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K=(const function& __x)\n'}
+[7.601623] (light_sensor) StderrLine: {'line': b'      |       \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[7.601680] (light_sensor) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/std_function.h:469:33:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  no known conversion for argument 1 from \xe2\x80\x98\x1b[01m\x1b[Kignition::plugin::detail::Registrar<custom_light_sensor::LightSensor, ignition::gazebo::v6::System, ignition::gazebo::v6::ISystemPostUpdate>::MakeInfo()::<lambda()>\x1b[m\x1b[K\xe2\x80\x99 to \xe2\x80\x98\x1b[01m\x1b[Kconst std::function<void*()>&\x1b[m\x1b[K\xe2\x80\x99\n'}
+[7.601746] (light_sensor) StderrLine: {'line': b'  469 |       operator=(\x1b[01;36m\x1b[Kconst function& __x\x1b[m\x1b[K)\n'}
+[7.601804] (light_sensor) StderrLine: {'line': b'      |                 \x1b[01;36m\x1b[K~~~~~~~~~~~~~~~~^~~\x1b[m\x1b[K\n'}
+[7.601862] (light_sensor) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/std_function.h:487:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kstd::function<_Res(_ArgTypes ...)>& std::function<_Res(_ArgTypes ...)>::operator=(std::function<_Res(_ArgTypes ...)>&&) [with _Res = void*; _ArgTypes = {}]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[7.601922] (light_sensor) StderrLine: {'line': b'  487 |       \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K=(function&& __x) noexcept\n'}
+[7.601980] (light_sensor) StderrLine: {'line': b'      |       \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[7.602038] (light_sensor) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/std_function.h:487:28:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  no known conversion for argument 1 from \xe2\x80\x98\x1b[01m\x1b[Kignition::plugin::detail::Registrar<custom_light_sensor::LightSensor, ignition::gazebo::v6::System, ignition::gazebo::v6::ISystemPostUpdate>::MakeInfo()::<lambda()>\x1b[m\x1b[K\xe2\x80\x99 to \xe2\x80\x98\x1b[01m\x1b[Kstd::function<void*()>&&\x1b[m\x1b[K\xe2\x80\x99\n'}
+[7.602099] (light_sensor) StderrLine: {'line': b'  487 |       operator=(\x1b[01;36m\x1b[Kfunction&& __x\x1b[m\x1b[K) noexcept\n'}
+[7.602156] (light_sensor) StderrLine: {'line': b'      |                 \x1b[01;36m\x1b[K~~~~~~~~~~~^~~\x1b[m\x1b[K\n'}
+[7.602218] (light_sensor) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/std_function.h:501:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kstd::function<_Res(_ArgTypes ...)>& std::function<_Res(_ArgTypes ...)>::operator=(std::nullptr_t) [with _Res = void*; _ArgTypes = {}; std::nullptr_t = std::nullptr_t]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[7.602279] (light_sensor) StderrLine: {'line': b'  501 |       \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K=(nullptr_t) noexcept\n'}
+[7.602336] (light_sensor) StderrLine: {'line': b'      |       \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[7.602394] (light_sensor) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/std_function.h:501:17:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  no known conversion for argument 1 from \xe2\x80\x98\x1b[01m\x1b[Kignition::plugin::detail::Registrar<custom_light_sensor::LightSensor, ignition::gazebo::v6::System, ignition::gazebo::v6::ISystemPostUpdate>::MakeInfo()::<lambda()>\x1b[m\x1b[K\xe2\x80\x99 to \xe2\x80\x98\x1b[01m\x1b[Kstd::nullptr_t\x1b[m\x1b[K\xe2\x80\x99\n'}
+[7.602504] (light_sensor) StderrLine: {'line': b'  501 |       operator=(\x1b[01;36m\x1b[Knullptr_t\x1b[m\x1b[K) noexcept\n'}
+[7.602564] (light_sensor) StderrLine: {'line': b'      |                 \x1b[01;36m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[7.621429] (-) TimerEvent: {}
+[7.721684] (-) TimerEvent: {}
+[7.821985] (-) TimerEvent: {}
+[7.922274] (-) TimerEvent: {}
+[8.022567] (-) TimerEvent: {}
+[8.122855] (-) TimerEvent: {}
+[8.223144] (-) TimerEvent: {}
+[8.323435] (-) TimerEvent: {}
+[8.423745] (-) TimerEvent: {}
+[8.524019] (-) TimerEvent: {}
+[8.624307] (-) TimerEvent: {}
+[8.724597] (-) TimerEvent: {}
+[8.824879] (-) TimerEvent: {}
+[8.925193] (-) TimerEvent: {}
+[9.025484] (-) TimerEvent: {}
+[9.125779] (-) TimerEvent: {}
+[9.226068] (-) TimerEvent: {}
+[9.326356] (-) TimerEvent: {}
+[9.426645] (-) TimerEvent: {}
+[9.526957] (-) TimerEvent: {}
+[9.627259] (-) TimerEvent: {}
+[9.727567] (-) TimerEvent: {}
+[9.827890] (-) TimerEvent: {}
+[9.928199] (-) TimerEvent: {}
+[10.028545] (-) TimerEvent: {}
+[10.128862] (-) TimerEvent: {}
+[10.229153] (-) TimerEvent: {}
+[10.329447] (-) TimerEvent: {}
+[10.429735] (-) TimerEvent: {}
+[10.530055] (-) TimerEvent: {}
+[10.566633] (light_sensor) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/LightSensor.dir/build.make:76: CMakeFiles/LightSensor.dir/src/LightSensor.cc.o] Error 1\n'}
+[10.566956] (light_sensor) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/LightSensor.dir/all] Error 2\n'}
+[10.567366] (light_sensor) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[10.569469] (light_sensor) CommandEnded: {'returncode': 2}
+[10.630131] (-) TimerEvent: {}
+[10.684062] (light_sensor) JobEnded: {'identifier': 'light_sensor', 'rc': 2}
+[10.695287] (-) EventReactorShutdown: {}

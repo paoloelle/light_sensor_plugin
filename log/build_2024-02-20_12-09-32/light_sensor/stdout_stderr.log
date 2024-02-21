@@ -1,0 +1,45 @@
+[35m[1mConsolidate compiler generated dependencies of target LightSensor[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/LightSensor.dir/src/LightSensor.cc.o[0m
+[01m[K/home/paolo/light_sensor_plugin/src/light_sensor_custom/src/LightSensor.cc:[m[K In member function ‘[01m[Kvirtual void custom_light_sensor::LightSensor::Configure(const Entity&, const std::shared_ptr<const sdf::v12::Element>&, ignition::gazebo::v6::EntityComponentManager&, ignition::gazebo::v6::EventManager&)[m[K’:
+[01m[K/home/paolo/light_sensor_plugin/src/light_sensor_custom/src/LightSensor.cc:46:30:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Ksdf::v12::Element::Get(const char [6])[m[K’
+   46 |                 [01;31m[KsdfLight->Get("light")[m[K.first;
+      |                 [01;31m[K~~~~~~~~~~~~~^~~~~~~~~[m[K
+In file included from [01m[K/usr/include/ignition/sdformat12/sdf/Actor.hh:26[m[K,
+                 from [01m[K/usr/include/ignition/gazebo6/gz/sim/components/Actor.hh:26[m[K,
+                 from [01m[K/usr/include/ignition/gazebo6/gz/sim/components.hh:21[m[K,
+                 from [01m[K/usr/include/ignition/gazebo6/ignition/gazebo/components.hh:18[m[K,
+                 from [01m[K/home/paolo/light_sensor_plugin/src/light_sensor_custom/src/LightSensor.cc:2[m[K:
+[01m[K/usr/include/ignition/sdformat12/sdf/Element.hh:319:15:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class T> T sdf::v12::Element::Get(const string&) const[m[K’
+  319 |             T [01;36m[KGet[m[K(const std::string &_key = "") const;
+      |               [01;36m[K^~~[m[K
+[01m[K/usr/include/ignition/sdformat12/sdf/Element.hh:319:15:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/paolo/light_sensor_plugin/src/light_sensor_custom/src/LightSensor.cc:46:30:[m[K [01;36m[Knote: [m[K  couldn’t deduce template parameter ‘[01m[KT[m[K’
+   46 |                 [01;36m[KsdfLight->Get("light")[m[K.first;
+      |                 [01;36m[K~~~~~~~~~~~~~^~~~~~~~~[m[K
+In file included from [01m[K/usr/include/ignition/sdformat12/sdf/Actor.hh:26[m[K,
+                 from [01m[K/usr/include/ignition/gazebo6/gz/sim/components/Actor.hh:26[m[K,
+                 from [01m[K/usr/include/ignition/gazebo6/gz/sim/components.hh:21[m[K,
+                 from [01m[K/usr/include/ignition/gazebo6/ignition/gazebo/components.hh:18[m[K,
+                 from [01m[K/home/paolo/light_sensor_plugin/src/light_sensor_custom/src/LightSensor.cc:2[m[K:
+[01m[K/usr/include/ignition/sdformat12/sdf/Element.hh:722:22:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class T> std::pair<T, bool> sdf::v12::Element::Get(const string&, const T&) const[m[K’
+  722 |   std::pair<T, bool> [01;36m[KElement[m[K::Get(const std::string &_key,
+      |                      [01;36m[K^~~~~~~[m[K
+[01m[K/usr/include/ignition/sdformat12/sdf/Element.hh:722:22:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/paolo/light_sensor_plugin/src/light_sensor_custom/src/LightSensor.cc:46:30:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 1 provided
+   46 |                 [01;36m[KsdfLight->Get("light")[m[K.first;
+      |                 [01;36m[K~~~~~~~~~~~~~^~~~~~~~~[m[K
+In file included from [01m[K/usr/include/ignition/sdformat12/sdf/Actor.hh:26[m[K,
+                 from [01m[K/usr/include/ignition/gazebo6/gz/sim/components/Actor.hh:26[m[K,
+                 from [01m[K/usr/include/ignition/gazebo6/gz/sim/components.hh:21[m[K,
+                 from [01m[K/usr/include/ignition/gazebo6/ignition/gazebo/components.hh:18[m[K,
+                 from [01m[K/home/paolo/light_sensor_plugin/src/light_sensor_custom/src/LightSensor.cc:2[m[K:
+[01m[K/usr/include/ignition/sdformat12/sdf/Element.hh:338:18:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class T> bool sdf::v12::Element::Get(const string&, T&, const T&) const[m[K’
+  338 |             bool [01;36m[KGet[m[K(const std::string &_key,
+      |                  [01;36m[K^~~[m[K
+[01m[K/usr/include/ignition/sdformat12/sdf/Element.hh:338:18:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/paolo/light_sensor_plugin/src/light_sensor_custom/src/LightSensor.cc:46:30:[m[K [01;36m[Knote: [m[K  candidate expects 3 arguments, 1 provided
+   46 |                 [01;36m[KsdfLight->Get("light")[m[K.first;
+      |                 [01;36m[K~~~~~~~~~~~~~^~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/LightSensor.dir/build.make:76: CMakeFiles/LightSensor.dir/src/LightSensor.cc.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/LightSensor.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

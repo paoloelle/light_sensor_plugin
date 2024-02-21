@@ -1,0 +1,27 @@
+[35m[1mConsolidate compiler generated dependencies of target LightSensor[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/LightSensor.dir/src/LightSensor.cc.o[0m
+[01m[K/home/paolo/light_sensor_plugin/src/light_sensor_custom/src/LightSensor.cc:[m[K In member function ‘[01m[Kvirtual void custom_light_sensor::LightSensor::Configure(const Entity&, const std::shared_ptr<const sdf::v12::Element>&, ignition::gazebo::v6::EntityComponentManager&, ignition::gazebo::v6::EventManager&)[m[K’:
+[01m[K/home/paolo/light_sensor_plugin/src/light_sensor_custom/src/LightSensor.cc:33:57:[m[K [01;31m[Kerror: [m[K‘[01m[KLIght[m[K’ is not a member of ‘[01m[Kignition::gazebo::v6::components[m[K’; did you mean ‘[01m[KLight[m[K’?
+   33 |                 _ecm.Each<ignition::gazebo::components::[01;31m[KLIght[m[K,
+      |                                                         [01;31m[K^~~~~[m[K
+      |                                                         [32m[KLight[m[K
+[01m[K/home/paolo/light_sensor_plugin/src/light_sensor_custom/src/LightSensor.cc:36:70:[m[K [01;31m[Kerror: [m[K‘[01m[KLIght[m[K’ in namespace ‘[01m[Kignition::gazebo::v6::components[m[K’ does not name a type; did you mean ‘[01m[KLight[m[K’?
+   36 |                            const ignition::gazebo::components:: [01;31m[KLIght[m[K *,
+      |                                                                 [01;31m[K^~~~~[m[K
+      |                                                                 [32m[KLight[m[K
+[01m[K/home/paolo/light_sensor_plugin/src/light_sensor_custom/src/LightSensor.cc:[m[K In lambda function:
+[01m[K/home/paolo/light_sensor_plugin/src/light_sensor_custom/src/LightSensor.cc:44:19:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K{[m[K’ before ‘[01m[K;[m[K’ token
+   44 |                 })[01;31m[K;[m[K
+      |                   [01;31m[K^[m[K
+[01m[K/home/paolo/light_sensor_plugin/src/light_sensor_custom/src/LightSensor.cc:[m[K In member function ‘[01m[Kvirtual void custom_light_sensor::LightSensor::Configure(const Entity&, const std::shared_ptr<const sdf::v12::Element>&, ignition::gazebo::v6::EntityComponentManager&, ignition::gazebo::v6::EventManager&)[m[K’:
+[01m[K/home/paolo/light_sensor_plugin/src/light_sensor_custom/src/LightSensor.cc:44:19:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[K;[m[K’ token
+   44 |                 })[01;31m[K;[m[K
+      |                   [01;31m[K^[m[K
+      |                   [32m[K)[m[K
+[01m[K/home/paolo/light_sensor_plugin/src/light_sensor_custom/src/LightSensor.cc:34:76:[m[K [01;36m[Knote: [m[Kto match this ‘[01m[K([m[K’
+   34 |                                     ignition::gazebo::components::Pose>[01;36m[K([m[K
+      |                                                                        [01;36m[K^[m[K
+
+gmake[2]: *** [CMakeFiles/LightSensor.dir/build.make:76: CMakeFiles/LightSensor.dir/src/LightSensor.cc.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/LightSensor.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

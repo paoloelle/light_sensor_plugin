@@ -1,0 +1,144 @@
+[0.113s] Invoking command in '/home/paolo/light_sensor_plugin/build/light_sensor': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/paolo/turtlebot4_controller_ws/install/turtlebot4_controller:/opt/ros/humble /usr/bin/cmake --build /home/paolo/light_sensor_plugin/build/light_sensor -- -j8 -l8
+[0.164s] [35m[1mConsolidate compiler generated dependencies of target LightSensor[0m
+[0.197s] [ 50%] [32mBuilding CXX object CMakeFiles/LightSensor.dir/src/LightSensor.cc.o[0m
+[7.301s] [01m[K/home/paolo/light_sensor_plugin/src/light_sensor_custom/src/LightSensor.cc:[m[K In member function ‘[01m[Kvirtual void custom_light_sensor::LightSensor::Configure(const Entity&, const std::shared_ptr<const sdf::v12::Element>&, ignition::gazebo::v6::EntityComponentManager&, ignition::gazebo::v6::EventManager&)[m[K’:
+[7.301s] [01m[K/home/paolo/light_sensor_plugin/src/light_sensor_custom/src/LightSensor.cc:21:52:[m[K [01;31m[Kerror: [m[Kinvalid use of non-static member function ‘[01m[Kstd::optional<double> ignition::gazebo::v6::Light::Intensity(const ignition::gazebo::v6::EntityComponentManager&) const[m[K’
+[7.301s]    21 |                 _ecm.Each<ignition::gazebo::Light::[01;31m[KIntensity[m[K>(
+[7.301s]       |                                                    [01;31m[K^~~~~~~~~[m[K
+[7.302s] [01m[K/home/paolo/light_sensor_plugin/src/light_sensor_custom/src/LightSensor.cc:[m[K In lambda function:
+[7.302s] [01m[K/home/paolo/light_sensor_plugin/src/light_sensor_custom/src/LightSensor.cc:27:17:[m[K [01;35m[Kwarning: [m[Kno return statement in function returning non-void [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreturn-type-Wreturn-type]8;;[m[K]
+[7.302s]    27 |                 [01;35m[K}[m[K);
+[7.302s]       |                 [01;35m[K^[m[K
+[7.302s] [01m[K/home/paolo/light_sensor_plugin/src/light_sensor_custom/src/LightSensor.cc:[m[K In member function ‘[01m[Kvirtual void custom_light_sensor::LightSensor::Configure(const Entity&, const std::shared_ptr<const sdf::v12::Element>&, ignition::gazebo::v6::EntityComponentManager&, ignition::gazebo::v6::EventManager&)[m[K’:
+[7.302s] [01m[K/home/paolo/light_sensor_plugin/src/light_sensor_custom/src/LightSensor.cc:21:62:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kignition::gazebo::v6::EntityComponentManager::Each<<expression error> >(custom_light_sensor::LightSensor::Configure(const Entity&, const std::shared_ptr<const sdf::v12::Element>&, ignition::gazebo::v6::EntityComponentManager&, ignition::gazebo::v6::EventManager&)::<lambda(const Pose*)>)[m[K’
+[7.303s]    21 |                 [01;31m[K_ecm.Each<ignition::gazebo::Light::Intensity>([m[K
+[7.303s]       |                 [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^[m[K
+[7.303s]    22 | [01;31m[K                        [&](const ignition::gazebo::components::Pose *_pose) -> bool[m[K
+[7.303s]       |                         [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[7.303s]    23 | [01;31m[K                {[m[K
+[7.303s]       |                 [01;31m[K~[m[K                                             
+[7.303s]    24 | [01;31m[K                        ignition::math::Pose3d light_pose = _pose->Data();[m[K
+[7.303s]       |                         [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[7.303s]    25 | [01;31m[K                        lightSourcesPoses.push_back(light_pose);[m[K
+[7.303s]       |                         [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[7.304s]    26 | 
+[7.304s]       |                                                               
+[7.304s]    27 | [01;31m[K                })[m[K;
+[7.304s]       |                 [01;31m[K~~[m[K                                            
+[7.304s] In file included from [01m[K/usr/include/ignition/gazebo6/gz/sim/Light.hh:33[m[K,
+[7.304s]                  from [01m[K/usr/include/ignition/gazebo6/ignition/gazebo/Light.hh:18[m[K,
+[7.304s]                  from [01m[K/home/paolo/light_sensor_plugin/src/light_sensor_custom/src/LightSensor.cc:1[m[K:
+[7.304s] [01m[K/usr/include/ignition/gazebo6/gz/sim/EntityComponentManager.hh:463:20:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class ... ComponentTypeTs> void ignition::gazebo::v6::EntityComponentManager::Each(typename ignition::gazebo::v6::EntityComponentManager::identity<std::function<bool(const long unsigned int&, const ComponentTypeTs* ...)> >::type) const[m[K’
+[7.304s]   463 |               void [01;36m[KEach[m[K(typename identity<std::function<
+[7.305s]       |                    [01;36m[K^~~~[m[K
+[7.305s] [01m[K/usr/include/ignition/gazebo6/gz/sim/EntityComponentManager.hh:463:20:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[7.305s] [01m[K/home/paolo/light_sensor_plugin/src/light_sensor_custom/src/LightSensor.cc:21:62:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[7.305s]    21 |                 [01;31m[K_ecm.Each<ignition::gazebo::Light::Intensity>([m[K
+[7.305s]       |                 [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^[m[K
+[7.305s]    22 | [01;31m[K                        [&](const ignition::gazebo::components::Pose *_pose) -> bool[m[K
+[7.305s]       |                         [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[7.306s]    23 | [01;31m[K                {[m[K
+[7.306s]       |                 [01;31m[K~[m[K                                             
+[7.306s]    24 | [01;31m[K                        ignition::math::Pose3d light_pose = _pose->Data();[m[K
+[7.306s]       |                         [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[7.306s]    25 | [01;31m[K                        lightSourcesPoses.push_back(light_pose);[m[K
+[7.306s]       |                         [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[7.306s]    26 | 
+[7.306s]       |                                                               
+[7.306s]    27 | [01;31m[K                })[m[K;
+[7.306s]       |                 [01;31m[K~~[m[K                                            
+[7.307s] In file included from [01m[K/usr/include/ignition/gazebo6/gz/sim/Light.hh:33[m[K,
+[7.307s]                  from [01m[K/usr/include/ignition/gazebo6/ignition/gazebo/Light.hh:18[m[K,
+[7.307s]                  from [01m[K/home/paolo/light_sensor_plugin/src/light_sensor_custom/src/LightSensor.cc:1[m[K:
+[7.307s] [01m[K/usr/include/ignition/gazebo6/gz/sim/EntityComponentManager.hh:480:20:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class ... ComponentTypeTs> void ignition::gazebo::v6::EntityComponentManager::Each(typename ignition::gazebo::v6::EntityComponentManager::identity<std::function<bool(const long unsigned int&, ComponentTypeTs* ...)> >::type)[m[K’
+[7.307s]   480 |               void [01;36m[KEach[m[K(typename identity<std::function<
+[7.307s]       |                    [01;36m[K^~~~[m[K
+[7.307s] [01m[K/usr/include/ignition/gazebo6/gz/sim/EntityComponentManager.hh:480:20:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[7.307s] [01m[K/home/paolo/light_sensor_plugin/src/light_sensor_custom/src/LightSensor.cc:21:62:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[7.307s]    21 |                 [01;31m[K_ecm.Each<ignition::gazebo::Light::Intensity>([m[K
+[7.307s]       |                 [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^[m[K
+[7.307s]    22 | [01;31m[K                        [&](const ignition::gazebo::components::Pose *_pose) -> bool[m[K
+[7.307s]       |                         [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[7.307s]    23 | [01;31m[K                {[m[K
+[7.307s]       |                 [01;31m[K~[m[K                                             
+[7.307s]    24 | [01;31m[K                        ignition::math::Pose3d light_pose = _pose->Data();[m[K
+[7.307s]       |                         [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[7.307s]    25 | [01;31m[K                        lightSourcesPoses.push_back(light_pose);[m[K
+[7.308s]       |                         [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[7.308s]    26 | 
+[7.308s]       |                                                               
+[7.308s]    27 | [01;31m[K                })[m[K;
+[7.308s]       |                 [01;31m[K~~[m[K                                            
+[7.308s] [01m[K/home/paolo/light_sensor_plugin/src/light_sensor_custom/src/LightSensor.cc:[m[K In member function ‘[01m[Kvirtual void custom_light_sensor::LightSensor::PostUpdate(const ignition::gazebo::v6::UpdateInfo&, const ignition::gazebo::v6::EntityComponentManager&)[m[K’:
+[7.308s] [01m[K/home/paolo/light_sensor_plugin/src/light_sensor_custom/src/LightSensor.cc:56:44:[m[K [01;31m[Kerror: [m[Kno match for ‘[01m[Koperator+=[m[K’ (operand types are ‘[01m[Kdouble[m[K’ and ‘[01m[Kconst ignition::math::v6::Pose3<double>[m[K’)
+[7.308s]    56 |                                 [01;31m[Klight_value+=pose[m[K;
+[7.308s]       |                                 [01;31m[K~~~~~~~~~~~^~~~~~[m[K
+[7.308s] In file included from [01m[K/usr/include/x86_64-linux-gnu/qt5/QtCore/QtCore:227[m[K,
+[7.308s]                  from [01m[K/usr/include/ignition/gui6/gz/gui/qt.h:25[m[K,
+[7.308s]                  from [01m[K/usr/include/ignition/gui6/gz/gui/Application.hh:25[m[K,
+[7.308s]                  from [01m[K/usr/include/ignition/gazebo6/gz/sim/gui/Gui.hh:23[m[K,
+[7.308s]                  from [01m[K/usr/include/ignition/gazebo6/gz/gazebo.hh:139[m[K,
+[7.308s]                  from [01m[K/usr/include/ignition/gazebo6/gz/sim.hh:27[m[K,
+[7.308s]                  from [01m[K/usr/include/ignition/gazebo6/ignition/gazebo.hh:18[m[K,
+[7.308s]                  from [01m[K/home/paolo/light_sensor_plugin/src/light_sensor_custom/src/LightSensor.cc:4[m[K:
+[7.308s] [01m[K/usr/include/x86_64-linux-gnu/qt5/QtCore/qstringbuilder.h:474:13:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class A, class B> QByteArray& operator+=(QByteArray&, const QStringBuilder<A, B>&)[m[K’
+[7.309s]   474 | QByteArray &[01;36m[Koperator[m[K+=(QByteArray &a, const QStringBuilder<A, B> &b)
+[7.309s]       |             [01;36m[K^~~~~~~~[m[K
+[7.309s] [01m[K/usr/include/x86_64-linux-gnu/qt5/QtCore/qstringbuilder.h:474:13:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[7.309s] [01m[K/home/paolo/light_sensor_plugin/src/light_sensor_custom/src/LightSensor.cc:56:46:[m[K [01;36m[Knote: [m[K  ‘[01m[Kconst ignition::math::v6::Pose3<double>[m[K’ is not derived from ‘[01m[Kconst QStringBuilder<A, B>[m[K’
+[7.309s]    56 |                                 light_value+=[01;36m[Kpose[m[K;
+[7.309s]       |                                              [01;36m[K^~~~[m[K
+[7.309s] In file included from [01m[K/usr/include/x86_64-linux-gnu/qt5/QtCore/QtCore:227[m[K,
+[7.309s]                  from [01m[K/usr/include/ignition/gui6/gz/gui/qt.h:25[m[K,
+[7.309s]                  from [01m[K/usr/include/ignition/gui6/gz/gui/Application.hh:25[m[K,
+[7.309s]                  from [01m[K/usr/include/ignition/gazebo6/gz/sim/gui/Gui.hh:23[m[K,
+[7.309s]                  from [01m[K/usr/include/ignition/gazebo6/gz/gazebo.hh:139[m[K,
+[7.309s]                  from [01m[K/usr/include/ignition/gazebo6/gz/sim.hh:27[m[K,
+[7.309s]                  from [01m[K/usr/include/ignition/gazebo6/ignition/gazebo.hh:18[m[K,
+[7.309s]                  from [01m[K/home/paolo/light_sensor_plugin/src/light_sensor_custom/src/LightSensor.cc:4[m[K:
+[7.309s] [01m[K/usr/include/x86_64-linux-gnu/qt5/QtCore/qstringbuilder.h:481:10:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class A, class B> QString& operator+=(QString&, const QStringBuilder<A, B>&)[m[K’
+[7.309s]   481 | QString &[01;36m[Koperator[m[K+=(QString &a, const QStringBuilder<A, B> &b)
+[7.309s]       |          [01;36m[K^~~~~~~~[m[K
+[7.310s] [01m[K/usr/include/x86_64-linux-gnu/qt5/QtCore/qstringbuilder.h:481:10:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[7.310s] [01m[K/home/paolo/light_sensor_plugin/src/light_sensor_custom/src/LightSensor.cc:56:46:[m[K [01;36m[Knote: [m[K  ‘[01m[Kconst ignition::math::v6::Pose3<double>[m[K’ is not derived from ‘[01m[Kconst QStringBuilder<A, B>[m[K’
+[7.310s]    56 |                                 light_value+=[01;36m[Kpose[m[K;
+[7.310s]       |                                              [01;36m[K^~~~[m[K
+[7.310s] In file included from [01m[K/usr/include/x86_64-linux-gnu/qt5/QtCore/qcborstreamreader.h:45[m[K,
+[7.310s]                  from [01m[K/usr/include/x86_64-linux-gnu/qt5/QtCore/qcborstream.h:47[m[K,
+[7.310s]                  from [01m[K/usr/include/x86_64-linux-gnu/qt5/QtCore/QtCore:41[m[K,
+[7.310s]                  from [01m[K/usr/include/ignition/gui6/gz/gui/qt.h:25[m[K,
+[7.310s]                  from [01m[K/usr/include/ignition/gui6/gz/gui/Application.hh:25[m[K,
+[7.310s]                  from [01m[K/usr/include/ignition/gazebo6/gz/sim/gui/Gui.hh:23[m[K,
+[7.310s]                  from [01m[K/usr/include/ignition/gazebo6/gz/gazebo.hh:139[m[K,
+[7.310s]                  from [01m[K/usr/include/ignition/gazebo6/gz/sim.hh:27[m[K,
+[7.310s]                  from [01m[K/usr/include/ignition/gazebo6/ignition/gazebo.hh:18[m[K,
+[7.310s]                  from [01m[K/home/paolo/light_sensor_plugin/src/light_sensor_custom/src/LightSensor.cc:4[m[K:
+[7.310s] [01m[K/usr/include/x86_64-linux-gnu/qt5/QtCore/qfloat16.h:230:1:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kqfloat16& operator+=(qfloat16&, long double)[m[K’
+[7.310s]   230 | [01;36m[KQF16_MAKE_ARITH_OP[m[K(long double)
+[7.310s]       | [01;36m[K^~~~~~~~~~~~~~~~~~[m[K
+[7.311s] [01m[K/usr/include/x86_64-linux-gnu/qt5/QtCore/qfloat16.h:230:1:[m[K [01;36m[Knote: [m[K  no known conversion for argument 2 from ‘[01m[Kconst ignition::math::v6::Pose3<double>[m[K’ to ‘[01m[Klong double[m[K’
+[7.311s]   230 | [01;36m[KQ[m[KF16_MAKE_ARITH_OP(long double)
+[7.311s]       | [01;36m[K^[m[K
+[7.311s] [01m[K/usr/include/x86_64-linux-gnu/qt5/QtCore/qfloat16.h:231:1:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kqfloat16& operator+=(qfloat16&, double)[m[K’
+[7.311s]   231 | [01;36m[KQF16_MAKE_ARITH_OP[m[K(double)
+[7.311s]       | [01;36m[K^~~~~~~~~~~~~~~~~~[m[K
+[7.311s] [01m[K/usr/include/x86_64-linux-gnu/qt5/QtCore/qfloat16.h:231:1:[m[K [01;36m[Knote: [m[K  no known conversion for argument 2 from ‘[01m[Kconst ignition::math::v6::Pose3<double>[m[K’ to ‘[01m[Kdouble[m[K’
+[7.311s]   231 | [01;36m[KQ[m[KF16_MAKE_ARITH_OP(double)
+[7.311s]       | [01;36m[K^[m[K
+[7.311s] [01m[K/usr/include/x86_64-linux-gnu/qt5/QtCore/qfloat16.h:232:1:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kqfloat16& operator+=(qfloat16&, float)[m[K’
+[7.311s]   232 | [01;36m[KQF16_MAKE_ARITH_OP[m[K(float)
+[7.311s]       | [01;36m[K^~~~~~~~~~~~~~~~~~[m[K
+[7.311s] [01m[K/usr/include/x86_64-linux-gnu/qt5/QtCore/qfloat16.h:232:1:[m[K [01;36m[Knote: [m[K  no known conversion for argument 2 from ‘[01m[Kconst ignition::math::v6::Pose3<double>[m[K’ to ‘[01m[Kfloat[m[K’
+[7.311s]   232 | [01;36m[KQ[m[KF16_MAKE_ARITH_OP(float)
+[7.311s]       | [01;36m[K^[m[K
+[7.311s] [01m[K/home/paolo/light_sensor_plugin/src/light_sensor_custom/src/LightSensor.cc:68:68:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass custom_light_sensor::LightSensor[m[K’ has no member named ‘[01m[Kentity[m[K’
+[7.311s]    68 |                                 ignition::gazebo::scopedName(this->[01;31m[Kentity[m[K, _ecm, "::", false), "::");
+[7.312s]       |                                                                    [01;31m[K^~~~~~[m[K
+[7.312s] [01m[K/home/paolo/light_sensor_plugin/src/light_sensor_custom/src/LightSensor.cc:[m[K At global scope:
+[7.312s] [01m[K/home/paolo/light_sensor_plugin/src/light_sensor_custom/src/LightSensor.cc:81:40:[m[K [01;31m[Kerror: [m[Kexpected constructor, destructor, or type conversion at end of input
+[7.312s]    81 |         LightSensor::ISystemPostUpdate)
+[7.312s]       |                                        [01;31m[K^[m[K
+[10.721s] gmake[2]: *** [CMakeFiles/LightSensor.dir/build.make:76: CMakeFiles/LightSensor.dir/src/LightSensor.cc.o] Error 1
+[10.721s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/LightSensor.dir/all] Error 2
+[10.721s] gmake: *** [Makefile:146: all] Error 2
+[10.723s] Invoked command in '/home/paolo/light_sensor_plugin/build/light_sensor' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/paolo/turtlebot4_controller_ws/install/turtlebot4_controller:/opt/ros/humble /usr/bin/cmake --build /home/paolo/light_sensor_plugin/build/light_sensor -- -j8 -l8

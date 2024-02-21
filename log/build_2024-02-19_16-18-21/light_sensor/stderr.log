@@ -1,0 +1,10 @@
+[01m[K/home/paolo/light_sensor_plugin/src/light_sensor_custom/src/LightSensor.cc:21:14:[m[K [01;31m[Kerror: [m[Kmissing terminating > character
+   21 | #include <sdf
+      |              [01;31m[K^[m[K
+[01m[K/home/paolo/light_sensor_plugin/src/light_sensor_custom/src/LightSensor.cc:21:10:[m[K [01;31m[Kfatal error: [m[Ksdf: No such file or directory
+   21 | #include [01;31m[K<[m[Ksdf
+      |          [01;31m[K^[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/LightSensor.dir/build.make:76: CMakeFiles/LightSensor.dir/src/LightSensor.cc.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/LightSensor.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

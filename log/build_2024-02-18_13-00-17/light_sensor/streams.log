@@ -1,0 +1,19 @@
+[0.106s] Invoking command in '/home/paolo/light_sensor_plugin/build/light_sensor': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/paolo/turtlebot4_controller_ws/install/turtlebot4_controller:/opt/ros/humble /usr/bin/cmake --build /home/paolo/light_sensor_plugin/build/light_sensor -- -j8 -l8
+[0.154s] [35m[1mConsolidate compiler generated dependencies of target LightSensor[0m
+[0.181s] [ 50%] [32mBuilding CXX object CMakeFiles/LightSensor.dir/src/LightSensor.cc.o[0m
+[3.753s] [01m[K/home/paolo/light_sensor_plugin/src/light_sensor_custom/src/LightSensor.cc:[m[K In member function ‘[01m[Kvirtual void custom_light_sensor::LightSensor::Configure(const Entity&, const std::shared_ptr<const sdf::v12::Element>&, ignition::gazebo::v6::EntityComponentManager&, ignition::gazebo::v6::EventManager&)[m[K’:
+[3.753s] [01m[K/home/paolo/light_sensor_plugin/src/light_sensor_custom/src/LightSensor.cc:35:38:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Ksdf::v12::Element::PrintDescription()[m[K’
+[3.753s]    35 |                 [01;31m[Ksdf->PrintDescription()[m[K;
+[3.753s]       |                 [01;31m[K~~~~~~~~~~~~~~~~~~~~~^~[m[K
+[3.753s] In file included from [01m[K/usr/include/ignition/sdformat12/sdf/Model.hh:26[m[K,
+[3.753s]                  from [01m[K/usr/include/ignition/gazebo6/gz/sim/components/Model.hh:22[m[K,
+[3.753s]                  from [01m[K/usr/include/ignition/gazebo6/ignition/gazebo/components/Model.hh:18[m[K,
+[3.753s]                  from [01m[K/home/paolo/light_sensor_plugin/src/light_sensor_custom/src/LightSensor.cc:4[m[K:
+[3.753s] [01m[K/usr/include/ignition/sdformat12/sdf/Element.hh:152:18:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid sdf::v12::Element::PrintDescription(const string&) const[m[K’
+[3.753s]   152 |     public: void [01;36m[KPrintDescription[m[K(const std::string &_prefix) const;
+[3.753s]       |                  [01;36m[K^~~~~~~~~~~~~~~~[m[K
+[3.753s] [01m[K/usr/include/ignition/sdformat12/sdf/Element.hh:152:18:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 0 provided
+[4.991s] gmake[2]: *** [CMakeFiles/LightSensor.dir/build.make:76: CMakeFiles/LightSensor.dir/src/LightSensor.cc.o] Error 1
+[4.991s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/LightSensor.dir/all] Error 2
+[4.992s] gmake: *** [Makefile:146: all] Error 2
+[4.994s] Invoked command in '/home/paolo/light_sensor_plugin/build/light_sensor' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/paolo/turtlebot4_controller_ws/install/turtlebot4_controller:/opt/ros/humble /usr/bin/cmake --build /home/paolo/light_sensor_plugin/build/light_sensor -- -j8 -l8

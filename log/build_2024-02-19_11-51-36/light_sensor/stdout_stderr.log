@@ -1,0 +1,8 @@
+[35m[1mConsolidate compiler generated dependencies of target LightSensor[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/LightSensor.dir/src/LightSensor.cc.o[0m
+[01m[K/home/paolo/light_sensor_plugin/src/light_sensor_custom/src/LightSensor.cc:87:40:[m[K [01;31m[Kerror: [m[Kexpected constructor, destructor, or type conversion at end of input
+   87 |         LightSensor::ISystemPostUpdate)
+      |                                        [01;31m[K^[m[K
+gmake[2]: *** [CMakeFiles/LightSensor.dir/build.make:76: CMakeFiles/LightSensor.dir/src/LightSensor.cc.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/LightSensor.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

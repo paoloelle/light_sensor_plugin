@@ -1,0 +1,69 @@
+[01m[K/home/paolo/light_sensor_plugin/src/light_sensor_custom/src/LightSensor.cc:[m[K In member function ‘[01m[Kvirtual void custom_light_sensor::LightSensor::Configure(const Entity&, const std::shared_ptr<const sdf::v12::Element>&, ignition::gazebo::v6::EntityComponentManager&, ignition::gazebo::v6::EventManager&)[m[K’:
+[01m[K/home/paolo/light_sensor_plugin/src/light_sensor_custom/src/LightSensor.cc:38:33:[m[K [01;31m[Kerror: [m[Klambda-expression in template-argument only available with ‘[01m[K-std=c++20[m[K’ or ‘[01m[K-std=gnu++20[m[K’
+   38 |                                 [01;31m[K[[m[K&](const ignition::gazebo::Entity &_entity,
+      |                                 [01;31m[K^[m[K
+[01m[K/home/paolo/light_sensor_plugin/src/light_sensor_custom/src/LightSensor.cc:36:22:[m[K [01;31m[Kerror: [m[Kparse error in template argument list
+   36 |                 _ecm.[01;31m[KEach<//ignition::gazebo::components::Light,[m[K
+      |                      [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+   37 | [01;31m[K                                ignition::gazebo::components::Pose([m[K
+      |                                 [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+   38 | [01;31m[K                                [&](const ignition::gazebo::Entity &_entity,[m[K
+      |                                 [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+   39 | [01;31m[K                                const ignition::gazebo::components::Pose *_pose) -> bool[m[K
+      |                                 [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+   40 | [01;31m[K                {[m[K
+      |                 [01;31m[K~[m[K     
+   41 | 
+      |                       
+   42 | 
+      |                       
+   43 | [01;31m[K                        ignition::math::Pose3d light_pose = _pose->Data();[m[K
+      |                         [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+   44 | [01;31m[K                        lightPoses.push_back(light_pose);[m[K
+      |                         [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+   45 | 
+      |                       
+   46 | [01;31m[K                        std:: cout << lightPoses.size() << std::endl;[m[K
+      |                         [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+   47 | 
+      |                       
+   48 | [01;31m[K                        return true;[m[K
+      |                         [01;31m[K~~~~~~~~~~~~[m[K
+   49 | 
+      |                       
+   50 | [01;31m[K                })[m[K;
+      |                 [01;31m[K~~[m[K    
+[01m[K/home/paolo/light_sensor_plugin/src/light_sensor_custom/src/LightSensor.cc:36:22:[m[K [01;31m[Kerror: [m[Kstatement cannot resolve address of overloaded function
+   36 |                 [01;31m[K_ecm.Each<//ignition::gazebo::components::Light,[m[K
+      |                 [01;31m[K~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+   37 | [01;31m[K                                ignition::gazebo::components::Pose([m[K
+      |                                 [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+   38 | [01;31m[K                                [&](const ignition::gazebo::Entity &_entity,[m[K
+      |                                 [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+   39 | [01;31m[K                                const ignition::gazebo::components::Pose *_pose) -> bool[m[K
+      |                                 [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+   40 | [01;31m[K                {[m[K
+      |                 [01;31m[K~[m[K     
+   41 | 
+      |                       
+   42 | 
+      |                       
+   43 | [01;31m[K                        ignition::math::Pose3d light_pose = _pose->Data();[m[K
+      |                         [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+   44 | [01;31m[K                        lightPoses.push_back(light_pose);[m[K
+      |                         [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+   45 | 
+      |                       
+   46 | [01;31m[K                        std:: cout << lightPoses.size() << std::endl;[m[K
+      |                         [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+   47 | 
+      |                       
+   48 | [01;31m[K                        return true;[m[K
+      |                         [01;31m[K~~~~~~~~~~~~[m[K
+   49 | 
+      |                       
+   50 | [01;31m[K                })[m[K;
+      |                 [01;31m[K~~[m[K    
+gmake[2]: *** [CMakeFiles/LightSensor.dir/build.make:76: CMakeFiles/LightSensor.dir/src/LightSensor.cc.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/LightSensor.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

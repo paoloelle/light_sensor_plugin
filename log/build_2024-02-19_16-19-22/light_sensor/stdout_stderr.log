@@ -1,0 +1,9 @@
+[35m[1mConsolidate compiler generated dependencies of target LightSensor[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/LightSensor.dir/src/LightSensor.cc.o[0m
+[01m[K/home/paolo/light_sensor_plugin/src/light_sensor_custom/src/LightSensor.cc:[m[K In member function ‘[01m[Kvirtual void custom_light_sensor::LightSensor::Configure(const Entity&, const std::shared_ptr<const sdf::v12::Element>&, ignition::gazebo::v6::EntityComponentManager&, ignition::gazebo::v6::EventManager&)[m[K’:
+[01m[K/home/paolo/light_sensor_plugin/src/light_sensor_custom/src/LightSensor.cc:51:47:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K->[m[K’ token
+   51 |                 sdf::ElementPtr scanElem = sdf[01;31m[K->[m[KGetElement("scan");
+      |                                               [01;31m[K^~[m[K
+gmake[2]: *** [CMakeFiles/LightSensor.dir/build.make:76: CMakeFiles/LightSensor.dir/src/LightSensor.cc.o] Interrupt
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/LightSensor.dir/all] Interrupt
+gmake: *** [Makefile:146: all] Interrupt

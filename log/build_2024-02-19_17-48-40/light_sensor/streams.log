@@ -1,0 +1,34 @@
+[0.106s] Invoking command in '/home/paolo/light_sensor_plugin/build/light_sensor': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/paolo/turtlebot4_controller_ws/install/turtlebot4_controller:/opt/ros/humble /usr/bin/cmake --build /home/paolo/light_sensor_plugin/build/light_sensor -- -j8 -l8
+[0.156s] [35m[1mConsolidate compiler generated dependencies of target LightSensor[0m
+[0.187s] [ 50%] [32mBuilding CXX object CMakeFiles/LightSensor.dir/src/LightSensor.cc.o[0m
+[6.834s] [01m[K/home/paolo/light_sensor_plugin/src/light_sensor_custom/src/LightSensor.cc:[m[K In lambda function:
+[6.834s] [01m[K/home/paolo/light_sensor_plugin/src/light_sensor_custom/src/LightSensor.cc:44:41:[m[K [01;31m[Kerror: [m[K‘[01m[KPose[m[K’ is not a member of ‘[01m[Kignition::math[m[K’
+[6.834s]    44 |                         ignition::math::[01;31m[KPose[m[K light_pose = _pose->Data();
+[6.834s]       |                                         [01;31m[K^~~~[m[K
+[6.834s] [01m[K/home/paolo/light_sensor_plugin/src/light_sensor_custom/src/LightSensor.cc:44:41:[m[K [01;36m[Knote: [m[Ksuggested alternatives:
+[6.834s] In file included from [01m[K/usr/include/ignition/msgs8/ignition/msgs/actor.pb.h:37[m[K,
+[6.834s]                  from [01m[K/usr/include/ignition/msgs8/gz/msgs/actor.pb.h:18[m[K,
+[6.834s]                  from [01m[K/usr/include/ignition/gazebo6/gz/sim/components/Actor.hh:20[m[K,
+[6.834s]                  from [01m[K/usr/include/ignition/gazebo6/gz/sim/components.hh:21[m[K,
+[6.835s]                  from [01m[K/usr/include/ignition/gazebo6/ignition/gazebo/components.hh:18[m[K,
+[6.835s]                  from [01m[K/home/paolo/light_sensor_plugin/src/light_sensor_custom/src/LightSensor.cc:2[m[K:
+[6.835s] [01m[K/usr/include/ignition/msgs8/ignition/msgs/pose.pb.h:86:29:[m[K [01;36m[Knote: [m[K  ‘[01m[Kignition::msgs::Pose[m[K’
+[6.835s]    86 | class IGNITION_MSGS_VISIBLE [01;36m[KPose[m[K PROTOBUF_FINAL :
+[6.835s]       |                             [01;36m[K^~~~[m[K
+[6.835s] In file included from [01m[K/usr/include/ignition/physics5/gz/physics/ContactProperties.hh:26[m[K,
+[6.835s]                  from [01m[K/usr/include/ignition/gazebo6/gz/sim/physics/Events.hh:24[m[K,
+[6.835s]                  from [01m[K/usr/include/ignition/gazebo6/gz/gazebo.hh:142[m[K,
+[6.835s]                  from [01m[K/usr/include/ignition/gazebo6/gz/sim.hh:27[m[K,
+[6.835s]                  from [01m[K/usr/include/ignition/gazebo6/ignition/gazebo.hh:18[m[K,
+[6.835s]                  from [01m[K/home/paolo/light_sensor_plugin/src/light_sensor_custom/src/LightSensor.cc:4[m[K:
+[6.836s] [01m[K/usr/include/ignition/physics5/gz/physics/Geometry.hh:44:11:[m[K [01;36m[Knote: [m[K  ‘[01m[Kignition::physics::Pose[m[K’
+[6.836s]    44 |     using [01;36m[KPose[m[K = Eigen::Transform<Scalar, Dim, Eigen::Isometry>;
+[6.836s]       |           [01;36m[K^~~~[m[K
+[6.845s] [01m[K/home/paolo/light_sensor_plugin/src/light_sensor_custom/src/LightSensor.cc:45:46:[m[K [01;31m[Kerror: [m[K‘[01m[Klight_pose[m[K’ was not declared in this scope; did you mean ‘[01m[KlightPoses[m[K’?
+[6.845s]    45 |                         lightPoses.push_back([01;31m[Klight_pose[m[K);
+[6.845s]       |                                              [01;31m[K^~~~~~~~~~[m[K
+[6.845s]       |                                              [32m[KlightPoses[m[K
+[10.347s] gmake[2]: *** [CMakeFiles/LightSensor.dir/build.make:76: CMakeFiles/LightSensor.dir/src/LightSensor.cc.o] Error 1
+[10.347s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/LightSensor.dir/all] Error 2
+[10.347s] gmake: *** [Makefile:146: all] Error 2
+[10.350s] Invoked command in '/home/paolo/light_sensor_plugin/build/light_sensor' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/paolo/turtlebot4_controller_ws/install/turtlebot4_controller:/opt/ros/humble /usr/bin/cmake --build /home/paolo/light_sensor_plugin/build/light_sensor -- -j8 -l8

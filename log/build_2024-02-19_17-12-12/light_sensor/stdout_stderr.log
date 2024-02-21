@@ -1,0 +1,17 @@
+[35m[1mConsolidate compiler generated dependencies of target LightSensor[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/LightSensor.dir/src/LightSensor.cc.o[0m
+[01m[K/home/paolo/light_sensor_plugin/src/light_sensor_custom/src/LightSensor.cc:[m[K In member function ‘[01m[Kvirtual void custom_light_sensor::LightSensor::Configure(const Entity&, const std::shared_ptr<const sdf::v12::Element>&, ignition::gazebo::v6::EntityComponentManager&, ignition::gazebo::v6::EventManager&)[m[K’:
+[01m[K/home/paolo/light_sensor_plugin/src/light_sensor_custom/src/LightSensor.cc:65:36:[m[K [01;31m[Kerror: [m[K‘[01m[Kecm[m[K’ was not declared in this scope; did you mean ‘[01m[K_ecm[m[K’?
+   65 |                 std::string name = [01;31m[Kecm[m[K.Component<components::Name>(entity)->Data();
+      |                                    [01;31m[K^~~[m[K
+      |                                    [32m[K_ecm[m[K
+[01m[K/home/paolo/light_sensor_plugin/src/light_sensor_custom/src/LightSensor.cc:65:50:[m[K [01;31m[Kerror: [m[K‘[01m[Kcomponents[m[K’ has not been declared
+   65 |                 std::string name = ecm.Component<[01;31m[Kcomponents[m[K::Name>(entity)->Data();
+      |                                                  [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/paolo/light_sensor_plugin/src/light_sensor_custom/src/LightSensor.cc:65:68:[m[K [01;31m[Kerror: [m[K‘[01m[Kentity[m[K’ was not declared in this scope; did you mean ‘[01m[K_entity[m[K’?
+   65 |                 std::string name = ecm.Component<components::Name>([01;31m[Kentity[m[K)->Data();
+      |                                                                    [01;31m[K^~~~~~[m[K
+      |                                                                    [32m[K_entity[m[K
+gmake[2]: *** [CMakeFiles/LightSensor.dir/build.make:76: CMakeFiles/LightSensor.dir/src/LightSensor.cc.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/LightSensor.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

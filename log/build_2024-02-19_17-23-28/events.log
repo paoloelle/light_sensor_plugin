@@ -1,0 +1,182 @@
+[0.000000] (-) TimerEvent: {}
+[0.000144] (light_sensor) JobQueued: {'identifier': 'light_sensor', 'dependencies': OrderedDict()}
+[0.000175] (light_sensor) JobStarted: {'identifier': 'light_sensor'}
+[0.099157] (-) TimerEvent: {}
+[0.100986] (light_sensor) JobProgress: {'identifier': 'light_sensor', 'progress': 'cmake'}
+[0.102414] (light_sensor) JobProgress: {'identifier': 'light_sensor', 'progress': 'build'}
+[0.102450] (light_sensor) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/paolo/light_sensor_plugin/build/light_sensor', '--', '-j8', '-l8'], 'cwd': '/home/paolo/light_sensor_plugin/build/light_sensor', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'paolo'), ('LC_TIME', 'it_IT.UTF-8'), ('IGNITION_VERSION', 'fortress'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/paolo/turtlebot4_ws/install/turtlebot4_msgs/lib:/home/paolo/create3_ws/install/irobot_create_nodes/lib:/home/paolo/create3_ws/install/irobot_create_ignition_toolbox/lib:/home/paolo/create3_ws/install/irobot_create_toolbox/lib:/home/paolo/create3_ws/install/irobot_create_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/paolo'), ('OLDPWD', '/home/paolo'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'it_IT.UTF-8'), ('MANAGERPID', '990'), ('SYSTEMD_EXEC_PID', '1166'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '12473'), ('_colcon_cd_root', '/opt/ros/humble/'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/paolo/turtlebot4_controller_ws/install:/home/paolo/turtlebot4_ws/install:/home/paolo/create3_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'paolo'), ('JOURNAL_STREAM', '8:27999'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'paolo'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/paolo-VivoBook-S15-X510UF:@/tmp/.ICE-unix/1143,unix/paolo-VivoBook-S15-X510UF:/tmp/.ICE-unix/1143'), ('INVOCATION_ID', '2f2b369fc9ec4b36b1d0c45d9955141b'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'it_IT.UTF-8'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('LC_TELEPHONE', 'it_IT.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.IFREJ2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/paolo/turtlebot4_controller_ws/install/turtlebot4_controller:/home/paolo/turtlebot4_ws/install/turtlebot4_simulator:/home/paolo/turtlebot4_ws/install/turtlebot4_ignition_bringup:/home/paolo/turtlebot4_ws/install/turtlebot4_desktop:/home/paolo/turtlebot4_ws/install/turtlebot4_viz:/home/paolo/turtlebot4_ws/install/turtlebot4_setup:/home/paolo/turtlebot4_ws/install/turtlebot4_node:/home/paolo/turtlebot4_ws/install/turtlebot4_navigation:/home/paolo/turtlebot4_ws/install/turtlebot4_ignition_toolbox:/home/paolo/turtlebot4_ws/install/turtlebot4_msgs:/home/paolo/turtlebot4_ws/install/turtlebot4_ignition_gui_plugins:/home/paolo/turtlebot4_ws/install/turtlebot4_description:/home/paolo/create3_ws/install/irobot_create_ignition_sim:/home/paolo/create3_ws/install/irobot_create_ignition_bringup:/home/paolo/create3_ws/install/irobot_create_common_bringup:/home/paolo/create3_ws/install/irobot_create_nodes:/home/paolo/create3_ws/install/irobot_create_ignition_toolbox:/home/paolo/create3_ws/install/irobot_create_toolbox:/home/paolo/create3_ws/install/irobot_create_msgs:/home/paolo/create3_ws/install/irobot_create_ignition_plugins:/home/paolo/create3_ws/install/irobot_create_description:/home/paolo/create3_ws/install/irobot_create_control:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'it_IT.UTF-8'), ('TERMINATOR_UUID', 'urn:uuid:9c6313d9-7ca9-4067-b3d5-9b4fee3246a7'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'it_IT.UTF-8'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'it_IT.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/paolo/light_sensor_plugin/build/light_sensor'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/paolo/turtlebot4_controller_ws/build/turtlebot4_controller:/home/paolo/turtlebot4_controller_ws/install/turtlebot4_controller/lib/python3.10/site-packages:/home/paolo/turtlebot4_ws/install/turtlebot4_setup/local/lib/python3.10/dist-packages:/home/paolo/turtlebot4_ws/install/turtlebot4_navigation/local/lib/python3.10/dist-packages:/home/paolo/turtlebot4_ws/install/turtlebot4_msgs/local/lib/python3.10/dist-packages:/home/paolo/create3_ws/install/irobot_create_common_bringup/local/lib/python3.10/dist-packages:/home/paolo/create3_ws/install/irobot_create_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'it_IT.UTF-8'), ('LC_PAPER', 'it_IT.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/paolo/turtlebot4_ws/install/turtlebot4_simulator:/home/paolo/turtlebot4_ws/install/turtlebot4_ignition_bringup:/home/paolo/turtlebot4_ws/install/turtlebot4_desktop:/home/paolo/turtlebot4_ws/install/turtlebot4_viz:/home/paolo/turtlebot4_ws/install/turtlebot4_setup:/home/paolo/turtlebot4_ws/install/turtlebot4_node:/home/paolo/turtlebot4_ws/install/turtlebot4_navigation:/home/paolo/turtlebot4_ws/install/turtlebot4_ignition_toolbox:/home/paolo/turtlebot4_ws/install/turtlebot4_msgs:/home/paolo/turtlebot4_ws/install/turtlebot4_ignition_gui_plugins:/home/paolo/turtlebot4_ws/install/turtlebot4_description:/home/paolo/create3_ws/install/irobot_create_ignition_sim:/home/paolo/create3_ws/install/irobot_create_ignition_bringup:/home/paolo/create3_ws/install/irobot_create_common_bringup:/home/paolo/create3_ws/install/irobot_create_nodes:/home/paolo/create3_ws/install/irobot_create_ignition_toolbox:/home/paolo/create3_ws/install/irobot_create_toolbox:/home/paolo/create3_ws/install/irobot_create_msgs:/home/paolo/create3_ws/install/irobot_create_ignition_plugins:/home/paolo/create3_ws/install/irobot_create_description:/home/paolo/create3_ws/install/irobot_create_control:/home/paolo/turtlebot4_controller_ws/install/turtlebot4_controller:/opt/ros/humble')]), 'shell': False}
+[0.155371] (light_sensor) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target LightSensor\x1b[0m\n'}
+[0.188713] (light_sensor) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/LightSensor.dir/src/LightSensor.cc.o\x1b[0m\n'}
+[0.199281] (-) TimerEvent: {}
+[0.299599] (-) TimerEvent: {}
+[0.399947] (-) TimerEvent: {}
+[0.500232] (-) TimerEvent: {}
+[0.600592] (-) TimerEvent: {}
+[0.700966] (-) TimerEvent: {}
+[0.801286] (-) TimerEvent: {}
+[0.901699] (-) TimerEvent: {}
+[1.002074] (-) TimerEvent: {}
+[1.102417] (-) TimerEvent: {}
+[1.202763] (-) TimerEvent: {}
+[1.303127] (-) TimerEvent: {}
+[1.403487] (-) TimerEvent: {}
+[1.503810] (-) TimerEvent: {}
+[1.604123] (-) TimerEvent: {}
+[1.704482] (-) TimerEvent: {}
+[1.804821] (-) TimerEvent: {}
+[1.905177] (-) TimerEvent: {}
+[2.005519] (-) TimerEvent: {}
+[2.105923] (-) TimerEvent: {}
+[2.206299] (-) TimerEvent: {}
+[2.306644] (-) TimerEvent: {}
+[2.407033] (-) TimerEvent: {}
+[2.507386] (-) TimerEvent: {}
+[2.607738] (-) TimerEvent: {}
+[2.708094] (-) TimerEvent: {}
+[2.808458] (-) TimerEvent: {}
+[2.908779] (-) TimerEvent: {}
+[3.009140] (-) TimerEvent: {}
+[3.109475] (-) TimerEvent: {}
+[3.209821] (-) TimerEvent: {}
+[3.310101] (-) TimerEvent: {}
+[3.410366] (-) TimerEvent: {}
+[3.510694] (-) TimerEvent: {}
+[3.610969] (-) TimerEvent: {}
+[3.711266] (-) TimerEvent: {}
+[3.811535] (-) TimerEvent: {}
+[3.911847] (-) TimerEvent: {}
+[4.012155] (-) TimerEvent: {}
+[4.112451] (-) TimerEvent: {}
+[4.212755] (-) TimerEvent: {}
+[4.313060] (-) TimerEvent: {}
+[4.413333] (-) TimerEvent: {}
+[4.513580] (-) TimerEvent: {}
+[4.613862] (-) TimerEvent: {}
+[4.714136] (-) TimerEvent: {}
+[4.814407] (-) TimerEvent: {}
+[4.914694] (-) TimerEvent: {}
+[5.014997] (-) TimerEvent: {}
+[5.115298] (-) TimerEvent: {}
+[5.215604] (-) TimerEvent: {}
+[5.315902] (-) TimerEvent: {}
+[5.416166] (-) TimerEvent: {}
+[5.516462] (-) TimerEvent: {}
+[5.616763] (-) TimerEvent: {}
+[5.717056] (-) TimerEvent: {}
+[5.817393] (-) TimerEvent: {}
+[5.917688] (-) TimerEvent: {}
+[6.017968] (-) TimerEvent: {}
+[6.118281] (-) TimerEvent: {}
+[6.218593] (-) TimerEvent: {}
+[6.318913] (-) TimerEvent: {}
+[6.419247] (-) TimerEvent: {}
+[6.519579] (-) TimerEvent: {}
+[6.619924] (-) TimerEvent: {}
+[6.720269] (-) TimerEvent: {}
+[6.765549] (light_sensor) StderrLine: {'line': b'\x1b[01m\x1b[K/home/paolo/light_sensor_plugin/src/light_sensor_custom/src/LightSensor.cc:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvirtual void custom_light_sensor::LightSensor::Configure(const Entity&, const std::shared_ptr<const sdf::v12::Element>&, ignition::gazebo::v6::EntityComponentManager&, ignition::gazebo::v6::EventManager&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[6.765956] (light_sensor) StderrLine: {'line': b'\x1b[01m\x1b[K/home/paolo/light_sensor_plugin/src/light_sensor_custom/src/LightSensor.cc:38:33:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Klambda-expression in template-argument only available with \xe2\x80\x98\x1b[01m\x1b[K-std=c++20\x1b[m\x1b[K\xe2\x80\x99 or \xe2\x80\x98\x1b[01m\x1b[K-std=gnu++20\x1b[m\x1b[K\xe2\x80\x99\n'}
+[6.766198] (light_sensor) StderrLine: {'line': b'   38 |                                 \x1b[01;31m\x1b[K[\x1b[m\x1b[K&](const ignition::gazebo::Entity &_entity,\n'}
+[6.766295] (light_sensor) StderrLine: {'line': b'      |                                 \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[6.766385] (light_sensor) StderrLine: {'line': b'\x1b[01m\x1b[K/home/paolo/light_sensor_plugin/src/light_sensor_custom/src/LightSensor.cc:36:22:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kparse error in template argument list\n'}
+[6.766487] (light_sensor) StderrLine: {'line': b'   36 |                 _ecm.\x1b[01;31m\x1b[KEach<//ignition::gazebo::components::Light,\x1b[m\x1b[K\n'}
+[6.766577] (light_sensor) StderrLine: {'line': b'      |                      \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.766666] (light_sensor) StderrLine: {'line': b'   37 | \x1b[01;31m\x1b[K                                ignition::gazebo::components::Pose(\x1b[m\x1b[K\n'}
+[6.766754] (light_sensor) StderrLine: {'line': b'      |                                 \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.766843] (light_sensor) StderrLine: {'line': b'   38 | \x1b[01;31m\x1b[K                                [&](const ignition::gazebo::Entity &_entity,\x1b[m\x1b[K\n'}
+[6.766955] (light_sensor) StderrLine: {'line': b'      |                                 \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.767051] (light_sensor) StderrLine: {'line': b'   39 | \x1b[01;31m\x1b[K                                const ignition::gazebo::components::Pose *_pose) -> bool\x1b[m\x1b[K\n'}
+[6.767148] (light_sensor) StderrLine: {'line': b'      |                                 \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.767252] (light_sensor) StderrLine: {'line': b'   40 | \x1b[01;31m\x1b[K                {\x1b[m\x1b[K\n'}
+[6.767338] (light_sensor) StderrLine: {'line': b'      |                 \x1b[01;31m\x1b[K~\x1b[m\x1b[K     \n'}
+[6.767424] (light_sensor) StderrLine: {'line': b'   41 | \n'}
+[6.767512] (light_sensor) StderrLine: {'line': b'      |                       \n'}
+[6.767599] (light_sensor) StderrLine: {'line': b'   42 | \n'}
+[6.767687] (light_sensor) StderrLine: {'line': b'      |                       \n'}
+[6.767774] (light_sensor) StderrLine: {'line': b'   43 | \x1b[01;31m\x1b[K                        ignition::math::Pose3d light_pose = _pose->Data();\x1b[m\x1b[K\n'}
+[6.767862] (light_sensor) StderrLine: {'line': b'      |                         \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.767954] (light_sensor) StderrLine: {'line': b'   44 | \x1b[01;31m\x1b[K                        lightPoses.push_back(light_pose);\x1b[m\x1b[K\n'}
+[6.768042] (light_sensor) StderrLine: {'line': b'      |                         \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.768130] (light_sensor) StderrLine: {'line': b'   45 | \n'}
+[6.768217] (light_sensor) StderrLine: {'line': b'      |                       \n'}
+[6.768304] (light_sensor) StderrLine: {'line': b'   46 | \x1b[01;31m\x1b[K                        std:: cout << lightPoses.size() << std::endl;\x1b[m\x1b[K\n'}
+[6.768393] (light_sensor) StderrLine: {'line': b'      |                         \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.768480] (light_sensor) StderrLine: {'line': b'   47 | \n'}
+[6.768566] (light_sensor) StderrLine: {'line': b'      |                       \n'}
+[6.768653] (light_sensor) StderrLine: {'line': b'   48 | \x1b[01;31m\x1b[K                        return true;\x1b[m\x1b[K\n'}
+[6.768741] (light_sensor) StderrLine: {'line': b'      |                         \x1b[01;31m\x1b[K~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.768829] (light_sensor) StderrLine: {'line': b'   49 | \n'}
+[6.768917] (light_sensor) StderrLine: {'line': b'      |                       \n'}
+[6.769004] (light_sensor) StderrLine: {'line': b'   50 | \x1b[01;31m\x1b[K                })\x1b[m\x1b[K;\n'}
+[6.769090] (light_sensor) StderrLine: {'line': b'      |                 \x1b[01;31m\x1b[K~~\x1b[m\x1b[K    \n'}
+[6.769178] (light_sensor) StderrLine: {'line': b'\x1b[01m\x1b[K/home/paolo/light_sensor_plugin/src/light_sensor_custom/src/LightSensor.cc:36:22:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kstatement cannot resolve address of overloaded function\n'}
+[6.769267] (light_sensor) StderrLine: {'line': b'   36 |                 \x1b[01;31m\x1b[K_ecm.Each<//ignition::gazebo::components::Light,\x1b[m\x1b[K\n'}
+[6.769417] (light_sensor) StderrLine: {'line': b'      |                 \x1b[01;31m\x1b[K~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.769508] (light_sensor) StderrLine: {'line': b'   37 | \x1b[01;31m\x1b[K                                ignition::gazebo::components::Pose(\x1b[m\x1b[K\n'}
+[6.769596] (light_sensor) StderrLine: {'line': b'      |                                 \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.769692] (light_sensor) StderrLine: {'line': b'   38 | \x1b[01;31m\x1b[K                                [&](const ignition::gazebo::Entity &_entity,\x1b[m\x1b[K\n'}
+[6.769783] (light_sensor) StderrLine: {'line': b'      |                                 \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.769870] (light_sensor) StderrLine: {'line': b'   39 | \x1b[01;31m\x1b[K                                const ignition::gazebo::components::Pose *_pose) -> bool\x1b[m\x1b[K\n'}
+[6.769959] (light_sensor) StderrLine: {'line': b'      |                                 \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.770048] (light_sensor) StderrLine: {'line': b'   40 | \x1b[01;31m\x1b[K                {\x1b[m\x1b[K\n'}
+[6.770135] (light_sensor) StderrLine: {'line': b'      |                 \x1b[01;31m\x1b[K~\x1b[m\x1b[K     \n'}
+[6.770223] (light_sensor) StderrLine: {'line': b'   41 | \n'}
+[6.770309] (light_sensor) StderrLine: {'line': b'      |                       \n'}
+[6.770396] (light_sensor) StderrLine: {'line': b'   42 | \n'}
+[6.770483] (light_sensor) StderrLine: {'line': b'      |                       \n'}
+[6.770592] (light_sensor) StderrLine: {'line': b'   43 | \x1b[01;31m\x1b[K                        ignition::math::Pose3d light_pose = _pose->Data();\x1b[m\x1b[K\n'}
+[6.770705] (light_sensor) StderrLine: {'line': b'      |                         \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.770856] (light_sensor) StderrLine: {'line': b'   44 | \x1b[01;31m\x1b[K                        lightPoses.push_back(light_pose);\x1b[m\x1b[K\n'}
+[6.770963] (light_sensor) StderrLine: {'line': b'      |                         \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.771054] (light_sensor) StderrLine: {'line': b'   45 | \n'}
+[6.771142] (light_sensor) StderrLine: {'line': b'      |                       \n'}
+[6.771229] (light_sensor) StderrLine: {'line': b'   46 | \x1b[01;31m\x1b[K                        std:: cout << lightPoses.size() << std::endl;\x1b[m\x1b[K\n'}
+[6.771316] (light_sensor) StderrLine: {'line': b'      |                         \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.771404] (light_sensor) StderrLine: {'line': b'   47 | \n'}
+[6.771491] (light_sensor) StderrLine: {'line': b'      |                       \n'}
+[6.771580] (light_sensor) StderrLine: {'line': b'   48 | \x1b[01;31m\x1b[K                        return true;\x1b[m\x1b[K\n'}
+[6.771667] (light_sensor) StderrLine: {'line': b'      |                         \x1b[01;31m\x1b[K~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.771777] (light_sensor) StderrLine: {'line': b'   49 | \n'}
+[6.771880] (light_sensor) StderrLine: {'line': b'      |                       \n'}
+[6.771966] (light_sensor) StderrLine: {'line': b'   50 | \x1b[01;31m\x1b[K                })\x1b[m\x1b[K;\n'}
+[6.772053] (light_sensor) StderrLine: {'line': b'      |                 \x1b[01;31m\x1b[K~~\x1b[m\x1b[K    \n'}
+[6.820398] (-) TimerEvent: {}
+[6.920706] (-) TimerEvent: {}
+[7.021019] (-) TimerEvent: {}
+[7.121363] (-) TimerEvent: {}
+[7.221681] (-) TimerEvent: {}
+[7.322017] (-) TimerEvent: {}
+[7.422343] (-) TimerEvent: {}
+[7.522654] (-) TimerEvent: {}
+[7.622966] (-) TimerEvent: {}
+[7.723278] (-) TimerEvent: {}
+[7.823595] (-) TimerEvent: {}
+[7.923908] (-) TimerEvent: {}
+[8.024223] (-) TimerEvent: {}
+[8.124539] (-) TimerEvent: {}
+[8.224855] (-) TimerEvent: {}
+[8.325233] (-) TimerEvent: {}
+[8.425587] (-) TimerEvent: {}
+[8.525897] (-) TimerEvent: {}
+[8.626246] (-) TimerEvent: {}
+[8.726559] (-) TimerEvent: {}
+[8.826874] (-) TimerEvent: {}
+[8.927194] (-) TimerEvent: {}
+[9.027505] (-) TimerEvent: {}
+[9.127817] (-) TimerEvent: {}
+[9.228151] (-) TimerEvent: {}
+[9.328480] (-) TimerEvent: {}
+[9.428789] (-) TimerEvent: {}
+[9.529124] (-) TimerEvent: {}
+[9.629419] (-) TimerEvent: {}
+[9.729741] (-) TimerEvent: {}
+[9.830051] (-) TimerEvent: {}
+[9.930361] (-) TimerEvent: {}
+[10.030675] (-) TimerEvent: {}
+[10.131015] (-) TimerEvent: {}
+[10.147721] (light_sensor) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/LightSensor.dir/build.make:76: CMakeFiles/LightSensor.dir/src/LightSensor.cc.o] Error 1\n'}
+[10.148006] (light_sensor) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/LightSensor.dir/all] Error 2\n'}
+[10.148227] (light_sensor) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[10.150937] (light_sensor) CommandEnded: {'returncode': 2}
+[10.231475] (-) TimerEvent: {}
+[10.261731] (light_sensor) JobEnded: {'identifier': 'light_sensor', 'rc': 2}
+[10.272454] (-) EventReactorShutdown: {}

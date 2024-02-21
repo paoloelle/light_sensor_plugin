@@ -1,0 +1,19 @@
+[0.105s] Invoking command in '/home/paolo/light_sensor_plugin/build/light_sensor': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/paolo/turtlebot4_controller_ws/install/turtlebot4_controller:/opt/ros/humble /usr/bin/cmake --build /home/paolo/light_sensor_plugin/build/light_sensor -- -j8 -l8
+[0.152s] [35m[1mConsolidate compiler generated dependencies of target LightSensor[0m
+[0.183s] [ 50%] [32mBuilding CXX object CMakeFiles/LightSensor.dir/src/LightSensor.cc.o[0m
+[6.946s] [01m[K/home/paolo/light_sensor_plugin/src/light_sensor_custom/src/LightSensor.cc:[m[K In member function ‘[01m[Kvirtual void custom_light_sensor::LightSensor::Configure(const Entity&, const std::shared_ptr<const sdf::v12::Element>&, ignition::gazebo::v6::EntityComponentManager&, ignition::gazebo::v6::EventManager&)[m[K’:
+[6.947s] [01m[K/home/paolo/light_sensor_plugin/src/light_sensor_custom/src/LightSensor.cc:65:36:[m[K [01;31m[Kerror: [m[K‘[01m[Kecm[m[K’ was not declared in this scope; did you mean ‘[01m[K_ecm[m[K’?
+[6.947s]    65 |                 std::string name = [01;31m[Kecm[m[K.Component<components::Name>(entity)->Data();
+[6.947s]       |                                    [01;31m[K^~~[m[K
+[6.947s]       |                                    [32m[K_ecm[m[K
+[6.947s] [01m[K/home/paolo/light_sensor_plugin/src/light_sensor_custom/src/LightSensor.cc:65:50:[m[K [01;31m[Kerror: [m[K‘[01m[Kcomponents[m[K’ has not been declared
+[6.947s]    65 |                 std::string name = ecm.Component<[01;31m[Kcomponents[m[K::Name>(entity)->Data();
+[6.947s]       |                                                  [01;31m[K^~~~~~~~~~[m[K
+[6.959s] [01m[K/home/paolo/light_sensor_plugin/src/light_sensor_custom/src/LightSensor.cc:65:68:[m[K [01;31m[Kerror: [m[K‘[01m[Kentity[m[K’ was not declared in this scope; did you mean ‘[01m[K_entity[m[K’?
+[6.959s]    65 |                 std::string name = ecm.Component<components::Name>([01;31m[Kentity[m[K)->Data();
+[6.959s]       |                                                                    [01;31m[K^~~~~~[m[K
+[6.959s]       |                                                                    [32m[K_entity[m[K
+[10.614s] gmake[2]: *** [CMakeFiles/LightSensor.dir/build.make:76: CMakeFiles/LightSensor.dir/src/LightSensor.cc.o] Error 1
+[10.614s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/LightSensor.dir/all] Error 2
+[10.614s] gmake: *** [Makefile:146: all] Error 2
+[10.617s] Invoked command in '/home/paolo/light_sensor_plugin/build/light_sensor' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/paolo/turtlebot4_controller_ws/install/turtlebot4_controller:/opt/ros/humble /usr/bin/cmake --build /home/paolo/light_sensor_plugin/build/light_sensor -- -j8 -l8
