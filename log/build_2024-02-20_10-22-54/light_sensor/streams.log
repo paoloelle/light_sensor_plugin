@@ -1,0 +1,31 @@
+[0.111s] Invoking command in '/home/paolo/light_sensor_plugin/build/light_sensor': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/paolo/turtlebot4_controller_ws/install/turtlebot4_controller:/opt/ros/humble /usr/bin/cmake --build /home/paolo/light_sensor_plugin/build/light_sensor -- -j8 -l8
+[0.184s] [ 50%] [32mBuilding CXX object CMakeFiles/LightSensor.dir/src/LightSensor.cc.o[0m
+[6.909s] [01m[K/home/paolo/light_sensor_plugin/src/light_sensor_custom/src/LightSensor.cc:35:49:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[6.909s]    35 |         const std::shared_ptr<const sdf::Light &[01;31m[K_sdfLight[m[K)
+[6.909s]       |                                                 [01;31m[K^~~~~~~~~[m[K
+[6.909s] [01m[K/home/paolo/light_sensor_plugin/src/light_sensor_custom/src/LightSensor.cc:35:49:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[6.909s] [01m[K/home/paolo/light_sensor_plugin/src/light_sensor_custom/src/LightSensor.cc:35:49:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[6.909s] [01m[K/home/paolo/light_sensor_plugin/src/light_sensor_custom/src/LightSensor.cc:35:15:[m[K [01;31m[Kerror: [m[Kinvalid template-id
+[6.910s]    35 |         const [01;31m[Kstd[m[K::shared_ptr<const sdf::Light &_sdfLight)
+[6.910s]       |               [01;31m[K^~~[m[K
+[6.910s] [01m[K/home/paolo/light_sensor_plugin/src/light_sensor_custom/src/LightSensor.cc:35:31:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[Kconst[m[K’
+[6.910s]    35 |         const std::shared_ptr<[01;31m[Kconst[m[K sdf::Light &_sdfLight)
+[6.910s]       |                               [01;31m[K^~~~~[m[K
+[6.910s] [01m[K/home/paolo/light_sensor_plugin/src/light_sensor_custom/src/LightSensor.cc:35:31:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K>[m[K’ before ‘[01m[Kconst[m[K’
+[6.910s] [01m[K/home/paolo/light_sensor_plugin/src/light_sensor_custom/src/LightSensor.cc:35:9:[m[K [01;31m[Kerror: [m[Kclass template placeholder ‘[01m[Kstd::shared_ptr[m[K’ not permitted in this context
+[6.910s]    35 |         [01;31m[Kconst[m[K std::shared_ptr<const sdf::Light &_sdfLight)
+[6.910s]       |         [01;31m[K^~~~~[m[K
+[6.910s] [01m[K/home/paolo/light_sensor_plugin/src/light_sensor_custom/src/LightSensor.cc:31:6:[m[K [01;31m[Kerror: [m[Kno declaration matches ‘[01m[Kvoid custom_light_sensor::LightSensor::Configure(...)[m[K’
+[6.910s]    31 | void [01;31m[KLightSensor[m[K::Configure(const ignition::gazebo::Entity &_entity,
+[6.911s]       |      [01;31m[K^~~~~~~~~~~[m[K
+[6.911s] In file included from [01m[K/home/paolo/light_sensor_plugin/src/light_sensor_custom/src/LightSensor.cc:22[m[K:
+[6.911s] [01m[K/home/paolo/light_sensor_plugin/src/light_sensor_custom/src/LightSensor.hh:26:22:[m[K [01;36m[Knote: [m[Kcandidate is: ‘[01m[Kvirtual void custom_light_sensor::LightSensor::Configure(const Entity&, const std::shared_ptr<const sdf::v12::Element>&, ignition::gazebo::v6::EntityComponentManager&, ignition::gazebo::v6::EventManager&)[m[K’
+[6.911s]    26 |         public: void [01;36m[KConfigure[m[K(
+[6.911s]       |                      [01;36m[K^~~~~~~~~[m[K
+[6.911s] [01m[K/home/paolo/light_sensor_plugin/src/light_sensor_custom/src/LightSensor.hh:13:11:[m[K [01;36m[Knote: [m[K‘[01m[Kclass custom_light_sensor::LightSensor[m[K’ defined here
+[6.911s]    13 |     class [01;36m[KLightSensor[m[K:
+[6.911s]       |           [01;36m[K^~~~~~~~~~~[m[K
+[10.384s] gmake[2]: *** [CMakeFiles/LightSensor.dir/build.make:76: CMakeFiles/LightSensor.dir/src/LightSensor.cc.o] Error 1
+[10.384s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/LightSensor.dir/all] Error 2
+[10.385s] gmake: *** [Makefile:146: all] Error 2
+[10.387s] Invoked command in '/home/paolo/light_sensor_plugin/build/light_sensor' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/paolo/turtlebot4_controller_ws/install/turtlebot4_controller:/opt/ros/humble /usr/bin/cmake --build /home/paolo/light_sensor_plugin/build/light_sensor -- -j8 -l8

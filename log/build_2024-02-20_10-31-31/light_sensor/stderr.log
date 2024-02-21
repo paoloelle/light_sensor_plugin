@@ -1,0 +1,13 @@
+[01m[K/home/paolo/light_sensor_plugin/src/light_sensor_custom/src/LightSensor.cc:31:6:[m[K [01;31m[Kerror: [m[Kno declaration matches ‘[01m[Kvoid custom_light_sensor::LightSensor::Configure(const Entity&, const std::shared_ptr<const sdf::v12::Element>&, ignition::gazebo::v6::EntityComponentManager&, ignition::gazebo::v6::EventManager&, const std::shared_ptr<const sdf::v12::Light>&)[m[K’
+   31 | void [01;31m[KLightSensor[m[K::Configure(const ignition::gazebo::Entity &_entity,
+      |      [01;31m[K^~~~~~~~~~~[m[K
+In file included from [01m[K/home/paolo/light_sensor_plugin/src/light_sensor_custom/src/LightSensor.cc:22[m[K:
+[01m[K/home/paolo/light_sensor_plugin/src/light_sensor_custom/src/LightSensor.hh:26:22:[m[K [01;36m[Knote: [m[Kcandidate is: ‘[01m[Kvirtual void custom_light_sensor::LightSensor::Configure(const Entity&, const std::shared_ptr<const sdf::v12::Element>&, ignition::gazebo::v6::EntityComponentManager&, ignition::gazebo::v6::EventManager&)[m[K’
+   26 |         public: void [01;36m[KConfigure[m[K(
+      |                      [01;36m[K^~~~~~~~~[m[K
+[01m[K/home/paolo/light_sensor_plugin/src/light_sensor_custom/src/LightSensor.hh:13:11:[m[K [01;36m[Knote: [m[K‘[01m[Kclass custom_light_sensor::LightSensor[m[K’ defined here
+   13 |     class [01;36m[KLightSensor[m[K:
+      |           [01;36m[K^~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/LightSensor.dir/build.make:76: CMakeFiles/LightSensor.dir/src/LightSensor.cc.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/LightSensor.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

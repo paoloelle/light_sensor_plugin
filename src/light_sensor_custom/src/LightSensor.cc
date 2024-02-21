@@ -17,9 +17,12 @@
 #include <ignition/gazebo/components/LightType.hh>
 #include <ignition/gazebo/components/Light.hh>
 #include <ignition/gazebo/EntityComponentManager.hh>
-#include <sdf/Root.hh>
+#include <sdf/Light.hh>
 
 #include "LightSensor.hh"
+
+#include <ignition/plugin/Register.hh>
+
 
 using namespace custom_light_sensor;
 
@@ -30,29 +33,28 @@ LightSensor::~LightSensor() = default;
 void LightSensor::Configure(const ignition::gazebo::Entity &_entity,
     const std::shared_ptr<const sdf::Element> &_sdf,
     ignition::gazebo::EntityComponentManager &_ecm,
-    ignition::gazebo::EventManager &/*_eventMgr*/)
-    {
-		
-		
+    ignition::gazebo::EventManager &/*_eventMgr*/
+	)
+	
+    {	
+		// get update rate from sdf file
+		auto sdf = const_cast<sdf::Element *>(_sdf.get());
+		this->updateRate = sdf->Get("update_rate", this->updateRate).first;
 
-		// questo metoodo sembra funzionare solo all'interno dei modelli
-  		_ecm.Each<ignition::gazebo::components::Light,
-				ignition::gazebo::components::Pose>(
-				[&](const ignition::gazebo::Entity &_entity,
-				const ignition::gazebo::components::Light *,
-				const ignition::gazebo::components::Pose *_pose) -> bool
+		// get and store the pose of each light element
+		_ecm.Each<ignition::gazebo::components::Light,
+		ignition::gazebo::components::Pose>(
+		[&](const ignition::gazebo::Entity &_entity,
+		const ignition::gazebo::components::Light *_light,
+		const ignition::gazebo::components::Pose *_pose) -> bool
 		{	
-
 			
 			ignition::math::Pose3d light_pose = _pose->Data();
 			lightPoses.push_back(light_pose);
 
-
 			return true;
 
 		});
-
-		std::cout << lightPoses <<std::endl;
 
 
 		// set the topic for sensor data publication
@@ -85,9 +87,9 @@ void LightSensor::Configure(const ignition::gazebo::Entity &_entity,
 			// populate and publish the message
 			double light_value = 0.0;
 
-			/*for (const auto &pose : lightPoses){
-				light_value+=pose;
-			}*/
+			/* TODO for now the light detected will be only porportional to the sum of distances from source lights
+			when I will find how to access to the attenuation factors I will change it (or I can hard code it :) ) */
+			
 
 			//std:: cout << lightPoses.size() << std::endl;
 
@@ -106,8 +108,9 @@ void LightSensor::Configure(const ignition::gazebo::Entity &_entity,
 
     	}
 
-	// Register the plugin
-	IGNITION_ADD_PLUGIN(custom_light_sensor::LightSensor,
-        ignition::gazebo::System,
-        LightSensor::ISystemConfigure,
-        LightSensor::ISystemPostUpdate)
+// Register the plugin
+IGNITION_ADD_PLUGIN(
+	custom_light_sensor::LightSensor,
+    ignition::gazebo::System,
+    LightSensor::ISystemConfigure,
+    LightSensor::ISystemPostUpdate)

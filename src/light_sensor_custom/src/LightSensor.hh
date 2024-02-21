@@ -6,6 +6,9 @@
 #include <ignition/transport/Node.hh>
 #include <ignition/math/Pose3.hh>
 
+#include <sdf/Light.hh>
+
+
 
 namespace custom_light_sensor
 {
@@ -27,7 +30,9 @@ namespace custom_light_sensor
                             const ignition::gazebo::Entity &_entity,
                             const std::shared_ptr<const sdf::Element> &_sdf,
                             ignition::gazebo::EntityComponentManager &_ecm,
-                            ignition::gazebo::EventManager &_eventMgr) override;
+                            ignition::gazebo::EventManager &_eventMgr
+                            //const std::shared_ptr<const sdf::Element> &_sdfB
+                            ) override;
 
         /// Documentation inherited
         public: void PostUpdate(

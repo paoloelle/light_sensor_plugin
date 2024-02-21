@@ -5,6 +5,7 @@
 		<model name="lights">
 
     	<static>true</static>
+		
 		<link name="link_light1">
 			<light type="point" name="point_light1">
 				<intensity>1</intensity>

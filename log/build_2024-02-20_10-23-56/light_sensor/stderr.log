@@ -1,0 +1,7 @@
+[01m[K/home/paolo/light_sensor_plugin/src/light_sensor_custom/src/LightSensor.cc:[m[K In lambda function:
+[01m[K/home/paolo/light_sensor_plugin/src/light_sensor_custom/src/LightSensor.cc:48:70:[m[K [01;31m[Kerror: [m[Kconversion from ‘[01m[Kconst sdf::v12::Light[m[K’ to non-scalar type ‘[01m[Kignition::gazebo::v6::Light[m[K’ requested
+   48 |                         ignition::gazebo::Light light=   [01;31m[K_light->Data()[m[K;
+      |                                                          [01;31m[K~~~~~~~~~~~~^~[m[K
+gmake[2]: *** [CMakeFiles/LightSensor.dir/build.make:76: CMakeFiles/LightSensor.dir/src/LightSensor.cc.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/LightSensor.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2
