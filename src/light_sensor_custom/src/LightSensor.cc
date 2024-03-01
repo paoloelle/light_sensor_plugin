@@ -73,7 +73,7 @@ void LightSensor::Configure(const ignition::gazebo::Entity &_entity,
 		}
 
 
-		  // set topic to publish sensor data to
+		// set topic to publish sensor data to
 		std::string topic = ignition::gazebo::scopedName(_entity, _ecm) + "/light_value";
 		topic = ignition::transport::TopicUtils::AsValidTopic(topic);
 
@@ -106,7 +106,7 @@ void LightSensor::Configure(const ignition::gazebo::Entity &_entity,
 			ignition::math::Pose3d entityPose = poseComp->Data();
 
 			/* TODO for now the light detected will be only porportional to the sum of distances from source lights
-			when I will find how to access to the attenuation factors I will change it (or I can hard code it :) ) */
+			when I will find how to access to the attenuation factors I will change it (or I can hard code it) */
 			
 			double light_value = 0.0; // light detected
 
@@ -115,7 +115,6 @@ void LightSensor::Configure(const ignition::gazebo::Entity &_entity,
 				light_value += entityPose.Pos().Distance(light_pose.Pos());
 
 			}
-
 			
 			// time stamp the message with sim time
 			ignition::msgs::Float msg;
