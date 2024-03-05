@@ -32,10 +32,8 @@
 
 		</model>
 
-
-		<model name="light_sensor">
-
-			<static>true</static>
+	<model name="robot">
+	
 			<link name="sensor_link">
 				<visual name="visual_object">					
 					<geometry>
@@ -48,48 +46,41 @@
 							<diffuse>1 0 0 1</diffuse>
 						</material>
 				</visual>
+			<!--FIXME no absoulte path-->
+				<plugin
+					filename="/home/paolo/light_sensor_plugin/install/lib/libLightSensor.so"
+					name="custom_light_sensor::LightSensor">
+					<update_rate>1</update_rate>
+				</plugin>
+
+			</link>
+			
+			<link name="sensor_link2">
+				<pose> 0 -5 0 0 0 0</pose>
+
+				<static>true</static>
+				<visual name="visual_object2">					
+					<geometry>
+						<cylinder>
+							<radius>.1</radius>
+							<length>0.08</length>
+						</cylinder>
+						</geometry>
+						<material>
+							<diffuse>0 1 0 1</diffuse>
+						</material>
+				</visual>
+
+				<!--FIXME no absoulte path-->
+				<plugin
+					filename="/home/paolo/light_sensor_plugin/install/lib/libLightSensor.so"
+					name="custom_light_sensor::LightSensor">
+					<update_rate>1</update_rate>
+				</plugin>
 
 			</link>
 
-			<!--FIXME no absoulte path-->
-			<plugin
-				filename="/home/paolo/light_sensor_plugin/install/lib/libLightSensor.so"
-				name="custom_light_sensor::LightSensor">
-				<update_rate>1</update_rate>
-			</plugin>
-
 		</model>
-
-
-
-		<!--<sensor name='gpu_lidar' type='gpu_lidar'>"
-        	<pose>0 0 0 0 0 0</pose>
-        	<topic>lidar</topic>
-        	<update_rate>10</update_rate>
-        	<ray>
-        	<scan>
-        	    <horizontal>
-        	    <samples>640</samples>
-        	    <resolution>1</resolution>
-        	    <min_angle>-1.396263</min_angle>
-        	    <max_angle>1.396263</max_angle>
-        	    </horizontal>
-        	    <vertical>
-        	    <samples>1</samples>
-        	    <resolution>0.01</resolution>
-        	    <min_angle>0</min_angle>
-        	    <max_angle>0</max_angle>
-        	    </vertical>
-        	</scan>
-        	<range>
-        	    <min>0.08</min>
-        	    <max>10.0</max>
-        	    <resolution>0.01</resolution>
-        	</range>
-        	</ray>
-        	<alwaysOn>1</alwaysOn>
-        	<visualize>true</visualize>
-    	</sensor>-->
 
 
     </world>

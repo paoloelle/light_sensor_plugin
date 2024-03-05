@@ -1,0 +1,29 @@
+[0.107s] Invoking command in '/home/paolo/light_sensor_plugin/build/light_sensor': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/paolo/turtlebot4_controller_ws/install/turtlebot4_controller:/opt/ros/humble /usr/bin/cmake --build /home/paolo/light_sensor_plugin/build/light_sensor -- -j8 -l8
+[0.151s] [35m[1mConsolidate compiler generated dependencies of target LightSensor[0m
+[0.175s] [ 50%] [32mBuilding CXX object CMakeFiles/LightSensor.dir/src/LightSensor.cc.o[0m
+[12.892s] [100%] [32m[1mLinking CXX shared library libLightSensor.so[0m
+[13.537s] [100%] Built target LightSensor
+[13.547s] Invoked command in '/home/paolo/light_sensor_plugin/build/light_sensor' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/paolo/turtlebot4_controller_ws/install/turtlebot4_controller:/opt/ros/humble /usr/bin/cmake --build /home/paolo/light_sensor_plugin/build/light_sensor -- -j8 -l8
+[13.584s] Invoking command in '/home/paolo/light_sensor_plugin/build/light_sensor': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/paolo/turtlebot4_controller_ws/install/turtlebot4_controller:/opt/ros/humble /usr/bin/cmake --install /home/paolo/light_sensor_plugin/build/light_sensor
+[13.591s] -- Install configuration: ""
+[13.591s] -- Up-to-date: /home/paolo/light_sensor_plugin/install/share/light_sensor/environment/resource_paths.dsv
+[13.592s] -- Up-to-date: /home/paolo/light_sensor_plugin/install/share/light_sensor/environment/resource_paths.sh
+[13.592s] -- Installing: /home/paolo/light_sensor_plugin/install/lib/libLightSensor.so
+[13.605s] -- Up-to-date: /home/paolo/light_sensor_plugin/install/share/light_sensor/model
+[13.606s] -- Installing: /home/paolo/light_sensor_plugin/install/share/light_sensor/model/model.sdf
+[13.606s] -- Up-to-date: /home/paolo/light_sensor_plugin/install/share/ament_index/resource_index/package_run_dependencies/light_sensor
+[13.606s] -- Up-to-date: /home/paolo/light_sensor_plugin/install/share/ament_index/resource_index/parent_prefix_path/light_sensor
+[13.606s] -- Up-to-date: /home/paolo/light_sensor_plugin/install/share/light_sensor/environment/ament_prefix_path.sh
+[13.606s] -- Up-to-date: /home/paolo/light_sensor_plugin/install/share/light_sensor/environment/ament_prefix_path.dsv
+[13.607s] -- Up-to-date: /home/paolo/light_sensor_plugin/install/share/light_sensor/environment/path.sh
+[13.607s] -- Up-to-date: /home/paolo/light_sensor_plugin/install/share/light_sensor/environment/path.dsv
+[13.607s] -- Up-to-date: /home/paolo/light_sensor_plugin/install/share/light_sensor/local_setup.bash
+[13.607s] -- Up-to-date: /home/paolo/light_sensor_plugin/install/share/light_sensor/local_setup.sh
+[13.607s] -- Up-to-date: /home/paolo/light_sensor_plugin/install/share/light_sensor/local_setup.zsh
+[13.607s] -- Up-to-date: /home/paolo/light_sensor_plugin/install/share/light_sensor/local_setup.dsv
+[13.607s] -- Installing: /home/paolo/light_sensor_plugin/install/share/light_sensor/package.dsv
+[13.608s] -- Up-to-date: /home/paolo/light_sensor_plugin/install/share/ament_index/resource_index/packages/light_sensor
+[13.608s] -- Up-to-date: /home/paolo/light_sensor_plugin/install/share/light_sensor/cmake/light_sensorConfig.cmake
+[13.608s] -- Up-to-date: /home/paolo/light_sensor_plugin/install/share/light_sensor/cmake/light_sensorConfig-version.cmake
+[13.608s] -- Up-to-date: /home/paolo/light_sensor_plugin/install/share/light_sensor/package.xml
+[13.609s] Invoked command in '/home/paolo/light_sensor_plugin/build/light_sensor' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/paolo/turtlebot4_controller_ws/install/turtlebot4_controller:/opt/ros/humble /usr/bin/cmake --install /home/paolo/light_sensor_plugin/build/light_sensor

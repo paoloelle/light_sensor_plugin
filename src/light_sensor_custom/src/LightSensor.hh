@@ -51,6 +51,9 @@ namespace custom_light_sensor
         /// \brief update rate
         public: double updateRate{5.0};
 
+        /// \brief sensor numbering
+        //public: int sensorNumber;
+
         /// \brief Ignition tranport node
         public: ignition::transport::Node node;
 

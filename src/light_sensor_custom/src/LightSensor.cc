@@ -39,6 +39,7 @@ void LightSensor::Configure(const ignition::gazebo::Entity &_entity,
 		// get update rate from sdf file
 		auto sdf = const_cast<sdf::Element *>(_sdf.get());
 		this->updateRate = sdf->Get("update_rate", this->updateRate).first;
+		//this->sensorNumber = sdf->Get("sensor_number", this->sensorNumber).first;
 
 		// get and store the pose of each light element
 		_ecm.Each<ignition::gazebo::components::Light,
@@ -64,17 +65,20 @@ void LightSensor::Configure(const ignition::gazebo::Entity &_entity,
 			_entity);
 		this->entity = _entity;
 		this->modelEntity = _entity;
-		while (parent && _ecm.Component<ignition::gazebo::components::Model>(
-				parent->Data()))
-		{
-			this->modelEntity = parent->Data();
-			parent = _ecm.Component<ignition::gazebo::components::ParentEntity>(
-				parent->Data());
-		}
+		//while (parent && _ecm.Component<ignition::gazebo::components::Model>(
+		//if (parent && _ecm.Component<ignition::gazebo::components::Model>( // check if the parent entity is a model
+		//		parent->Data()))
+		//{
+		//	this->modelEntity = parent->Data();
+		//	//parent = _ecm.Component<ignition::gazebo::components::ParentEntity>(
+		//		//parent->Data());
+		//}
 
 
 		// set topic to publish sensor data to
-		std::string topic = ignition::gazebo::scopedName(_entity, _ecm) + "/light_value";
+		//std::string topic = ignition::gazebo::scopedName(_entity, _ecm) + "/light_value";
+		std::string topic = ignition::gazebo::topicFromScopedName(_entity, _ecm, false) + "/light_value";
+
 		topic = ignition::transport::TopicUtils::AsValidTopic(topic);
 
 		// create the publisher
@@ -100,7 +104,7 @@ void LightSensor::Configure(const ignition::gazebo::Entity &_entity,
                 this->nextUpdateTime += delta;
             }
 
-			  // get the pose of the model
+			// get the pose of the model
 			const ignition::gazebo::components::Pose *poseComp =
 				_ecm.Component<ignition::gazebo::components::Pose>(this->modelEntity);
 			ignition::math::Pose3d entityPose = poseComp->Data();
