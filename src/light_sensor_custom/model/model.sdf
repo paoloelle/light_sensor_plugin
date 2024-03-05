@@ -9,11 +9,11 @@
     	  <render_engine>ogre</render_engine>
     	</plugin>-->
 
-		<model name="lights">
+		<model name="light">
 
     	<static>true</static>
 		
-		<link name="link_light1">
+		<link name="link_light">
 			<light type="point" name="point_light1">
 				<intensity>1</intensity>
 				<pose>0 -0.6 1.5 0 0 0</pose>
@@ -33,7 +33,9 @@
 		</model>
 
 
-		<model name="light_sensor">
+		<model name="robot">
+
+			
 
 			<static>true</static>
 			<link name="sensor_link">
@@ -49,14 +51,16 @@
 						</material>
 				</visual>
 
+				<!--FIXME no absoulte path-->
+				<plugin
+					filename="/home/paolo/light_sensor_plugin/install/lib/libLightSensor.so"
+					name="custom_light_sensor::LightSensor">
+					<update_rate>1</update_rate>
+				</plugin>
+
 			</link>
 
-			<!--FIXME no absoulte path-->
-			<plugin
-				filename="/home/paolo/light_sensor_plugin/install/lib/libLightSensor.so"
-				name="custom_light_sensor::LightSensor">
-				<update_rate>1</update_rate>
-			</plugin>
+				
 
 		</model>
 

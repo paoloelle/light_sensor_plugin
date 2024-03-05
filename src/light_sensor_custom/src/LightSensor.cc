@@ -64,7 +64,7 @@ void LightSensor::Configure(const ignition::gazebo::Entity &_entity,
 			_entity);
 		this->entity = _entity;
 		this->modelEntity = _entity;
-		while (parent && _ecm.Component<ignition::gazebo::components::Model>(
+		while (parent && _ecm.Component<ignition::gazebo::components::Link>(
 				parent->Data()))
 		{
 			this->modelEntity = parent->Data();
@@ -100,7 +100,7 @@ void LightSensor::Configure(const ignition::gazebo::Entity &_entity,
                 this->nextUpdateTime += delta;
             }
 
-			  // get the pose of the model
+			// get the pose of the model
 			const ignition::gazebo::components::Pose *poseComp =
 				_ecm.Component<ignition::gazebo::components::Pose>(this->modelEntity);
 			ignition::math::Pose3d entityPose = poseComp->Data();
