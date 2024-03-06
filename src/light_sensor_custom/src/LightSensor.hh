@@ -1,69 +1,54 @@
+
+*/
 #ifndef LIGHT_SENSOR_HH_
 #define LIGHT_SENSOR_HH_
 
-#include <memory>
-#include <ignition/gazebo/System.hh>
-#include <ignition/transport/Node.hh>
-#include <ignition/math/Pose3.hh>
+#include <gz/sensors/Sensor.hh>
+#include <gz/sensors/SensorTypes.hh>
+#include <gz/transport/Node.hh>
 
-#include <sdf/Light.hh>
-
-
-
-namespace custom_light_sensor
+namespace custom
 {
+  /// \brief Example sensor that publishes the total distance travelled by a
+  /// robot, with noise.
+  class LightSensor : public gz::sensors::Sensor
+  {
+    /// \brief Load the sensor with SDF parameters.
+    /// \param[in] _sdf SDF Sensor parameters.
+    /// \return True if loading was successful
+    public: virtual bool Load(const sdf::Sensor &_sdf) override;
 
-    class LightSensor:
-    public ignition::gazebo::System,
-    public ignition::gazebo::ISystemConfigure,
-    public ignition::gazebo::ISystemPostUpdate
+    /// \brief Update the sensor and generate data
+    /// \param[in] _now The current time
+    /// \return True if the update was successfull
+    public: virtual bool Update(
+      const std::chrono::steady_clock::duration &_now) override;
 
-    {
-        /// \brief Constructor
-        public: LightSensor();
+    /// \brief Set the current postiion of the robot, so the odometer can
+    /// calculate the distance travelled.
+    /// \param[in] _pos Current position in world coordinates.
+    public: void NewPosition(const gz::math::Vector3d &_pos);
 
-        /// \brief Deconstructor
-        public: ~LightSensor() override;
+    /// \brief Get the latest world postiion of the robot.
+    /// \return The latest position given to the odometer.
+    public: const gz::math::Vector3d &Position() const;
 
-        /// Documentation inherited
-        public: void Configure(
-                            const ignition::gazebo::Entity &_entity,
-                            const std::shared_ptr<const sdf::Element> &_sdf,
-                            ignition::gazebo::EntityComponentManager &_ecm,
-                            ignition::gazebo::EventManager &_eventMgr
-                            //const std::shared_ptr<const sdf::Element> &_sdfB
-                            ) override;
+    /// \brief Previous position of the robot.
+    private: gz::math::Vector3d prevPos{std::nan(""), std::nan(""),
+        std::nan("")};
 
-        /// Documentation inherited
-        public: void PostUpdate(
-                const ignition::gazebo::UpdateInfo &_info,
-                const ignition::gazebo::EntityComponentManager &_ecm) override;
+    /// \brief Latest total distance.
+    private: double totalDistance{0.0};
 
-        /// \brief Entity ID of the sensor
-        public: ignition::gazebo::Entity entity{ignition::gazebo::kNullEntity};
+    /// \brief Noise that will be applied to the sensor data
+    private: gz::sensors::NoisePtr noise{nullptr};
 
-        /// \brief Entity ID of the parent model
-        public: ignition::gazebo::Entity modelEntity{ignition::gazebo::kNullEntity};
+    /// \brief Node for communication
+    private: gz::transport::Node node;
 
-        /// \brief store position of ligth sources
-        public: std::vector<ignition::math::Pose3d> lightPoses;
-
-        /// \brief update rate
-        public: double updateRate{5.0};
-
-        /// \brief Ignition tranport node
-        public: ignition::transport::Node node;
-
-        /// \brief Ignition transport publisher for publishing sensor data
-        public: ignition::transport::Node::Publisher publisher;
-
-        /// \brief Sim time when next update should occur
-        public: std::chrono::steady_clock::duration nextUpdateTime
-            {std::chrono::steady_clock::duration::zero()};
-
-
-    };
-
+    /// \brief Publishes sensor data
+    private: gz::transport::Node::Publisher pub;
+  };
 }
 
 #endif
